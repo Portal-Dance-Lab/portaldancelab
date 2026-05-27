@@ -56,7 +56,7 @@ nav {
 .hero-bg {
   position: absolute; inset: 0;
   background-image: url('/assets/mkd_1274_fixed.jpg');
-  background-size: cover; background-position: center top;
+  background-size: cover; background-position: center 65%;
   filter: brightness(0.35);
 }
 .hero-overlay {
@@ -323,6 +323,23 @@ section { padding: 96px 48px; }
   font-weight: 600; letter-spacing: 0.05em;
   position: relative; z-index: 1;
 }
+
+/* CONTACT */
+.contact { background: var(--navy); border-top: 1px solid var(--edge); }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+.contact-copy .section-title { margin-top: 12px; }
+.contact-details { display: flex; flex-direction: column; gap: 24px; }
+.contact-item {
+  display: flex; align-items: flex-start; gap: 16px;
+  font-size: 16px; color: var(--muted); line-height: 1.5;
+}
+.contact-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.contact-email { text-decoration: none; transition: color 0.2s; }
+.contact-email:hover { color: var(--cobalt-light); }
+.contact-email span:last-child { color: var(--cobalt-light); }
 
 /* FOOTER */
 footer {

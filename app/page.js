@@ -1,5 +1,6 @@
 import {
   BOOKING_URL,
+  AUDITIONS_URL,
   HERO,
   STATS,
   PATHWAYS,
@@ -7,6 +8,7 @@ import {
   VIDEO,
   REVIEWS,
   SZN3,
+  CONTACT,
   FOOTER,
 } from "../content";
 
@@ -205,11 +207,37 @@ export default function Home() {
           )}
         </h2>
         <p className="szn3-sub">{SZN3.sub}</p>
-        <a href={BOOKING_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
+        <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
           {SZN3.cta}
         </a>
         <div className="szn3-dates">{SZN3.dates}</div>
       </div>
+
+      {/* CONTACT */}
+      <section className="contact">
+        <div className="section-inner">
+          <div className="contact-grid">
+            <div className="contact-copy">
+              <p className="section-eyebrow">{CONTACT.eyebrow}</p>
+              <h2 className="section-title">{CONTACT.title}</h2>
+            </div>
+            <div className="contact-details">
+              <a href={`mailto:${CONTACT.email}`} className="contact-item contact-email">
+                <span className="contact-icon">✉</span>
+                <span>{CONTACT.email}</span>
+              </a>
+              <div className="contact-item">
+                <span className="contact-icon">📍</span>
+                <span>{CONTACT.address}</span>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">🕐</span>
+                <span>{CONTACT.hours}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* FOOTER */}
       <footer>

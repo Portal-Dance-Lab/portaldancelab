@@ -6,6 +6,8 @@
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
 
+export const AUDITIONS_URL = "https://portaldancelab.gymmasteronline.com/portal/";
+
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About", "Shop"],
   cta: "Book a Free Trial",
@@ -110,6 +112,15 @@ export const SZN3 = {
   sub: "Bigger instructors. Monsters Convention. Vegas. We are not slowing down.",
   cta: "Register for Auditions",
   dates: "Auditions · June 8–10 · Portal Dance Lab, Richmond TX",
+};
+
+export const CONTACT = {
+  eyebrow: "Get In Touch",
+  title: "We'd Love to Hear From You.",
+  email: "info@portaldancelab.com",
+  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
+  cta: "Send Us a Message",
 };
 
 export const FOOTER = {
