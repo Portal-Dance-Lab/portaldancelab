@@ -33,6 +33,7 @@ export default function TeamsPage() {
             <h2 className="auditions-title">{TEAMS.auditions.title}</h2>
             <p className="auditions-sub">{TEAMS.auditions.sub}</p>
             <p className="auditions-dates">{TEAMS.auditions.dates}</p>
+            <p className="auditions-fee">{TEAMS.auditions.fee}</p>
           </div>
           <div className="auditions-action">
             <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
@@ -65,6 +66,7 @@ export default function TeamsPage() {
           <div className="teams-grid">
             {regularTeams.map((team, i) => (
               <div className="team-card" key={i}>
+                <p className="team-age">{team.age}</p>
                 <p className="team-tagline">{team.tagline}</p>
                 <h3 className="team-name">{team.name}</h3>
                 <p className="team-desc">{team.desc}</p>
@@ -75,6 +77,7 @@ export default function TeamsPage() {
           {featuredTeam && (
             <div className="team-card team-card-featured">
               <div className="featured-badge">Flagship Team</div>
+              <p className="team-age">{featuredTeam.age}</p>
               <p className="team-tagline">{featuredTeam.tagline}</p>
               <h3 className="team-name">{featuredTeam.name}</h3>
               <p className="team-desc">{featuredTeam.desc}</p>

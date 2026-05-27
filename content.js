@@ -92,18 +92,13 @@ export const REVIEWS = {
   cards: [
     {
       quote:
-        "My daughter has been at PDL for two seasons now and the growth has been unreal — not just in dance, but in confidence and discipline. This studio is the real deal.",
-      author: "PDL Parent, Rangers",
+        "This is our first year in competitive dance and we love it. The studio is full of love and excitement. My daughter has learned so much from her dance teachers and always wants to be there. Coach Taylor and Coach Andrew put so much heart into teaching not only my kid but all the others.",
+      author: "Erica Rosales — Parent, Orbitties SZN II",
     },
     {
       quote:
-        "We drove 45 minutes to compete and our girls cleaned up. The training here is serious. These coaches don't play. And I mean that in the best way.",
-      author: "PDL Parent, Nova",
-    },
-    {
-      quote:
-        "My son went from zero dance experience to performing at nationals in one season. Couldn't be prouder. This place changes kids.",
-      author: "PDL Parent, SZN II",
+        "Andrew and Taylor have done an impeccable job about informing and constantly reminding us that dance is more than a sport, it's a culture. This studio is heavily foundations based, but also offers anywhere from beginner to advanced. The dancers are all so welcoming and it is overall a great environment for you and your children. This is the place to be.",
+      author: "Cameron Knight — MonStarz, SZN II",
     },
   ],
 };
@@ -141,26 +136,31 @@ export const TEAMS = {
   teams: [
     {
       name: "Orbitties",
+      age: "Mini · Hip Hop",
       tagline: "Where it starts.",
       desc: "The youngest Portal team. Big personality, bigger work ethic. Orbitties learn the Portal way from day one — technique, stage presence, and how to compete.",
     },
     {
       name: "Rangers",
+      age: "Youth · Hip Hop",
       tagline: "Ready for anything.",
       desc: "Rangers are built for the grind. Consistent, coachable, and competitive. They show up every week and show out every performance.",
     },
     {
       name: "Ethereal",
+      age: "Junior · Jazz & Contemporary",
       tagline: "Grace. Power. Both.",
       desc: "Ethereal dancers know how to hold a room. Artistry and athleticism in the same breath — the performers that make the crowd go quiet.",
     },
     {
       name: "Nova",
+      age: "Junior · Hip Hop",
       tagline: "Emerging fast.",
       desc: "Nova is the wildcard — in the best way. Developing at a pace that surprises people. When they hit the stage, you remember it.",
     },
     {
       name: "MonStarz",
+      age: "Senior · Hip Hop",
       tagline: "The flagship. The standard.",
       desc: "MonStarz is Portal at its peak. Eleven national titles, two Worlds and Summit Finals appearances, and the hardware to back it up. This team doesn't chase the moment — they create it.",
       featured: true,
@@ -172,6 +172,7 @@ export const TEAMS = {
     title: "Auditions Are Open.",
     sub: "Bigger instructors. Monsters Convention. Las Vegas. If your dancer has the drive, we have everything else.",
     dates: "June 8–10, 2026 · Portal Dance Lab, Richmond TX",
+    fee: "$50 audition fee · Includes Standard Portal Shirt",
     cta: "Register for Auditions",
     note: "All experience levels considered. If your dancer has the drive, we'll build the rest.",
   },
@@ -182,6 +183,45 @@ export const TEAMS = {
     { heading: "Complete Development", desc: "Teams train in hip hop, jazz, contemporary, and technique. We build complete dancers, not one-trick specialists." },
     { heading: "College-Bound Culture", desc: "100% of PDL seniors go on to college. The discipline you build here follows you everywhere." },
   ],
+};
+
+export const PRICING = {
+  eyebrow: "Transparent Pricing",
+  title: "No Surprises.",
+  sub: "Everything is month-to-month. Cancel anytime before your next billing date.",
+  groups: [
+    {
+      label: "Memberships",
+      note: "Monthly · Billed on the 1st",
+      items: [
+        { name: "Unlimited Classes", price: "$200", per: "/mo", desc: "All styles, all levels. Best value." },
+        { name: "2 Classes / Week", price: "$180", per: "/mo", desc: "Two classes per week, any style." },
+        { name: "Drill Team Unlimited", price: "$150", per: "/mo", desc: "Unlimited classes for pom & drill team prep." },
+        { name: "1 Class / Week", price: "$100", per: "/mo", desc: "One class per week, any style." },
+      ],
+    },
+    {
+      label: "Drop In",
+      note: "No commitment",
+      items: [
+        { name: "10-Class Pack", price: "$150", per: "", desc: "$15 per class. Never expires." },
+        { name: "5-Class Pack", price: "$75", per: "", desc: "$15 per class. Never expires." },
+        { name: "Single Class", price: "$20", per: "", desc: "Just show up." },
+        { name: "First Class", price: "Free", per: "", desc: "Try us out. No card required." },
+      ],
+    },
+    {
+      label: "Competitive Team",
+      note: "SZN III · June 2026 – May 2027",
+      note2: "Auditions required — June 8–10",
+      items: [
+        { name: "1 Routine", price: "$350", per: "/mo", desc: "4 hrs/week training. Competition fees included." },
+        { name: "2 Routines", price: "$380", per: "/mo", desc: "6 hrs/week training. Competition fees included." },
+        { name: "3 Routines", price: "$400", per: "/mo", desc: "8 hrs/week training. Competition fees included." },
+      ],
+    },
+  ],
+  discounts: "Discounts available for educators, first responders, and military. Unlimited referral bonus.",
 };
 
 export const SCHEDULE = {

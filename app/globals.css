@@ -265,7 +265,7 @@ section { padding: 96px 48px; }
 
 /* SOCIAL PROOF */
 .social-proof { background: var(--navy); }
-.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; max-width: 880px; }
 .proof-card {
   background: var(--navy-card); border-radius: 8px; padding: 32px;
   border: 1px solid var(--edge);
@@ -542,10 +542,12 @@ footer {
   display: grid; grid-template-columns: auto 1fr;
   gap: 0 40px; align-items: start;
   grid-template-areas:
+    "badge age"
     "badge tagline"
     "badge name"
     "badge desc";
 }
+.team-card-featured .team-age { grid-area: age; }
 .team-card-featured .team-tagline { grid-area: tagline; }
 .team-card-featured .team-name { grid-area: name; font-size: 52px; }
 .team-card-featured .team-desc { grid-area: desc; max-width: 640px; }
@@ -604,6 +606,75 @@ footer {
 
   .training-section { padding: 64px 24px; }
   .training-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* TEAM AGE LABEL */
+.team-age {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--subtle); margin-bottom: 4px;
+}
+.auditions-fee {
+  font-size: 13px; color: var(--cobalt-light); font-weight: 500; margin-top: 6px;
+}
+
+/* PRICING SECTION */
+.pricing-section {
+  background: var(--navy-mid);
+  border-top: 1px solid var(--edge);
+  padding: 96px 48px;
+}
+.pricing-sub {
+  font-size: 16px; color: var(--muted); margin-top: 16px; margin-bottom: 64px;
+}
+.pricing-groups { display: flex; flex-direction: column; gap: 48px; }
+.pricing-group {
+  background: var(--navy-card); border-radius: 8px;
+  border: 1px solid var(--edge); overflow: hidden;
+}
+.pricing-group-header {
+  padding: 24px 32px; border-bottom: 1px solid var(--edge);
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: rgba(255,255,255,0.02);
+}
+.pricing-group-label {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 22px; font-weight: 700; color: var(--white); letter-spacing: 0.02em;
+}
+.pricing-group-note {
+  font-size: 12px; color: var(--subtle); font-weight: 500; letter-spacing: 0.05em;
+}
+.pricing-group-note2 {
+  font-size: 12px; color: var(--coral); font-weight: 600; letter-spacing: 0.05em;
+  margin-left: auto;
+}
+.pricing-items { padding: 8px 0; }
+.pricing-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 32px; border-bottom: 1px solid var(--edge); gap: 24px;
+}
+.pricing-item:last-child { border-bottom: none; }
+.pricing-item-left { display: flex; flex-direction: column; gap: 4px; }
+.pricing-item-name { font-size: 16px; font-weight: 600; color: var(--white); }
+.pricing-item-desc { font-size: 13px; color: var(--subtle); }
+.pricing-item-price { display: flex; align-items: baseline; gap: 2px; flex-shrink: 0; }
+.pricing-amount {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 28px; font-weight: 900; color: var(--cobalt-light);
+}
+.pricing-per { font-size: 13px; color: var(--subtle); }
+.pricing-group:last-child .pricing-amount { color: var(--gold); }
+.pricing-discounts {
+  margin-top: 40px; font-size: 14px; color: var(--subtle);
+  text-align: center; font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .pricing-section { padding: 64px 24px; }
+  .pricing-group-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .pricing-group-note2 { margin-left: 0; }
+  .pricing-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .pricing-item-price { flex-direction: row; }
+  .proof-grid { grid-template-columns: 1fr; }
 }
 
 /* SPACE ELEMENTS */
