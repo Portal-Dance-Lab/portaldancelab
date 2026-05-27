@@ -9,7 +9,7 @@ export default function Nav() {
       </Link>
       <div className="nav-links">
         <a href="#">Classes</a>
-        <a href="#">Teams</a>
+        <Link href="/teams">Teams</Link>
         <Link href="/schedule">Schedule</Link>
         <a href="#">About</a>
         <a href="#">Shop</a>

@@ -126,6 +126,64 @@ export const CONTACT = {
   cta: "Send Us a Message",
 };
 
+export const TEAMS = {
+  eyebrow: "Competitive Program · SZN III",
+  title: "Five Teams. One Standard.",
+  sub: "We always put on a good show. Eleven national titles later, that rule hasn't changed.",
+
+  stats: [
+    { number: "11", unit: "×", label: "National Champions", sub: "SZN II alone" },
+    { number: "7", unit: "", label: "Competitions", sub: "5 nationals + Worlds + Summit" },
+    { number: "5", unit: "", label: "States", sub: "NJ · LV · MD · FL · CO" },
+    { number: "2", unit: "×", label: "Worlds & Summit Finalists", sub: "Biggest stages in the sport" },
+  ],
+
+  teams: [
+    {
+      name: "Orbitties",
+      tagline: "Where it starts.",
+      desc: "The youngest Portal team. Big personality, bigger work ethic. Orbitties learn the Portal way from day one — technique, stage presence, and how to compete.",
+    },
+    {
+      name: "Rangers",
+      tagline: "Ready for anything.",
+      desc: "Rangers are built for the grind. Consistent, coachable, and competitive. They show up every week and show out every performance.",
+    },
+    {
+      name: "Ethereal",
+      tagline: "Grace. Power. Both.",
+      desc: "Ethereal dancers know how to hold a room. Artistry and athleticism in the same breath — the performers that make the crowd go quiet.",
+    },
+    {
+      name: "Nova",
+      tagline: "Emerging fast.",
+      desc: "Nova is the wildcard — in the best way. Developing at a pace that surprises people. When they hit the stage, you remember it.",
+    },
+    {
+      name: "MonStarz",
+      tagline: "The flagship. The standard.",
+      desc: "MonStarz is Portal at its peak. Eleven national titles, two Worlds and Summit Finals appearances, and the hardware to back it up. This team doesn't chase the moment — they create it.",
+      featured: true,
+    },
+  ],
+
+  auditions: {
+    eyebrow: "Season III · Now Open",
+    title: "Auditions Are Open.",
+    sub: "Bigger instructors. Monsters Convention. Las Vegas. If your dancer has the drive, we have everything else.",
+    dates: "June 8–10, 2026 · Portal Dance Lab, Richmond TX",
+    cta: "Register for Auditions",
+    note: "All experience levels considered. If your dancer has the drive, we'll build the rest.",
+  },
+
+  training: [
+    { heading: "Year-Round Training", desc: "Competitive team members train weekly throughout the season, with intensified prep before every competition window." },
+    { heading: "National Competitions", desc: "PDL competes at nationals across 5 states, including Worlds and Summit Finals. We don't go for participation trophies." },
+    { heading: "Complete Development", desc: "Teams train in hip hop, jazz, contemporary, and technique. We build complete dancers, not one-trick specialists." },
+    { heading: "College-Bound Culture", desc: "100% of PDL seniors go on to college. The discipline you build here follows you everywhere." },
+  ],
+};
+
 export const SCHEDULE = {
   eyebrow: "Richmond, TX · Portal Dance Lab",
   title: "Class Schedule.",
