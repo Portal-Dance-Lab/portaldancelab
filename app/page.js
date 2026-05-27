@@ -1,3 +1,5 @@
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import {
   BOOKING_URL,
   AUDITIONS_URL,
@@ -9,28 +11,12 @@ import {
   REVIEWS,
   SZN3,
   CONTACT,
-  FOOTER,
 } from "../content";
 
 export default function Home() {
   return (
     <>
-      {/* NAV */}
-      <nav>
-        <a href="/" className="nav-logo">
-          <img src="/brand/pdl-logo-horizontal.svg" alt="Portal Dance Lab" style={{ height: 36, display: "block" }} />
-        </a>
-        <div className="nav-links">
-          <a href="#">Classes</a>
-          <a href="#">Teams</a>
-          <a href="#">Schedule</a>
-          <a href="#">About</a>
-          <a href="#">Shop</a>
-          <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
-            Book a Free Trial
-          </a>
-        </div>
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <section className="hero">
@@ -239,37 +225,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-top">
-            <div>
-              <img
-                src="/brand/pdl-logo-white-transparent.png"
-                alt="Portal Dance Lab"
-                style={{ height: 40, marginBottom: 12, display: "block" }}
-              />
-              <p className="footer-brand-desc">{FOOTER.desc}</p>
-            </div>
-            {FOOTER.columns.map((col, i) => (
-              <div className="footer-col" key={i}>
-                <div className="footer-col-title">{col.title}</div>
-                <ul>
-                  {col.links.map((link, j) => (
-                    <li key={j}>
-                      <a href="#">{link}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="footer-bottom">
-            <div className="footer-legal">{FOOTER.legal}</div>
-            <div className="footer-address">{FOOTER.domain}</div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

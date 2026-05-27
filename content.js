@@ -3,6 +3,9 @@
 // Edit copy here. Save → Vercel auto-deploys in ~60 sec.
 // ─────────────────────────────────────────────
 
+export const SCHEDULE_EMBED_URL =
+  "https://portaldancelab.gymmasteronline.com/portal/classcalendar?logo=0";
+
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
 
@@ -121,6 +124,12 @@ export const CONTACT = {
   address: "2441 Precinct Line Dr, Richmond, TX 77406",
   hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
   cta: "Send Us a Message",
+};
+
+export const SCHEDULE = {
+  eyebrow: "Richmond, TX · Portal Dance Lab",
+  title: "Class Schedule.",
+  sub: "Browse available classes and register directly. Walk-ins welcome — spots fill fast.",
 };
 
 export const FOOTER = {

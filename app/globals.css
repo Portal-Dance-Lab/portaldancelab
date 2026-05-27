@@ -416,6 +416,41 @@ footer {
   .footer-address { text-align: center; }
 }
 
+/* PAGE HEADER (inner pages) */
+.page-header {
+  padding: 140px 48px 64px;
+  background: var(--navy);
+  border-bottom: 1px solid var(--edge);
+}
+.page-header-inner { max-width: 1200px; margin: 0 auto; }
+.page-header-title {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(48px, 6vw, 80px); font-weight: 900;
+  line-height: 1; color: var(--white); margin-top: 12px;
+}
+.page-header-sub {
+  font-size: 16px; color: var(--muted); max-width: 520px;
+  margin-top: 16px; line-height: 1.6;
+}
+
+/* SCHEDULE PAGE */
+.schedule-section {
+  padding: 64px 48px 96px;
+  background: var(--navy);
+  min-height: 80vh;
+}
+.schedule-inner { max-width: 1200px; margin: 0 auto; }
+.gymmaster-wrapper {
+  border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--edge);
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 112px 24px 48px; }
+  .schedule-section { padding: 40px 24px 64px; }
+}
+
 /* SPACE ELEMENTS */
 @keyframes twinkle {
   from { opacity: 0.06; }
