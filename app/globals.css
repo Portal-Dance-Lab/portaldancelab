@@ -364,6 +364,58 @@ footer {
 .footer-legal { font-size: 12px; color: var(--subtle); }
 .footer-address { font-size: 12px; color: var(--subtle); text-align: right; }
 
+/* MOBILE */
+@media (max-width: 768px) {
+  /* Nav */
+  nav { padding: 0 24px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+  .nav-cta { padding: 8px 16px; font-size: 13px !important; }
+
+  /* Hero */
+  .hero { min-height: 100svh; align-items: flex-end; padding-bottom: 48px; }
+  .hero-content { padding: 0 24px; padding-top: 88px; }
+  .hero-sub { font-size: 15px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .btn-primary { width: 100%; text-align: center; padding: 14px 24px; }
+  .portal-ring { width: 160px; height: 160px; top: 8%; right: 4%; }
+
+  /* Stats */
+  .stats-strip { padding: 40px 24px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 32px 0; }
+  .stat-item { border-right: none; border-bottom: 1px solid var(--edge); padding-bottom: 24px; }
+  .stat-item:nth-child(odd) { border-right: 1px solid var(--edge); }
+  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .stat-number { font-size: 48px; }
+
+  /* Sections */
+  section { padding: 64px 24px; }
+  .section-inner { max-width: 100%; }
+
+  /* Pathways */
+  .pathways-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pathways-header { margin-bottom: 40px; }
+
+  /* Trial */
+  .trial-inner { grid-template-columns: 1fr; gap: 40px; }
+  .trial-photo { aspect-ratio: 16/9; }
+
+  /* Proof */
+  .proof-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* SZN3 */
+  .szn3-banner { padding: 56px 24px; }
+  .btn-coral { width: 100%; text-align: center; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+
+  /* Footer */
+  footer { padding: 48px 24px 32px; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .footer-address { text-align: center; }
+}
+
 /* SPACE ELEMENTS */
 @keyframes twinkle {
   from { opacity: 0.06; }
