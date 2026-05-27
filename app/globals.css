@@ -56,7 +56,7 @@ nav {
 .hero-bg {
   position: absolute; inset: 0;
   background-image: url('/assets/mkd_1274_fixed.jpg');
-  background-size: cover; background-position: center 65%;
+  background-size: cover; background-position: center 30%;
   filter: brightness(0.35);
 }
 .hero-overlay {
