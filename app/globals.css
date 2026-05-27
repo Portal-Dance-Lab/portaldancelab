@@ -608,6 +608,36 @@ footer {
   .training-grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
+/* PROGRAM STRIP (teams page) */
+.program-strip {
+  background: var(--navy-mid);
+  border-bottom: 1px solid var(--edge);
+  padding: 28px 48px;
+}
+.program-strip-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; gap: 0;
+  flex-wrap: wrap;
+}
+.program-strip-item {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 0 32px; border-right: 1px solid var(--edge);
+  flex: 1; min-width: 160px;
+}
+.program-strip-item:first-child { padding-left: 0; }
+.program-strip-item:last-child { border-right: none; }
+.program-strip-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--subtle);
+}
+.program-strip-value { font-size: 13px; font-weight: 500; color: var(--white); }
+
+.auditions-workshop-note {
+  font-size: 13px; color: var(--white); line-height: 1.5;
+  max-width: 280px; font-weight: 500;
+  border-left: 2px solid var(--coral); padding-left: 12px;
+}
+
 /* TEAM AGE LABEL */
 .team-age {
   font-size: 11px; font-weight: 600; letter-spacing: 0.12em;

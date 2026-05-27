@@ -90,7 +90,7 @@ export default function Home() {
                 <p className="pathway-who">{card.who}</p>
                 <h3 className="pathway-heading">{card.heading}</h3>
                 <p className="pathway-desc">{card.desc}</p>
-                <a href={BOOKING_URL} className="pathway-link" target="_blank" rel="noopener noreferrer">
+                <a href="/schedule" className="pathway-link">
                   {card.link} &rarr;
                 </a>
               </div>

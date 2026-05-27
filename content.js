@@ -174,8 +174,17 @@ export const TEAMS = {
     dates: "June 8–10, 2026 · Portal Dance Lab, Richmond TX",
     fee: "$50 audition fee · Includes Standard Portal Shirt",
     cta: "Register for Auditions",
+    workshopNote: "Sign up for your workshop session — Monday June 8 and/or Wednesday June 10. Register for each day you plan to attend.",
     note: "All experience levels considered. If your dancer has the drive, we'll build the rest.",
   },
+
+  programDetails: [
+    { label: "Season", value: "June 2026 – May 2027" },
+    { label: "Age Groups", value: "Mini · Youth · Junior · Senior" },
+    { label: "Styles", value: "Hip Hop · Jazz · Contemporary" },
+    { label: "Competition Fees", value: "Included in monthly tuition" },
+    { label: "Space Camp", value: "July 20–26 · Mandatory" },
+  ],
 
   training: [
     { heading: "Year-Round Training", desc: "Competitive team members train weekly throughout the season, with intensified prep before every competition window." },

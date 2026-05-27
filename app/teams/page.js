@@ -39,22 +39,19 @@ export default function TeamsPage() {
             <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
               {TEAMS.auditions.cta}
             </a>
+            <p className="auditions-workshop-note">{TEAMS.auditions.workshopNote}</p>
             <p className="auditions-note">{TEAMS.auditions.note}</p>
           </div>
         </div>
       </div>
 
-      {/* HARDWARE STRIP */}
-      <div className="hardware-strip">
-        <div className="hardware-inner">
-          {TEAMS.stats.map((s, i) => (
-            <div className="hardware-stat" key={i}>
-              <span className="hardware-number">
-                {s.number}
-                {s.unit && <span className="hardware-unit">{s.unit}</span>}
-              </span>
-              <span className="hardware-label">{s.label}</span>
-              <span className="hardware-sub">{s.sub}</span>
+      {/* PROGRAM OVERVIEW STRIP */}
+      <div className="program-strip">
+        <div className="program-strip-inner">
+          {TEAMS.programDetails.map((item, i) => (
+            <div className="program-strip-item" key={i}>
+              <span className="program-strip-label">{item.label}</span>
+              <span className="program-strip-value">{item.value}</span>
             </div>
           ))}
         </div>
