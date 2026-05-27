@@ -6,7 +6,7 @@
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
 
-export const AUDITIONS_URL = "https://portaldancelab.gymmasteronline.com/portal/";
+export const AUDITIONS_URL = "https://portaldancelab.gymmasteronline.com/portal/classcalendar?logo=0";
 
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About", "Shop"],
