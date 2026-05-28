@@ -46,7 +46,7 @@ export const PATHWAYS = {
       heading: "Your kid is ready. We'll prove it.",
       desc: "From first-timers to future competitors, PDL builds confident dancers who know how to win — and how to handle it when they don't. Real training. Real results.",
       link: "Explore Kids Classes",
-      href: null,
+      href: "/classes",
     },
     {
       variant: "neutral",
@@ -54,7 +54,7 @@ export const PATHWAYS = {
       heading: "You don't have to have started young.",
       desc: "Adult classes that take you seriously. Hip hop, technique, and conditioning taught by people who do this professionally. No judgment. All work.",
       link: "See Adult Classes",
-      href: null,
+      href: "/classes",
     },
     {
       variant: "cobalt",
@@ -127,6 +127,97 @@ export const CONTACT = {
   address: "2441 Precinct Line Dr, Richmond, TX 77406",
   hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
   cta: "Send Us a Message",
+};
+
+export const CLASSES = {
+  eyebrow: "Classes & Programs",
+  title: "Find Your Class.",
+  sub: "From your dancer's first class to the national stage — every level, every age, every style.",
+
+  pipeline: {
+    eyebrow: "The Portal Pathway",
+    title: "One Studio. A Full Journey.",
+    sub: "Every class at PDL feeds somewhere. The pipeline starts at your first class and goes as far as your dancer is willing to push.",
+    steps: [
+      { label: "Tiny & Mini", age: "Born 2016–2023", desc: "First moves. First stage. The Portal way starts here.", accent: "cobalt-light" },
+      { label: "Youth", age: "Born 2013–2018", desc: "Building real technique and stage presence.", accent: "cobalt" },
+      { label: "Junior & Senior", age: "Born 2007–2016", desc: "Recreational and technique classes at full intensity.", accent: "cobalt" },
+      { label: "Competitive Team", age: "Audition Required", desc: "Nationals. Worlds. Summit. The stage is yours.", accent: "coral" },
+    ],
+  },
+
+  programs: [
+    {
+      label: "Tiny & Mini",
+      eyebrow: "Born 2016–2023",
+      heading: "Where It Starts.",
+      desc: "PDL's youngest classes are designed to build a love for dance before demanding the craft — and the craft follows fast. Small classes, big energy, and coaches who know how to make it real for little ones.",
+      styles: ["Hip Hop", "Jazz", "Movement & Rhythm"],
+      accent: "cobalt-light",
+    },
+    {
+      label: "Youth",
+      eyebrow: "Born 2013–2018",
+      heading: "Building the Foundation.",
+      desc: "Youth classes are where dancing gets serious without losing the fun. Technique, performance quality, and the kind of training that makes competitive teams take notice.",
+      styles: ["Hip Hop", "Jazz", "Contemporary", "Ballet Foundations"],
+      accent: "cobalt",
+    },
+    {
+      label: "Junior & Senior",
+      eyebrow: "Born 2007–2016",
+      heading: "Training at Full Intensity.",
+      desc: "Recreational classes for dancers who want real training. Hip hop, jazz, contemporary, lyrical, and technique taught by coaches who compete professionally. All levels welcome — but no one coasts.",
+      styles: ["Hip Hop", "Jazz", "Contemporary", "Lyrical", "Ballet", "Technique"],
+      accent: "cobalt",
+    },
+    {
+      label: "Adult",
+      eyebrow: "18 & Up",
+      heading: "You Don't Have to Have Started Young.",
+      desc: "Adult classes that take you seriously. Hip hop and conditioning taught by professionals — whether you're a first-timer or coming back after years away. No judgment. All work.",
+      styles: ["Adult Hip Hop", "Technique & Conditioning"],
+      accent: "cobalt-light",
+    },
+  ],
+
+  drillTeam: {
+    eyebrow: "Fort Bend County · High School Prep",
+    title: "Drill Team Prep.",
+    desc: "Fort Bend County is one of the strongest high school drill team markets in Texas. PDL's drill team prep program is built for middle and high schoolers looking to make — and excel on — their school's team. We train the technique, precision, and performance quality that tryout panels look for.",
+    details: [
+      "Pom and kick technique aligned with TAPPS and UIL standards",
+      "Performance quality, crowd appeal, and stage presence",
+      "Tryout prep — material breakdown, execution, and managing nerves",
+      "Year-round program — Drill Team Unlimited membership available",
+    ],
+    cta: "View Drill Team Schedule",
+  },
+
+  privateTraining: {
+    eyebrow: "One-On-One & Custom Work",
+    title: "Private Training.",
+    desc: "For the dancer who wants more. Private lessons, solo choreography, and duet work available for all ages and styles. Ideal for competition prep, audition readiness, or accelerated development.",
+    offerings: [
+      { name: "Private Lessons", desc: "One-on-one coaching in any style. Technique, performance quality, or freestyle — we meet you where you are and take you further." },
+      { name: "Solo Choreography", desc: "Original solo routines built for your dancer. Competition-ready, style-specific, coach-crafted from the ground up." },
+      { name: "Duet Choreography", desc: "Partner routines choreographed for competition or performance. Timing, sync, and chemistry — all of it." },
+    ],
+    cta: "Inquire About Private Training",
+    ctaHref: "mailto:info@portaldancelab.com",
+    note: "Scheduling and pricing discussed directly with coaching staff.",
+  },
+
+  guide: {
+    eyebrow: "Not Sure Where to Start?",
+    title: "We'll Help You Find the Right Fit.",
+    options: [
+      { situation: "No dance experience", rec: "Book a Free Trial in Hip Hop or Jazz. Our coaches will watch, assess, and place your dancer in the right class." },
+      { situation: "Some experience or returning dancer", rec: "Jump into Recreational Hip Hop or Contemporary. We'll evaluate and recommend from there." },
+      { situation: "Ready to compete", rec: "SZN III auditions are June 8–10. Show up ready to work — all experience levels considered." },
+      { situation: "High school drill team prep", rec: "Drill Team Unlimited — start any time, train year-round, peak before tryouts." },
+    ],
+  },
 };
 
 export const TEAMS = {
