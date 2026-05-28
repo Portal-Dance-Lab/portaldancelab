@@ -97,8 +97,8 @@ export const REVIEWS = {
     },
     {
       quote:
-        "A wonderful dance studio with so many skills and techniques offered. Great family environment. I highly recommend it. Our 11 year old daughter loves everything about it. We can't wait to watch her grow and develop more for her dance journey in the future.",
-      author: "Stephanie Rodriguez — Google Review",
+        "Hands down the best dance studio in town. The instructors are incredibly versatile, skilled, and create such a positive, supportive environment for growth. Whether you're a beginner or an experienced dancer, every class feels tailored to your individual progress. They strongly encourage not just dance moves, but understanding foundation and unlocking your full potential.",
+      author: "Rhea Athilat — Google Review",
     },
     {
       quote:
