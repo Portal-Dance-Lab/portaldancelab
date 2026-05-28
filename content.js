@@ -532,14 +532,9 @@ export const SOCIALS = [
 
 export const FOOTER = {
   desc: "Richmond, TX's competitive dance home. Training champions from Mini to Senior since 2023.",
-  navLinks: [
-    { label: "Classes",          href: "/classes" },
-    { label: "Teams",            href: "/teams" },
-    { label: "Schedule",         href: "/schedule" },
-    { label: "About",            href: "/about" },
-    { label: "Book a Free Trial", href: null, external: true }, // uses BOOKING_URL
-    { label: "Auditions",        href: null, external: true }, // uses AUDITIONS_URL
-  ],
+  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  hours: "Mon – Fri: 4PM – 9PM · Sat: 9AM – 2PM",
+  email: "info@portaldancelab.com",
   legal: "© 2026 Portal Dance Lab · Richmond, TX",
   domain: "portaldancelab.com",
 };

@@ -22,25 +22,31 @@ function SocialIcon({ icon }) {
   return null;
 }
 
-function resolveHref(link) {
-  if (link.label === "Book a Free Trial") return BOOKING_URL;
-  if (link.label === "Auditions") return AUDITIONS_URL;
-  return link.href;
-}
-
 export default function Footer() {
   return (
     <footer>
       <div className="footer-inner">
         <div className="footer-top">
-          {/* Brand + socials */}
+
+          {/* LEFT — brand + contact */}
           <div className="footer-brand">
-            <img
-              src="/brand/pdl-logo-white-transparent.png"
-              alt="Portal Dance Lab"
-              style={{ height: 40, marginBottom: 12, display: "block" }}
-            />
+            <Link href="/">
+              <img
+                src="/brand/pdl-logo-white-transparent.png"
+                alt="Portal Dance Lab"
+                style={{ height: 40, marginBottom: 16, display: "block" }}
+              />
+            </Link>
             <p className="footer-brand-desc">{FOOTER.desc}</p>
+
+            <div className="footer-contact">
+              <p className="footer-contact-item">{FOOTER.address}</p>
+              <p className="footer-contact-item">{FOOTER.hours}</p>
+              <a href={`mailto:${FOOTER.email}`} className="footer-contact-item footer-contact-link">
+                {FOOTER.email}
+              </a>
+            </div>
+
             <div className="footer-socials">
               {SOCIALS.map((s) => (
                 <a
@@ -57,24 +63,26 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Nav links */}
-          <nav className="footer-nav" aria-label="Footer navigation">
-            {FOOTER.navLinks.map((link) => {
-              const href = resolveHref(link);
-              if (link.external) {
-                return (
-                  <a key={link.label} href={href} className="footer-nav-link" target="_blank" rel="noopener noreferrer">
-                    {link.label}
-                  </a>
-                );
-              }
-              return (
-                <Link key={link.label} href={href} className="footer-nav-link">
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
+          {/* RIGHT — nav links */}
+          <div className="footer-links-col">
+            <p className="footer-col-title">Explore</p>
+            <nav className="footer-links" aria-label="Footer navigation">
+              <Link href="/" className="footer-nav-link">Home</Link>
+              <Link href="/classes" className="footer-nav-link">Classes</Link>
+              <Link href="/teams" className="footer-nav-link">Teams</Link>
+              <Link href="/schedule" className="footer-nav-link">Schedule</Link>
+              <Link href="/about" className="footer-nav-link">About</Link>
+            </nav>
+            <div className="footer-link-ctas">
+              <a href={BOOKING_URL} className="btn-primary footer-cta-btn" target="_blank" rel="noopener noreferrer">
+                Book a Free Trial
+              </a>
+              <a href={AUDITIONS_URL} className="footer-auditions-link" target="_blank" rel="noopener noreferrer">
+                SZN III Auditions - June 8-10 &rarr;
+              </a>
+            </div>
+          </div>
+
         </div>
 
         <div className="footer-bottom">

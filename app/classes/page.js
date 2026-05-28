@@ -66,6 +66,18 @@ export default function ClassesPage() {
         </div>
       </section>
 
+      {/* PHOTO STRIP */}
+      <div className="classes-photo-strip">
+        <img
+          src="/assets/photo-7.png"
+          alt="Portal Dance Lab dancers performing on stage"
+          className="classes-photo-img"
+        />
+        <div className="classes-photo-overlay">
+          <p className="classes-photo-label">This is where it goes.</p>
+        </div>
+      </div>
+
       {/* PROGRAM CARDS */}
       <section className="programs-section">
         <div className="section-inner">

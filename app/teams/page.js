@@ -45,6 +45,18 @@ export default function TeamsPage() {
         </div>
       </div>
 
+      {/* COMPETITION PHOTO */}
+      <div className="teams-photo-strip">
+        <img
+          src="/assets/photo-9.png"
+          alt="Portal Dance Lab dancer at Super Nationals"
+          className="teams-photo-img"
+        />
+        <div className="teams-photo-overlay">
+          <p className="teams-photo-stat">Super Nationals.</p>
+        </div>
+      </div>
+
       {/* PROGRAM OVERVIEW STRIP */}
       <div className="program-strip">
         <div className="program-strip-inner">

@@ -35,12 +35,12 @@ export default function AboutPage() {
               ))}
             </div>
             <div className="about-origin-accent">
-              <div className="about-portal-ring">
-                <div className="about-ring-inner">
-                  <span className="about-ring-year">Est.</span>
-                  <span className="about-ring-num">2023</span>
-                  <span className="about-ring-label">Richmond, TX</span>
-                </div>
+              <div className="about-origin-photo">
+                <img
+                  src="/assets/photo-4.png"
+                  alt="Portal Dance Lab team"
+                  className="about-photo-img"
+                />
               </div>
             </div>
           </div>
