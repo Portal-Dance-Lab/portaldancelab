@@ -404,6 +404,126 @@ export const SCHEDULE = {
   sub: "Browse available classes and register directly. Walk-ins welcome — spots fill fast.",
 };
 
+// ─────────────────────────────────────────────
+// CITY LANDING PAGES (Tier 2 SEO / Google Ads)
+// One page per Fort Bend County market.
+// URL structure: /locations/[slug]
+// ─────────────────────────────────────────────
+export const CITIES = [
+  {
+    slug: "richmond",
+    name: "Richmond",
+    metaTitle: "Dance Classes in Richmond, TX — Portal Dance Lab",
+    metaDesc:
+      "Portal Dance Lab is Richmond's competitive dance studio. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, and adult classes. First class is free.",
+    headline: "Dance Classes in Richmond, TX.",
+    sub: "This is home. We train Richmond dancers from their first class all the way to the national stage.",
+    paras: [
+      "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Dr. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
+      "We train dancers from age 3 through adult across hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Recreational classes are open enrollment — no audition, no long-term commitment. Competitive team spots are earned through auditions.",
+      "Fort Bend County has serious drill team culture, and we're built for it. Our drill team prep program is designed around UIL and TAPPS standards. If your student is prepping for a FBISD tryout, this is the place.",
+    ],
+  },
+  {
+    slug: "rosenberg",
+    name: "Rosenberg",
+    metaTitle: "Dance Classes Near Rosenberg, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Rosenberg, TX at Portal Dance Lab — just 5 minutes away in Richmond. 11x National Champions. All ages, all levels. First class is free.",
+    headline: "Dance Classes Near Rosenberg, TX.",
+    sub: "Five minutes away. Richmond's national champion dance studio is right in your backyard.",
+    paras: [
+      "Rosenberg and Richmond are practically the same neighborhood. Portal Dance Lab is five minutes from most of Rosenberg — no highway, no long commute. Just show up.",
+      "We run a competitive program that's earned 11 national titles in two seasons, and a recreational program that's open to anyone, anytime. Hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Ages 3 through adult.",
+      "Whether your kid wants to dance for fun or compete on the national stage, we have a lane for them. First class is always on us.",
+    ],
+  },
+  {
+    slug: "sugar-land",
+    name: "Sugar Land",
+    metaTitle: "Dance Classes Near Sugar Land, TX — Portal Dance Lab",
+    metaDesc:
+      "Looking for dance classes near Sugar Land, TX? Portal Dance Lab in Richmond is less than 15 minutes away. 11x National Champions. Book a free trial class today.",
+    headline: "Dance Classes Near Sugar Land, TX.",
+    sub: "About 12 miles from Sugar Land. Families in the area drive to Portal because the training is worth it.",
+    paras: [
+      "Sugar Land has dance studios. What it doesn't have is a studio that has taken teams to the national stage and brought home hardware the way Portal Dance Lab has — 11 national titles in two seasons, competing in five states, at Worlds, and at Summit Finals.",
+      "We're a short drive from most Sugar Land neighborhoods — less than 15 minutes from First Colony, Telfair, and New Territory. Our coaches train recreational and competitive dancers from age 3 through adult in hip hop, jazz, contemporary, ballet, and drill team prep.",
+      "Fort Bend County is one of the strongest drill team markets in Texas. If your high schooler is prepping for Dulles, Clements, or any FBISD squad, our drill team prep program is built for exactly that. First class is on us.",
+    ],
+  },
+  {
+    slug: "missouri-city",
+    name: "Missouri City",
+    metaTitle: "Dance Classes Near Missouri City, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Missouri City, TX at Portal Dance Lab in Richmond. About 15 miles away. Competitive and recreational training for all ages. First class free.",
+    headline: "Dance Classes Near Missouri City, TX.",
+    sub: "About 15 miles from Missouri City. Real training, real results — all ages and levels.",
+    paras: [
+      "Missouri City dancers who want more than a once-a-week routine come to Portal. We're about 15 miles west — close enough to make it part of your weekly schedule, and far enough that families come here on purpose.",
+      "Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Our competitive program fields five teams that compete nationally. Both tracks exist at every age level.",
+      "If your student is prepping for a high school drill team tryout, Fort Bend County is one of the top markets in Texas for that. Our drill team prep program is built around UIL and TAPPS standards, taught by coaches who train professionally.",
+    ],
+  },
+  {
+    slug: "stafford",
+    name: "Stafford",
+    metaTitle: "Dance Classes Near Stafford, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Stafford, TX at Portal Dance Lab in Richmond. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, adult classes. First class free.",
+    headline: "Dance Classes Near Stafford, TX.",
+    sub: "About 15 miles from Stafford. Competitive training that builds dancers who show up and show out.",
+    paras: [
+      "Stafford sits at the edge of Houston, and Portal Dance Lab is just west on Highway 90 — about 15 miles from most Stafford neighborhoods. Families come here because they want training that develops real dancers, not just kids who can run through a routine.",
+      "We train ages 3 through adult. Hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. No audition required for recreational classes — just come try it. Competitive team spots are earned through auditions.",
+      "Our coaches compete professionally. When you train at Portal, you're getting coached by people who are active in the craft. That matters. You can feel the difference in how class runs.",
+    ],
+  },
+  {
+    slug: "katy",
+    name: "Katy",
+    metaTitle: "Dance Classes Near Katy, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Katy, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive teams and recreational classes for all ages. First class free.",
+    headline: "Dance Classes Near Katy, TX.",
+    sub: "About 20 miles east on I-10. Competitive families from Katy make the drive because they want the best.",
+    paras: [
+      "Katy has strong athletics culture, and families here know what elite training looks like. Portal Dance Lab is about 20 miles east on I-10, and for families that want national-level competitive dance, that drive is a regular part of their week.",
+      "We field five competitive teams from Mini through Senior — all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
+      "SZN III auditions are June 8-10. If your dancer is ready to compete, come show us what they've got. All experience levels are considered — we build the rest.",
+    ],
+  },
+  {
+    slug: "fulshear",
+    name: "Fulshear",
+    metaTitle: "Dance Classes Near Fulshear, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Fulshear, TX at Portal Dance Lab in Richmond. Less than 20 minutes away. Competitive teams and recreational classes for all ages. Book a free trial today.",
+    headline: "Dance Classes Near Fulshear, TX.",
+    sub: "Fulshear is growing fast. Portal Dance Lab has been here since 2023, about 15 miles east on FM 1093.",
+    paras: [
+      "Fulshear families looking for quality dance training make the short drive to Portal. About 15 minutes east on FM 1093 or FM 359 — and worth every minute.",
+      "We opened in 2023 and in two seasons our teams won 11 national titles. That's not slow-building credibility. We built this program from scratch with a clear standard: always put on a good show, always compete to win.",
+      "Recreational and competitive programs for ages 3 and up. All major styles. No long-term commitment required to start — just book a free trial and see what Portal is about.",
+    ],
+  },
+  {
+    slug: "pearland",
+    name: "Pearland",
+    metaTitle: "Dance Classes Near Pearland, TX — Portal Dance Lab",
+    metaDesc:
+      "Dance classes near Pearland, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive and recreational training for all ages. Book a free trial today.",
+    headline: "Dance Classes Near Pearland, TX.",
+    sub: "About 25 miles from Pearland. Our Pearland families make the drive because there's nothing like it closer to home.",
+    paras: [
+      "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built — 11 national titles in two seasons, five teams competing nationally — and decided the drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
+      "We run recreational classes year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. Competitive team spots are available through seasonal auditions.",
+      "If your high schooler is targeting a school drill team spot, our drill team prep program is one of the best in the Houston metro. Fort Bend County is serious drill team country, and we train for it. First class is always free.",
+    ],
+  },
+];
+
 export const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/portaldancelab", icon: "instagram" },
   { label: "TikTok",    href: "https://www.tiktok.com/@portaldancelab",   icon: "tiktok" },

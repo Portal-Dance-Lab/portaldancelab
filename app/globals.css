@@ -378,6 +378,56 @@ footer {
 }
 .footer-social-link:hover { color: var(--white); border-color: var(--cobalt); background: rgba(27,79,216,0.12); }
 
+/* CITY LANDING PAGES */
+.city-body { background: var(--navy); border-top: 1px solid var(--edge); padding: 80px 48px; }
+.city-body-inner { display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: flex-start; }
+.city-para { font-size: 16px; color: var(--muted); line-height: 1.85; margin-bottom: 24px; }
+.city-para:last-child { margin-bottom: 0; }
+
+.city-aside { display: flex; flex-direction: column; gap: 16px; }
+.city-aside-card {
+  background: var(--navy-card); border: 1px solid var(--edge); border-radius: 8px;
+  padding: 20px 24px;
+}
+.city-aside-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--subtle); margin-bottom: 6px;
+}
+.city-aside-value { font-size: 14px; color: var(--white); line-height: 1.6; font-weight: 500; }
+.city-aside-value--highlight {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 22px; font-weight: 900; color: var(--coral);
+}
+.city-aside-cta { margin-top: 8px; text-align: center; width: 100%; }
+
+.city-offerings {
+  background: var(--navy-mid); border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge); padding: 56px 48px;
+}
+.city-offerings-inner { max-width: 1200px; margin: 0 auto; }
+.city-offerings-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.city-offering-item {
+  background: var(--navy-card); border: 1px solid var(--edge); border-radius: 6px;
+  padding: 16px 20px; font-size: 14px; font-weight: 600; color: var(--white);
+  text-align: center; letter-spacing: 0.02em;
+}
+
+.city-reviews { background: var(--navy); border-top: 1px solid var(--edge); padding: 80px 48px; }
+.city-reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+.city-cta { background: var(--navy-mid); border-top: 1px solid var(--edge); padding: 96px 48px; }
+
+@media (max-width: 768px) {
+  .city-body { padding: 56px 24px; }
+  .city-body-inner { grid-template-columns: 1fr; gap: 40px; }
+  .city-aside { order: -1; }
+  .city-offerings { padding: 48px 24px; }
+  .city-offerings-grid { grid-template-columns: repeat(2, 1fr); }
+  .city-reviews { padding: 56px 24px; }
+  .city-reviews-grid { grid-template-columns: 1fr; }
+  .city-cta { padding: 64px 24px; }
+}
+
 /* PRIVACY PAGE */
 .privacy-section { background: var(--navy); padding: 80px 48px 120px; }
 .privacy-inner { max-width: 720px; margin: 0 auto; }

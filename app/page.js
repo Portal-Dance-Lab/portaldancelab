@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
 import {
   BOOKING_URL,
   AUDITIONS_URL,
@@ -16,6 +17,7 @@ import {
 export default function Home() {
   return (
     <>
+      <LocalBusinessJsonLd />
       <Nav />
 
       {/* HERO */}
