@@ -47,6 +47,9 @@ export const metadata = {
       "11x National Champions. Book your free trial class today.",
     images: ["/assets/og-image.png"],
   },
+  verification: {
+    google: "b13dc9740169dfed",
+  },
   robots: {
     index: true,
     follow: true,
