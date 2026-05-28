@@ -778,6 +778,22 @@ footer {
 .program-cta:hover { color: var(--white); }
 
 /* CLASSES PHOTO STRIP */
+/* HOME PHOTO STRIP */
+.home-photo-strip {
+  position: relative; height: 460px; overflow: hidden;
+  border-top: 1px solid var(--edge); border-bottom: 1px solid var(--edge);
+}
+.home-photo-img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; filter: brightness(0.5); }
+.home-photo-overlay {
+  position: absolute; inset: 0; display: flex; align-items: flex-end;
+  padding: 48px 56px;
+  background: linear-gradient(to top, rgba(9,21,36,0.75) 0%, transparent 60%);
+}
+.home-photo-stat {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(44px, 5.5vw, 72px); font-weight: 900; color: var(--gold); line-height: 1;
+}
+
 .classes-photo-strip {
   position: relative; height: 340px; overflow: hidden;
   border-top: 1px solid var(--edge); border-bottom: 1px solid var(--edge);
@@ -1000,6 +1016,8 @@ footer {
   .about-origin { padding: 64px 24px; }
   .about-origin-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-origin-photo { height: 240px; }
+  .home-photo-strip { height: 260px; }
+  .home-photo-overlay { padding: 24px 28px; }
   .classes-photo-strip { height: 220px; }
   .classes-photo-overlay { padding: 24px; }
   .teams-photo-strip { height: 240px; }

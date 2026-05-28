@@ -37,8 +37,8 @@ export default function AboutPage() {
             <div className="about-origin-accent">
               <div className="about-origin-photo">
                 <img
-                  src="/assets/photo-4.png"
-                  alt="Portal Dance Lab team"
+                  src="/assets/photo-encore.jpg"
+                  alt="Portal Dance Lab team holding Encore Championships banner"
                   className="about-photo-img"
                 />
               </div>

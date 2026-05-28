@@ -79,6 +79,18 @@ export default function Home() {
         </div>
       </div>
 
+      {/* HOMEPAGE PHOTO STRIP */}
+      <div className="home-photo-strip">
+        <img
+          src="/assets/photo-groove.jpg"
+          alt="Portal Dance Lab team performing at The Groove Experience"
+          className="home-photo-img"
+        />
+        <div className="home-photo-overlay">
+          <p className="home-photo-stat">11x National Champions.</p>
+        </div>
+      </div>
+
       {/* PATHWAYS */}
       <section className="pathways">
         <div className="section-inner">
