@@ -29,6 +29,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="footer-legal">{FOOTER.legal}</div>
+          <Link href="/privacy" className="footer-privacy">Privacy Policy</Link>
           <div className="footer-address">{FOOTER.domain}</div>
         </div>
       </div>
