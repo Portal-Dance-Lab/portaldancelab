@@ -8,11 +8,8 @@ export default function Nav() {
         <img src="/brand/pdl-logo-horizontal.svg" alt="Portal Dance Lab" style={{ height: 36, display: "block" }} />
       </Link>
       <div className="nav-links">
-        <a href="#">Classes</a>
         <Link href="/teams">Teams</Link>
         <Link href="/schedule">Schedule</Link>
-        <a href="#">About</a>
-        <a href="#">Shop</a>
         <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
           Book a Free Trial
         </a>

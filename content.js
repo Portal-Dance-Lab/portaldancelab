@@ -46,6 +46,7 @@ export const PATHWAYS = {
       heading: "Your kid is ready. We'll prove it.",
       desc: "From first-timers to future competitors, PDL builds confident dancers who know how to win — and how to handle it when they don't. Real training. Real results.",
       link: "Explore Kids Classes",
+      href: null,
     },
     {
       variant: "neutral",
@@ -53,13 +54,15 @@ export const PATHWAYS = {
       heading: "You don't have to have started young.",
       desc: "Adult classes that take you seriously. Hip hop, technique, and conditioning taught by people who do this professionally. No judgment. All work.",
       link: "See Adult Classes",
+      href: null,
     },
     {
       variant: "cobalt",
       who: "For Competitors",
       heading: "You want the stage. We'll get you ready.",
       desc: "Our competitive program trains for nationals. If your dancer has the drive, we have the structure — and the hardware to back it up.",
-      link: "Competitive Program",
+      link: "Meet Our Teams",
+      href: "/teams",
     },
   ],
 };
