@@ -1,7 +1,6 @@
 // LocalBusiness structured data for Google rich results + map pack eligibility.
 // Schema type: DanceSchool (subtype of LocalBusiness).
-// TODO: Add telephone field when phone number is confirmed.
-// TODO: Swap og-image.jpg for final 1200x630 crop once agency delivers it.
+// TODO: Agency to deliver a true 1200x630 crop of og-image for ideal social preview dimensions.
 
 export default function LocalBusinessJsonLd() {
   const schema = {
@@ -12,7 +11,8 @@ export default function LocalBusinessJsonLd() {
       "Richmond, TX's competitive dance studio. 11x National Champions. Competitive and recreational training for all ages — hip hop, jazz, contemporary, ballet, drill team prep, and adult classes.",
     url: "https://www.portaldancelab.com",
     logo: "https://www.portaldancelab.com/brand/pdl-logo-horizontal.svg",
-    image: "https://www.portaldancelab.com/assets/og-image.jpg",
+    image: "https://www.portaldancelab.com/assets/og-image.png",
+    telephone: "+12812292400",
     email: "info@portaldancelab.com",
     address: {
       "@type": "PostalAddress",

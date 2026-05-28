@@ -33,7 +33,7 @@ export const metadata = {
       "11x National Champions. Competitive dance training in Richmond, TX. Book your free trial class today.",
     images: [
       {
-        url: "/assets/og-image.jpg",
+        url: "/assets/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portal Dance Lab — Richmond, TX competitive dance studio",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Portal Dance Lab — Richmond, TX",
     description:
       "11x National Champions. Book your free trial class today.",
-    images: ["/assets/og-image.jpg"],
+    images: ["/assets/og-image.png"],
   },
   robots: {
     index: true,
