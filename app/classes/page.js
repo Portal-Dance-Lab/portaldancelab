@@ -31,26 +31,37 @@ export default function ClassesPage() {
         </div>
       </div>
 
-      {/* THE PORTAL PATHWAY */}
-      <section className="pipeline-section">
+      {/* TWO TRACKS */}
+      <section className="tracks-section">
         <div className="section-inner">
-          <p className="section-eyebrow">{CLASSES.pipeline.eyebrow}</p>
-          <h2 className="section-title">{CLASSES.pipeline.title}</h2>
-          <p className="pipeline-sub">{CLASSES.pipeline.sub}</p>
-          <div className="pipeline-steps">
-            {CLASSES.pipeline.steps.map((step, i) => (
-              <>
-                <div className={`pipeline-step pipeline-step--${step.accent}`} key={i}>
-                  <span className="pipeline-step-num">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="pipeline-step-label">{step.label}</h3>
-                  <p className="pipeline-step-age">{step.age}</p>
-                  <p className="pipeline-step-desc">{step.desc}</p>
-                </div>
-                {i < CLASSES.pipeline.steps.length - 1 && (
-                  <div className="pipeline-arrow" key={`arrow-${i}`}>→</div>
-                )}
-              </>
-            ))}
+          <p className="section-eyebrow">{CLASSES.tracks.eyebrow}</p>
+          <h2 className="section-title">{CLASSES.tracks.title}</h2>
+          <p className="tracks-sub">{CLASSES.tracks.sub}</p>
+          <div className="tracks-grid">
+            {/* Recreational */}
+            <div className="track-card track-card--rec">
+              <p className="track-label">{CLASSES.tracks.rec.label}</p>
+              <h3 className="track-heading">{CLASSES.tracks.rec.heading}</h3>
+              <p className="track-desc">{CLASSES.tracks.rec.desc}</p>
+              <ul className="track-details">
+                {CLASSES.tracks.rec.details.map((d, i) => <li key={i}>{d}</li>)}
+              </ul>
+              <Link href={CLASSES.tracks.rec.ctaHref} className="btn-primary" style={{ marginTop: 32, display: "inline-block" }}>
+                {CLASSES.tracks.rec.cta}
+              </Link>
+            </div>
+            {/* Competitive */}
+            <div className="track-card track-card--comp">
+              <p className="track-label">{CLASSES.tracks.competitive.label}</p>
+              <h3 className="track-heading">{CLASSES.tracks.competitive.heading}</h3>
+              <p className="track-desc">{CLASSES.tracks.competitive.desc}</p>
+              <ul className="track-details">
+                {CLASSES.tracks.competitive.details.map((d, i) => <li key={i}>{d}</li>)}
+              </ul>
+              <Link href={CLASSES.tracks.competitive.ctaHref} className="btn-coral" style={{ marginTop: 32, display: "inline-block" }}>
+                {CLASSES.tracks.competitive.cta}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -64,11 +75,6 @@ export default function ClassesPage() {
                 <p className="program-eyebrow">{prog.eyebrow}</p>
                 <h3 className="program-heading">{prog.heading}</h3>
                 <p className="program-desc">{prog.desc}</p>
-                <div className="style-tags">
-                  {prog.styles.map((s, j) => (
-                    <span className="style-tag" key={j}>{s}</span>
-                  ))}
-                </div>
                 <a href={BOOKING_URL} className="program-cta" target="_blank" rel="noopener noreferrer">
                   Book a Free Trial &rarr;
                 </a>

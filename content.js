@@ -134,41 +134,48 @@ export const CLASSES = {
   title: "Find Your Class.",
   sub: "From your dancer's first class to the national stage — every level, every age, every style.",
 
-  pipeline: {
-    eyebrow: "The Portal Pathway",
-    title: "One Studio. A Full Journey.",
-    sub: "Every class at PDL feeds somewhere. The pipeline starts at your first class and goes as far as your dancer is willing to push.",
-    steps: [
-      { label: "Tiny & Mini", age: "Born 2016–2023", desc: "First moves. First stage. The Portal way starts here.", accent: "cobalt-light" },
-      { label: "Youth", age: "Born 2013–2018", desc: "Building real technique and stage presence.", accent: "cobalt" },
-      { label: "Junior & Senior", age: "Born 2007–2016", desc: "Recreational and technique classes at full intensity.", accent: "cobalt" },
-      { label: "Competitive Team", age: "Audition Required", desc: "Nationals. Worlds. Summit. The stage is yours.", accent: "coral" },
-    ],
+  tracks: {
+    eyebrow: "Two Ways to Train",
+    title: "Pick Your Path.",
+    sub: "Both tracks exist at every age level. Recreational and competitive run side by side — your dancer chooses the commitment level that fits.",
+    rec: {
+      label: "Recreational",
+      heading: "Train for the love of it.",
+      desc: "All styles. All ages. No audition, no season commitment. Come as you are and leave better than you arrived. Our recreational program covers every major discipline taught by coaches who compete professionally.",
+      details: ["Open to all ages and experience levels", "Hip hop, jazz, contemporary, lyrical, ballet, and technique", "Month-to-month — no long-term commitment required", "Drill team prep available year-round"],
+      cta: "View Schedule",
+      ctaHref: "/schedule",
+    },
+    competitive: {
+      label: "Competitive",
+      heading: "Train for the stage.",
+      desc: "Audition required. Five teams competing at nationals across 5 states, Worlds, and Summit Finals. If your dancer has the drive, this is where they find out what they're made of.",
+      details: ["Teams at every level: Mini, Youth, Junior, Senior", "National competition program — fees included in monthly tuition", "Year-round training with guest choreographers", "SZN III auditions — June 8–10"],
+      cta: "See Our Teams",
+      ctaHref: "/teams",
+    },
   },
 
   programs: [
     {
       label: "Tiny & Mini",
-      eyebrow: "Born 2016–2023",
+      eyebrow: "Ages 3–10",
       heading: "Where It Starts.",
       desc: "PDL's youngest classes are designed to build a love for dance before demanding the craft — and the craft follows fast. Small classes, big energy, and coaches who know how to make it real for little ones.",
-      styles: ["Hip Hop", "Jazz", "Movement & Rhythm"],
       accent: "cobalt-light",
     },
     {
       label: "Youth",
-      eyebrow: "Born 2013–2018",
+      eyebrow: "Ages 8–13",
       heading: "Building the Foundation.",
       desc: "Youth classes are where dancing gets serious without losing the fun. Technique, performance quality, and the kind of training that makes competitive teams take notice.",
-      styles: ["Hip Hop", "Jazz", "Contemporary", "Ballet Foundations"],
       accent: "cobalt",
     },
     {
       label: "Junior & Senior",
-      eyebrow: "Born 2007–2016",
+      eyebrow: "Ages 10–19",
       heading: "Training at Full Intensity.",
-      desc: "Recreational classes for dancers who want real training. Hip hop, jazz, contemporary, lyrical, and technique taught by coaches who compete professionally. All levels welcome — but no one coasts.",
-      styles: ["Hip Hop", "Jazz", "Contemporary", "Lyrical", "Ballet", "Technique"],
+      desc: "Recreational and competitive classes for dancers who want real training. Hip hop, jazz, contemporary, lyrical, and technique taught by coaches who compete professionally. All levels welcome — but no one coasts.",
       accent: "cobalt",
     },
     {
@@ -176,7 +183,6 @@ export const CLASSES = {
       eyebrow: "18 & Up",
       heading: "You Don't Have to Have Started Young.",
       desc: "Adult classes that take you seriously. Hip hop and conditioning taught by professionals — whether you're a first-timer or coming back after years away. No judgment. All work.",
-      styles: ["Adult Hip Hop", "Technique & Conditioning"],
       accent: "cobalt-light",
     },
   ],
