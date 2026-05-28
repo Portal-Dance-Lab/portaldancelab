@@ -77,44 +77,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* FOUNDERS */}
-      <section className="about-founders">
-        <div className="section-inner">
-          <p className="section-eyebrow">The Coaches</p>
-          <h2 className="section-title">Who We Are.</h2>
-          <div className="founders-grid">
-            {ABOUT.founders.map((f, i) => (
-              <div className="founder-card" key={i}>
-                <div className="founder-photo-placeholder">
-                  <span>{f.name.split(" ").map(n => n[0]).join("")}</span>
-                </div>
-                <div className="founder-copy">
-                  <h3 className="founder-name">{f.name}</h3>
-                  <p className="founder-title">{f.title}</p>
-                  <p className="founder-bio">{f.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SZN II RESULTS */}
-      <div className="about-hardware">
-        <div className="about-hardware-inner">
-          <p className="section-eyebrow">{ABOUT.szn2.eyebrow}</p>
-          <h2 className="about-hardware-title">{ABOUT.szn2.title}</h2>
-          <div className="about-hardware-stats">
-            {ABOUT.szn2.stats.map((s, i) => (
-              <div className="about-hardware-stat" key={i}>
-                <span className="about-hardware-number">{s.number}</span>
-                <span className="about-hardware-label">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* CTA */}
       <section className="about-cta">
         <div className="section-inner" style={{ textAlign: "center" }}>

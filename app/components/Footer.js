@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FOOTER, SOCIALS } from "../../content";
+import { FOOTER, SOCIALS, BOOKING_URL, AUDITIONS_URL } from "../../content";
 
 function SocialIcon({ icon }) {
   if (icon === "instagram") return (
@@ -22,12 +22,19 @@ function SocialIcon({ icon }) {
   return null;
 }
 
+function resolveHref(link) {
+  if (link.label === "Book a Free Trial") return BOOKING_URL;
+  if (link.label === "Auditions") return AUDITIONS_URL;
+  return link.href;
+}
+
 export default function Footer() {
   return (
     <footer>
       <div className="footer-inner">
         <div className="footer-top">
-          <div>
+          {/* Brand + socials */}
+          <div className="footer-brand">
             <img
               src="/brand/pdl-logo-white-transparent.png"
               alt="Portal Dance Lab"
@@ -49,19 +56,27 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          {FOOTER.columns.map((col, i) => (
-            <div className="footer-col" key={i}>
-              <div className="footer-col-title">{col.title}</div>
-              <ul>
-                {col.links.map((link, j) => (
-                  <li key={j}>
-                    <a href="#">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+
+          {/* Nav links */}
+          <nav className="footer-nav" aria-label="Footer navigation">
+            {FOOTER.navLinks.map((link) => {
+              const href = resolveHref(link);
+              if (link.external) {
+                return (
+                  <a key={link.label} href={href} className="footer-nav-link" target="_blank" rel="noopener noreferrer">
+                    {link.label}
+                  </a>
+                );
+              }
+              return (
+                <Link key={link.label} href={href} className="footer-nav-link">
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
         </div>
+
         <div className="footer-bottom">
           <div className="footer-legal">{FOOTER.legal}</div>
           <Link href="/privacy" className="footer-privacy">Privacy Policy</Link>

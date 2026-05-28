@@ -412,19 +412,13 @@ export const SOCIALS = [
 
 export const FOOTER = {
   desc: "Richmond, TX's competitive dance home. Training champions from Mini to Senior since 2023.",
-  columns: [
-    {
-      title: "Classes",
-      links: ["Hip Hop", "Lyrical", "Technique", "Adult Classes", "Free Trial"],
-    },
-    {
-      title: "Studio",
-      links: ["About PDL", "Our Teams", "Coaches", "Schedule", "Contact"],
-    },
-    {
-      title: "More",
-      links: ["Shop", "Instagram", "TikTok", "Facebook", "Sponsors"],
-    },
+  navLinks: [
+    { label: "Classes",          href: "/classes" },
+    { label: "Teams",            href: "/teams" },
+    { label: "Schedule",         href: "/schedule" },
+    { label: "About",            href: "/about" },
+    { label: "Book a Free Trial", href: null, external: true }, // uses BOOKING_URL
+    { label: "Auditions",        href: null, external: true }, // uses AUDITIONS_URL
   ],
   legal: "© 2026 Portal Dance Lab · Richmond, TX",
   domain: "portaldancelab.com",
