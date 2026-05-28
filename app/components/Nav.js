@@ -11,6 +11,7 @@ export default function Nav() {
         <Link href="/classes">Classes</Link>
         <Link href="/teams">Teams</Link>
         <Link href="/schedule">Schedule</Link>
+        <Link href="/about">About</Link>
         <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
           Book a Free Trial
         </a>

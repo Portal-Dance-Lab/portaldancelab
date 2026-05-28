@@ -781,6 +781,124 @@ footer {
   .guide-item:last-child { border-bottom: none; }
 }
 
+/* ABOUT PAGE */
+.about-origin { background: var(--navy); padding: 96px 48px; border-top: 1px solid var(--edge); }
+.about-origin-grid { display: grid; grid-template-columns: 1fr auto; gap: 96px; align-items: center; }
+.about-body { font-size: 16px; color: var(--muted); line-height: 1.8; margin-top: 20px; }
+.about-origin-accent { flex-shrink: 0; }
+.about-portal-ring {
+  width: 240px; height: 240px; border-radius: 50%;
+  border: 1px solid rgba(27,79,216,0.35);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 64px rgba(27,79,216,0.12), inset 0 0 48px rgba(27,79,216,0.06);
+  animation: portalPulse 7s ease-in-out infinite alternate;
+}
+.about-ring-inner { text-align: center; }
+.about-ring-year { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cobalt-light); display: block; }
+.about-ring-num {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 72px; font-weight: 900; color: var(--white); line-height: 1; display: block;
+}
+.about-ring-label { font-size: 11px; color: var(--subtle); letter-spacing: 0.1em; display: block; margin-top: 4px; }
+
+.about-mission { background: var(--navy-mid); border-top: 1px solid var(--edge); padding: 96px 48px; }
+.about-mission .section-title { margin-bottom: 56px; }
+.about-pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 64px; }
+.about-pillar { display: flex; flex-direction: column; gap: 10px; }
+.about-pillar-num {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.15em; color: var(--cobalt-light);
+}
+.about-pillar-heading {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 24px; font-weight: 900; color: var(--white); line-height: 1;
+}
+.about-pillar-desc { font-size: 15px; color: var(--muted); line-height: 1.7; }
+
+.about-dna {
+  background: var(--navy-card); border-top: 3px solid var(--cobalt);
+  border-bottom: 1px solid var(--edge); padding: 72px 48px;
+}
+.about-dna-inner { max-width: 1200px; margin: 0 auto; }
+.about-dna-line { line-height: 1; margin-bottom: 8px; }
+.about-dna-stat {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(40px, 5vw, 68px); font-weight: 900; color: var(--white);
+}
+.about-dna-label {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(40px, 5vw, 68px); font-weight: 900; color: var(--cobalt-light);
+}
+
+.about-founders { background: var(--navy); border-top: 1px solid var(--edge); padding: 96px 48px; }
+.about-founders .section-title { margin-bottom: 56px; }
+.founders-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.founder-card {
+  background: var(--navy-card); border-radius: 8px; border: 1px solid var(--edge);
+  padding: 40px; display: flex; gap: 28px; align-items: flex-start;
+}
+.founder-photo-placeholder {
+  width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0;
+  background: var(--navy-mid); border: 1px solid var(--edge);
+  display: flex; align-items: center; justify-content: center;
+}
+.founder-photo-placeholder span {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 22px; font-weight: 900; color: var(--cobalt-light);
+}
+.founder-copy { display: flex; flex-direction: column; gap: 6px; }
+.founder-name {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 26px; font-weight: 900; color: var(--white); line-height: 1;
+}
+.founder-title { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cobalt-light); }
+.founder-bio { font-size: 14px; color: var(--muted); line-height: 1.7; margin-top: 4px; }
+
+.about-hardware {
+  background: var(--navy-mid); border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge); padding: 72px 48px;
+  position: relative; overflow: hidden;
+}
+.about-hardware::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 100% at 50% 50%, rgba(212,168,67,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.about-hardware-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.about-hardware-title {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(36px, 4vw, 52px); font-weight: 900; color: var(--white); margin-bottom: 48px;
+}
+.about-hardware-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; text-align: center; }
+.about-hardware-stat { padding: 0 24px; border-right: 1px solid var(--edge); }
+.about-hardware-stat:last-child { border-right: none; }
+.about-hardware-number {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 56px; font-weight: 900; color: var(--gold); display: block; line-height: 1;
+}
+.about-hardware-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); display: block; margin-top: 8px; }
+
+.about-cta { background: var(--navy); border-top: 1px solid var(--edge); padding: 96px 48px; }
+
+@media (max-width: 768px) {
+  .about-origin { padding: 64px 24px; }
+  .about-origin-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-portal-ring { width: 180px; height: 180px; }
+  .about-ring-num { font-size: 56px; }
+  .about-mission { padding: 64px 24px; }
+  .about-pillars { grid-template-columns: 1fr; gap: 32px; }
+  .about-dna { padding: 56px 24px; }
+  .about-founders { padding: 64px 24px; }
+  .founders-grid { grid-template-columns: 1fr; }
+  .founder-card { flex-direction: column; gap: 20px; }
+  .about-hardware { padding: 56px 24px; }
+  .about-hardware-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 0; }
+  .about-hardware-stat { border-right: none; border-bottom: 1px solid var(--edge); padding-bottom: 24px; }
+  .about-hardware-stat:nth-child(odd) { border-right: 1px solid var(--edge); }
+  .about-hardware-stat:nth-last-child(-n+2) { border-bottom: none; }
+  .about-cta { padding: 64px 24px; }
+}
+
 /* PROGRAM STRIP (teams page) */
 .program-strip {
   background: var(--navy-mid);

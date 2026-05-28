@@ -129,6 +129,66 @@ export const CONTACT = {
   cta: "Send Us a Message",
 };
 
+export const ABOUT = {
+  eyebrow: "Richmond, TX · Est. 2023",
+  title: "Built Different.",
+  sub: "We train dancers like athletes. We develop them like leaders. And we make sure they love every step of it.",
+
+  origin: {
+    eyebrow: "Our Story",
+    title: "Why Portal.",
+    body: [
+      "Portal Dance Lab was founded in 2023 by Andrew Ton and Taylor Everett — two coaches who grew up competing on space-themed dance teams in Houston. Space City. Where champions are made.",
+      "A portal is a connection point. That's what this studio was always meant to be — a bridge between where your dancer is today and where they're capable of going. Between first-timers and national champions. Between a kid who just wants to move and an athlete who wants the stage.",
+      "In two seasons, we've earned 11 national titles, sent every graduating senior to college, and built a program that competes at Worlds and Summit Finals. We're just getting started.",
+    ],
+  },
+
+  mission: {
+    eyebrow: "What We Stand For",
+    title: "More Than Dance.",
+    pillars: [
+      { heading: "Train Like Athletes", desc: "We push physical and mental limits. Every class, every practice, every competition. No coasting at Portal." },
+      { heading: "Develop Leaders", desc: "Through discipline, teamwork, and community, our dancers learn to show up for themselves and others. 100% of our seniors go on to college." },
+      { heading: "Love the Journey", desc: "Growth means more when you enjoy the process. We create a space where dancers want to be — and come back to." },
+      { heading: "Always Put On a Show", desc: "No matter the stage, no matter the crowd size. Portal dancers perform like the room is packed and every eye is on them." },
+    ],
+  },
+
+  identity: {
+    eyebrow: "Studio DNA",
+    lines: [
+      { stat: "All gas,", label: "no brakes." },
+      { stat: "Underdog", label: "by choice." },
+      { stat: "Polished", label: "because we earned it." },
+    ],
+  },
+
+  founders: [
+    {
+      name: "Andrew Ton",
+      title: "Owner · Creative Director",
+      bio: "Andrew brings competitive dance roots, creative vision, and the operational backbone that keeps Portal running. His philosophy: train hard, perform harder, and always put on a good show.",
+    },
+    {
+      name: "Taylor Everett",
+      title: "Co-Owner · Head Coach",
+      bio: "Coach Taylor is the culture. The dancers follow her because she's been where they are — and she knows exactly how to get them where they want to go. Heart and high standards, in equal measure.",
+    },
+  ],
+
+  szn2: {
+    eyebrow: "SZN II Results",
+    title: "The Hardware.",
+    stats: [
+      { number: "11×", label: "National Champions" },
+      { number: "7", label: "Competitions" },
+      { number: "5", label: "States" },
+      { number: "2×", label: "Worlds & Summit Finalists" },
+    ],
+  },
+};
+
 export const CLASSES = {
   eyebrow: "Classes & Programs",
   title: "Find Your Class.",
