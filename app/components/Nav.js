@@ -3,7 +3,7 @@ import { BOOKING_URL } from "../../content";
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="main-nav">
       <Link href="/" className="nav-logo">
         <img src="/brand/pdl-logo-horizontal.svg" alt="Portal Dance Lab" style={{ height: 36, display: "block" }} />
       </Link>
