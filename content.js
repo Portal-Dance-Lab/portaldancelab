@@ -97,6 +97,11 @@ export const REVIEWS = {
     },
     {
       quote:
+        "A wonderful dance studio with so many skills and techniques offered. Great family environment. I highly recommend it. Our 11 year old daughter loves everything about it. We can't wait to watch her grow and develop more for her dance journey in the future.",
+      author: "Stephanie Rodriguez — Google Review",
+    },
+    {
+      quote:
         "Andrew and Taylor have done an impeccable job about informing and constantly reminding us that dance is more than a sport, it's a culture. This studio is heavily foundations based, but also offers anywhere from beginner to advanced. The dancers are all so welcoming and it is overall a great environment for you and your children. This is the place to be.",
       author: "Cameron Knight — MonStarz, SZN II",
     },
