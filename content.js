@@ -404,6 +404,12 @@ export const SCHEDULE = {
   sub: "Browse available classes and register directly. Walk-ins welcome — spots fill fast.",
 };
 
+export const SOCIALS = [
+  { label: "Instagram", href: "https://www.instagram.com/portaldancelab", icon: "instagram" },
+  { label: "TikTok",    href: "https://www.tiktok.com/@portaldancelab",   icon: "tiktok" },
+  { label: "Facebook",  href: "https://www.facebook.com/p/Portal-Dance-Lab-61554361072668/", icon: "facebook" },
+];
+
 export const FOOTER = {
   desc: "Richmond, TX's competitive dance home. Training champions from Mini to Senior since 2023.",
   columns: [

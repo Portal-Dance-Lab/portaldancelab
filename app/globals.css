@@ -365,6 +365,14 @@ footer {
 .footer-privacy { font-size: 12px; color: var(--subtle); text-decoration: none; transition: color 0.2s; }
 .footer-privacy:hover { color: var(--muted); }
 .footer-address { font-size: 12px; color: var(--subtle); text-align: right; }
+.footer-socials { display: flex; gap: 12px; margin-top: 20px; }
+.footer-social-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 8px;
+  background: var(--navy-mid); border: 1px solid var(--edge);
+  color: var(--subtle); transition: all 0.2s;
+}
+.footer-social-link:hover { color: var(--white); border-color: var(--cobalt); background: rgba(27,79,216,0.12); }
 
 /* PRIVACY PAGE */
 .privacy-section { background: var(--navy); padding: 80px 48px 120px; }
