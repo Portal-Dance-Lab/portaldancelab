@@ -30,36 +30,32 @@ export default function CityPage({ params }) {
     <>
       <Nav />
 
-      {/* PAGE HEADER */}
-      <div className="page-header">
-        <div className="page-header-inner">
+      {/* CITY HERO */}
+      <div className="city-hero">
+        {city.image && (
+          <Image
+            src={city.image}
+            alt={`Portal Dance Lab dancers competing at nationals`}
+            fill
+            className="city-hero-img"
+            priority
+          />
+        )}
+        <div className="city-hero-overlay" />
+        <div className="city-hero-content">
           <p className="section-eyebrow">Portal Dance Lab · Richmond, TX</p>
-          <h1 className="page-header-title">{city.headline}</h1>
-          <p className="page-header-sub">{city.sub}</p>
+          <h1 className="city-hero-title">{city.headline}</h1>
+          <p className="city-hero-sub">{city.sub}</p>
           <div style={{ display: "flex", gap: 16, marginTop: 32, flexWrap: "wrap" }}>
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               Book a Free Trial Class
             </a>
             <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
-              SZN III Auditions — June 8–10
+              SZN III Auditions - June 8-10
             </a>
           </div>
         </div>
       </div>
-
-      {/* PHOTO STRIP */}
-      {city.image && (
-        <div className="city-photo-strip">
-          <Image
-            src={city.image}
-            alt={`Portal Dance Lab dancers competing — ${city.name}, TX area`}
-            width={1400}
-            height={520}
-            className="city-photo-img"
-            priority
-          />
-        </div>
-      )}
 
       {/* BODY COPY */}
       <section className="city-body">

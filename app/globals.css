@@ -393,8 +393,36 @@ footer {
 .footer-social-link:hover { color: var(--white); border-color: var(--cobalt); background: rgba(27,79,216,0.12); }
 
 /* CITY LANDING PAGES */
-.city-photo-strip { width: 100%; overflow: hidden; max-height: 520px; line-height: 0; }
-.city-photo-img { width: 100%; height: 520px; object-fit: cover; object-position: center 30%; display: block; }
+.city-hero {
+  position: relative; width: 100%; height: 600px;
+  display: flex; align-items: center;
+  overflow: hidden; background: var(--navy);
+}
+.city-hero-img { object-fit: cover; object-position: center 20%; }
+.city-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right,
+    rgba(9,21,36,0.97) 0%,
+    rgba(9,21,36,0.90) 30%,
+    rgba(9,21,36,0.50) 55%,
+    rgba(9,21,36,0.10) 75%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+.city-hero-content {
+  position: relative; z-index: 2;
+  max-width: 520px; padding: 0 48px;
+}
+.city-hero-title {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: clamp(32px, 4vw, 52px); font-weight: 900;
+  text-transform: uppercase; letter-spacing: -0.01em;
+  color: var(--white); line-height: 1.05; margin-bottom: 16px;
+}
+.city-hero-sub {
+  font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 420px;
+}
 
 .city-body { background: var(--navy); border-top: 1px solid var(--edge); padding: 80px 48px; }
 .city-body-inner { display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: flex-start; }
@@ -435,7 +463,15 @@ footer {
 .city-cta { background: var(--navy-mid); border-top: 1px solid var(--edge); padding: 96px 48px; }
 
 @media (max-width: 768px) {
-  .city-photo-img { height: 260px; }
+  .city-hero { height: 480px; }
+  .city-hero-content { padding: 0 24px; max-width: 100%; }
+  .city-hero-overlay {
+    background: linear-gradient(to bottom,
+      rgba(9,21,36,0.5) 0%,
+      rgba(9,21,36,0.92) 60%,
+      rgba(9,21,36,0.97) 100%
+    );
+  }
   .city-body { padding: 56px 24px; }
   .city-body-inner { grid-template-columns: 1fr; gap: 40px; }
   .city-aside { order: -1; }
