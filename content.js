@@ -414,7 +414,7 @@ export const CITIES = [
     metaTitle: "Dance Classes in Richmond, TX | Portal Dance Lab",
     metaDesc:
       "Portal Dance Lab is Richmond's competitive dance studio. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, and adult classes. First class is free.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes in Richmond, TX.",
     sub: "This is home. We train Richmond dancers from their first class all the way to the national stage.",
     paras: [
@@ -429,7 +429,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Rosenberg, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Rosenberg, TX at Portal Dance Lab, just 5 minutes away in Richmond. 11x National Champions. All ages, all levels. First class is free.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Rosenberg, TX.",
     sub: "Five minutes away. Richmond's national champion dance studio is right in your backyard.",
     paras: [
@@ -444,7 +444,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Sugar Land, TX | Portal Dance Lab",
     metaDesc:
       "Looking for dance classes near Sugar Land, TX? Portal Dance Lab in Richmond is less than 15 minutes away. 11x National Champions. Book a free trial class today.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Sugar Land, TX.",
     sub: "About 12 miles from Sugar Land. Families in the area drive to Portal because the training is worth it.",
     paras: [
@@ -459,7 +459,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Missouri City, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Missouri City, TX at Portal Dance Lab in Richmond. About 15 miles away. Competitive and recreational training for all ages. First class free.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Missouri City, TX.",
     sub: "About 15 miles from Missouri City. Real training, real results. All ages and levels.",
     paras: [
@@ -474,7 +474,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Stafford, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Stafford, TX at Portal Dance Lab in Richmond. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, adult classes. First class free.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Stafford, TX.",
     sub: "About 15 miles from Stafford. Competitive training that builds dancers who show up and show out.",
     paras: [
@@ -489,7 +489,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Katy, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Katy, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive teams and recreational classes for all ages. First class free.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Katy, TX.",
     sub: "About 20 miles east on I-10. Competitive families from Katy make the drive because they want the best.",
     paras: [
@@ -504,7 +504,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Fulshear, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Fulshear, TX at Portal Dance Lab in Richmond. Less than 20 minutes away. Competitive teams and recreational classes for all ages. Book a free trial today.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Fulshear, TX.",
     sub: "Fulshear is growing fast. Portal Dance Lab has been here since 2023, about 15 miles east on FM 1093.",
     paras: [
@@ -519,7 +519,7 @@ export const CITIES = [
     metaTitle: "Dance Classes Near Pearland, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Pearland, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive and recreational training for all ages. Book a free trial today.",
-    image: "/assets/photo-groove.jpg",
+    image: "/assets/IMG_4684.jpeg",
     headline: "Dance Classes Near Pearland, TX.",
     sub: "About 25 miles from Pearland. Our Pearland families make the drive because there's nothing like it closer to home.",
     paras: [
