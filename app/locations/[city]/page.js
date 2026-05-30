@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { CITIES, BOOKING_URL, AUDITIONS_URL, REVIEWS } from "../../../content";
@@ -31,16 +30,10 @@ export default function CityPage({ params }) {
       <Nav />
 
       {/* CITY HERO */}
-      <div className="city-hero">
-        {city.image && (
-          <Image
-            src={city.image}
-            alt={`Portal Dance Lab dancers competing at nationals`}
-            fill
-            className="city-hero-img"
-            priority
-          />
-        )}
+      <div
+        className="city-hero"
+        style={city.image ? { backgroundImage: `url(${city.image})` } : {}}
+      >
         <div className="city-hero-overlay" />
         <div className="city-hero-content">
           <p className="section-eyebrow">Portal Dance Lab · Richmond, TX</p>
