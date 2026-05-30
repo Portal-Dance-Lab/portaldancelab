@@ -82,8 +82,8 @@ export default function Home() {
       {/* HOMEPAGE PHOTO STRIP */}
       <div className="home-photo-strip">
         <img
-          src="/assets/photo-groove.jpg"
-          alt="Portal Dance Lab team performing at The Groove Experience"
+          src="/assets/IMG_4684.jpeg"
+          alt="Portal Dance Lab National Champions celebrating at The Dance Worlds"
           className="home-photo-img"
         />
         <div className="home-photo-overlay">

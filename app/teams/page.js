@@ -48,8 +48,8 @@ export default function TeamsPage() {
       {/* COMPETITION PHOTO */}
       <div className="teams-photo-strip">
         <img
-          src="/assets/photo-groove-close.jpg"
-          alt="Portal Dance Lab dancer performing on stage"
+          src="/assets/6.png"
+          alt="Portal Dance Lab MonStarz competing at nationals"
           className="teams-photo-img"
         />
         <div className="teams-photo-overlay">
