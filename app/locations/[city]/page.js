@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { CITIES, BOOKING_URL, AUDITIONS_URL, REVIEWS } from "../../../content";
@@ -45,6 +46,20 @@ export default function CityPage({ params }) {
           </div>
         </div>
       </div>
+
+      {/* PHOTO STRIP */}
+      {city.image && (
+        <div className="city-photo-strip">
+          <Image
+            src={city.image}
+            alt={`Portal Dance Lab dancers competing — ${city.name}, TX area`}
+            width={1400}
+            height={520}
+            className="city-photo-img"
+            priority
+          />
+        </div>
+      )}
 
       {/* BODY COPY */}
       <section className="city-body">

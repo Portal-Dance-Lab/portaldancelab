@@ -20,7 +20,7 @@ export const HERO = {
   eyebrow: "Richmond, TX · Est. 2023",
   headline: ["This Is", "Where It", "Starts."],
   accentLine: "Starts.",
-  sub: "11x National Champions. 5 teams. Competitive training for every level — from your kid's first class to the national stage.",
+  sub: "Richmond's competitive dance studio. 11x National Champions. 5 teams. Every level - from your kid's first class to the national stage.",
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
   badge: {
@@ -44,7 +44,7 @@ export const PATHWAYS = {
       variant: "coral",
       who: "For Parents",
       heading: "Your kid is ready. We'll prove it.",
-      desc: "From first-timers to future competitors, PDL builds confident dancers who know how to win — and how to handle it when they don't. Real training. Real results.",
+      desc: "From first-timers to future competitors, PDL builds confident dancers who know how to win, and how to handle it when they don't. Real training. Real results.",
       link: "Explore Kids Classes",
       href: "/classes",
     },
@@ -60,7 +60,7 @@ export const PATHWAYS = {
       variant: "cobalt",
       who: "For Competitors",
       heading: "You want the stage. We'll get you ready.",
-      desc: "Our competitive program trains for nationals. If your dancer has the drive, we have the structure — and the hardware to back it up.",
+      desc: "Our competitive program trains for nationals. If your dancer has the drive, we have the structure, and the hardware to back it up.",
       link: "Meet Our Teams",
       href: "/teams",
     },
@@ -73,7 +73,7 @@ export const TRIAL = {
   body: "Come see what Portal is about before you sign a thing. One free trial class, any style, any age group. If it's not a fit, no pressure. If it is, welcome home.",
   checklist: [
     "Any age group, beginner to advanced",
-    "Hip hop, lyrical, technique — try what fits",
+    "Hip hop, lyrical, technique, and more. Try what fits.",
     "Meet the coaches and the team",
     "No forms, no sales pitch, just dancing",
   ],
@@ -96,17 +96,17 @@ export const REVIEWS = {
     {
       quote:
         "This is our first year in competitive dance and we love it. The studio is full of love and excitement. My daughter has learned so much from her dance teachers and always wants to be there. Coach Taylor and Coach Andrew put so much heart into teaching not only my kid but all the others.",
-      author: "Erica Rosales — Parent, Orbitties SZN II",
+      author: "Erica Rosales, Parent - Orbitties SZN II",
     },
     {
       quote:
         "Hands down the best dance studio in town. The instructors are incredibly versatile, skilled, and create such a positive, supportive environment for growth. Whether you're a beginner or an experienced dancer, every class feels tailored to your individual progress. They strongly encourage not just dance moves, but understanding foundation and unlocking your full potential.",
-      author: "Rhea Athilat — Google Review",
+      author: "Rhea Athilat, Google Review",
     },
     {
       quote:
         "Andrew and Taylor have done an impeccable job about informing and constantly reminding us that dance is more than a sport, it's a culture. This studio is heavily foundations based, but also offers anywhere from beginner to advanced. The dancers are all so welcoming and it is overall a great environment for you and your children. This is the place to be.",
-      author: "Cameron Knight — MonStarz, SZN II",
+      author: "Cameron Knight, MonStarz SZN II",
     },
   ],
 };
@@ -115,14 +115,14 @@ export const SZN3 = {
   eyebrow: "What Comes Next",
   title: ["Season III", "Is Coming."],
   accentWord: "Coming.",
-  sub: "Bigger instructors. Monsters Convention. Vegas. We are not slowing down.",
+  sub: "Guest choreographers. Monsters Convention. Vegas. We are not slowing down.",
   cta: "Register for Auditions",
   dates: "Auditions · June 8–10 · Portal Dance Lab, Richmond TX",
 };
 
 export const CONTACT = {
   eyebrow: "Get In Touch",
-  title: "We'd Love to Hear From You.",
+  title: "Questions? We're Fast.",
   email: "info@portaldancelab.com",
   address: "2441 Precinct Line Dr, Richmond, TX 77406",
   hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
@@ -131,26 +131,26 @@ export const CONTACT = {
 
 export const ABOUT = {
   eyebrow: "Richmond, TX · Est. 2023",
-  title: "Built Different.",
+  title: "Richmond's Dance Studio. Built Different.",
   sub: "We train dancers like athletes. We develop them like leaders. And we make sure they love every step of it.",
 
   origin: {
     eyebrow: "Our Story",
     title: "Why Portal.",
     body: [
-      "Portal Dance Lab was founded in 2023 by Andrew Ton and Taylor Everett — two coaches who grew up competing on space-themed dance teams in Houston. Space City. Where champions are made.",
-      "A portal is a connection point. That's what this studio was always meant to be — a bridge between where your dancer is today and where they're capable of going. Between first-timers and national champions. Between a kid who just wants to move and an athlete who wants the stage.",
+      "Portal Dance Lab was founded in 2023 by Andrew Ton and Taylor Everett, two coaches who grew up competing on space-themed dance teams in Houston. Space City. Where champions are made.",
+      "A portal is a connection point. That's what this studio was always meant to be, a bridge between where your dancer is today and where they're capable of going. Between first-timers and national champions. Between a kid who just wants to move and an athlete who wants the stage.",
       "In two seasons, we've earned 11 national titles, sent every graduating senior to college, and built a program that competes at Worlds and Summit Finals. We're just getting started.",
     ],
   },
 
   mission: {
     eyebrow: "What We Stand For",
-    title: "More Than Dance.",
+    title: "The Portal Standard.",
     pillars: [
       { heading: "Train Like Athletes", desc: "We push physical and mental limits. Every class, every practice, every competition. No coasting at Portal." },
       { heading: "Develop Leaders", desc: "Through discipline, teamwork, and community, our dancers learn to show up for themselves and others. 100% of our seniors go on to college." },
-      { heading: "Love the Journey", desc: "Growth means more when you enjoy the process. We create a space where dancers want to be — and come back to." },
+      { heading: "Love the Journey", desc: "Growth means more when you enjoy the process. We create a space where dancers want to be, and come back to." },
       { heading: "Always Put On a Show", desc: "No matter the stage, no matter the crowd size. Portal dancers perform like the room is packed and every eye is on them." },
     ],
   },
@@ -168,12 +168,10 @@ export const ABOUT = {
     {
       name: "Andrew Ton",
       title: "Owner · Creative Director",
-      bio: "Andrew brings competitive dance roots, creative vision, and the operational backbone that keeps Portal running. His philosophy: train hard, perform harder, and always put on a good show.",
     },
     {
       name: "Taylor Everett",
       title: "Co-Owner · Head Coach",
-      bio: "Coach Taylor is the culture. The dancers follow her because she's been where they are — and she knows exactly how to get them where they want to go. Heart and high standards, in equal measure.",
     },
   ],
 
@@ -191,18 +189,18 @@ export const ABOUT = {
 
 export const CLASSES = {
   eyebrow: "Classes & Programs",
-  title: "Find Your Class.",
-  sub: "From your dancer's first class to the national stage — every level, every age, every style.",
+  title: "Dance Classes in Richmond, TX.",
+  sub: "From your dancer's first class to the national stage. Every level, every age, every style.",
 
   tracks: {
     eyebrow: "Two Ways to Train",
     title: "Pick Your Path.",
-    sub: "Both tracks exist at every age level. Recreational and competitive run side by side — your dancer chooses the commitment level that fits.",
+    sub: "Both tracks exist at every age level. Recreational and competitive run side by side. Your dancer chooses the commitment level that fits.",
     rec: {
       label: "Recreational",
       heading: "Train for the love of it.",
       desc: "All styles. All ages. No audition, no season commitment. Come as you are and leave better than you arrived. Our recreational program covers every major discipline taught by coaches who compete professionally.",
-      details: ["Open to all ages and experience levels", "Hip hop, jazz, contemporary, lyrical, ballet, and technique", "Month-to-month — no long-term commitment required", "Drill team prep available year-round"],
+      details: ["Open to all ages and experience levels", "Hip hop, jazz, contemporary, lyrical, ballet, and technique", "Month-to-month, no long-term commitment required", "Drill team prep available year-round"],
       cta: "View Schedule",
       ctaHref: "/schedule",
     },
@@ -210,7 +208,7 @@ export const CLASSES = {
       label: "Competitive",
       heading: "Train for the stage.",
       desc: "Audition required. Five teams competing at nationals across 5 states, Worlds, and Summit Finals. If your dancer has the drive, this is where they find out what they're made of.",
-      details: ["Teams at every level: Mini, Youth, Junior, Senior", "National competition program — fees included in monthly tuition", "Year-round training with guest choreographers", "SZN III auditions — June 8–10"],
+      details: ["Teams at every level: Mini, Youth, Junior, Senior", "National competition program. Fees included in monthly tuition.", "Year-round training with guest choreographers", "SZN III auditions, June 8–10"],
       cta: "See Our Teams",
       ctaHref: "/teams",
     },
@@ -221,7 +219,7 @@ export const CLASSES = {
       label: "Tiny & Mini",
       eyebrow: "Ages 3–10",
       heading: "Where It Starts.",
-      desc: "PDL's youngest classes are designed to build a love for dance before demanding the craft — and the craft follows fast. Small classes, big energy, and coaches who know how to make it real for little ones.",
+      desc: "PDL's youngest classes are designed to build a love for dance before demanding the craft. The craft follows fast. Small classes, big energy, and coaches who know how to make it real for little ones.",
       accent: "cobalt-light",
     },
     {
@@ -235,14 +233,14 @@ export const CLASSES = {
       label: "Junior & Senior",
       eyebrow: "Ages 10–19",
       heading: "Training at Full Intensity.",
-      desc: "Recreational and competitive classes for dancers who want real training. Hip hop, jazz, contemporary, lyrical, and technique taught by coaches who compete professionally. All levels welcome — but no one coasts.",
+      desc: "Recreational and competitive classes for dancers who want real training. Hip hop, jazz, contemporary, lyrical, and technique taught by coaches who compete professionally. All levels welcome, but no one coasts.",
       accent: "cobalt",
     },
     {
       label: "Adult",
       eyebrow: "18 & Up",
       heading: "You Don't Have to Have Started Young.",
-      desc: "Adult classes that take you seriously. Hip hop and conditioning taught by professionals — whether you're a first-timer or coming back after years away. No judgment. All work.",
+      desc: "Adult classes that take you seriously. Hip hop and conditioning taught by professionals, whether you're a first-timer or coming back after years away. No judgment. All work.",
       accent: "cobalt-light",
     },
   ],
@@ -250,12 +248,12 @@ export const CLASSES = {
   drillTeam: {
     eyebrow: "Fort Bend County · High School Prep",
     title: "Drill Team Prep.",
-    desc: "Fort Bend County is one of the strongest high school drill team markets in Texas. PDL's drill team prep program is built for middle and high schoolers looking to make — and excel on — their school's team. We train the technique, precision, and performance quality that tryout panels look for.",
+    desc: "Fort Bend County is one of the strongest high school drill team markets in Texas. PDL's drill team prep program is built for middle and high schoolers looking to make and excel on their school's team. We train the technique, precision, and performance quality that tryout panels look for.",
     details: [
       "Pom and kick technique aligned with TAPPS and UIL standards",
       "Performance quality, crowd appeal, and stage presence",
-      "Tryout prep — material breakdown, execution, and managing nerves",
-      "Year-round program — Drill Team Unlimited membership available",
+      "Tryout prep: material breakdown, execution, and managing nerves",
+      "Year-round program. Drill Team Unlimited membership available.",
     ],
     cta: "View Drill Team Schedule",
   },
@@ -265,9 +263,9 @@ export const CLASSES = {
     title: "Private Training.",
     desc: "For the dancer who wants more. Private lessons, solo choreography, and duet work available for all ages and styles. Ideal for competition prep, audition readiness, or accelerated development.",
     offerings: [
-      { name: "Private Lessons", desc: "One-on-one coaching in any style. Technique, performance quality, or freestyle — we meet you where you are and take you further." },
+      { name: "Private Lessons", desc: "One-on-one coaching in any style. Technique, performance quality, or freestyle. We meet you where you are and take you further." },
       { name: "Solo Choreography", desc: "Original solo routines built for your dancer. Competition-ready, style-specific, coach-crafted from the ground up." },
-      { name: "Duet Choreography", desc: "Partner routines choreographed for competition or performance. Timing, sync, and chemistry — all of it." },
+      { name: "Duet Choreography", desc: "Partner routines choreographed for competition or performance. Timing, sync, and chemistry. All of it." },
     ],
     cta: "Inquire About Private Training",
     ctaHref: "mailto:info@portaldancelab.com",
@@ -280,15 +278,15 @@ export const CLASSES = {
     options: [
       { situation: "No dance experience", rec: "Book a Free Trial in Hip Hop or Jazz. Our coaches will watch, assess, and place your dancer in the right class." },
       { situation: "Some experience or returning dancer", rec: "Jump into Recreational Hip Hop or Contemporary. We'll evaluate and recommend from there." },
-      { situation: "Ready to compete", rec: "SZN III auditions are June 8–10. Show up ready to work — all experience levels considered." },
-      { situation: "High school drill team prep", rec: "Drill Team Unlimited — start any time, train year-round, peak before tryouts." },
+      { situation: "Ready to compete", rec: "SZN III auditions are June 8–10. Show up ready to work, all experience levels considered." },
+      { situation: "High school drill team prep", rec: "Drill Team Unlimited: start any time, train year-round, peak before tryouts." },
     ],
   },
 };
 
 export const TEAMS = {
   eyebrow: "Competitive Program · SZN III",
-  title: "Five Teams. One Standard.",
+  title: "Portal Dance Lab Competitive Teams.",
   sub: "We always put on a good show. Eleven national titles later, that rule hasn't changed.",
 
   stats: [
@@ -303,7 +301,7 @@ export const TEAMS = {
       name: "Orbitties",
       age: "Mini · Hip Hop",
       tagline: "Where it starts.",
-      desc: "The youngest Portal team. Big personality, bigger work ethic. Orbitties learn the Portal way from day one — technique, stage presence, and how to compete.",
+      desc: "The youngest Portal team. Big personality, bigger work ethic. Orbitties learn the Portal way from day one, technique, stage presence, and how to compete.",
     },
     {
       name: "Rangers",
@@ -315,19 +313,19 @@ export const TEAMS = {
       name: "Ethereal",
       age: "Junior · Jazz & Contemporary",
       tagline: "Grace. Power. Both.",
-      desc: "Ethereal dancers know how to hold a room. Artistry and athleticism in the same breath — the performers that make the crowd go quiet.",
+      desc: "Ethereal dancers know how to hold a room. Artistry and athleticism in the same breath. The performers that make the crowd go quiet.",
     },
     {
       name: "Nova",
       age: "Junior · Hip Hop",
       tagline: "Emerging fast.",
-      desc: "Nova is the wildcard — in the best way. Developing at a pace that surprises people. When they hit the stage, you remember it.",
+      desc: "Nova is the wildcard, in the best way. Developing at a pace that surprises people. When they hit the stage, you remember it.",
     },
     {
       name: "MonStarz",
       age: "Senior · Hip Hop",
       tagline: "The flagship. The standard.",
-      desc: "MonStarz is Portal at its peak. Eleven national titles, two Worlds and Summit Finals appearances, and the hardware to back it up. This team doesn't chase the moment — they create it.",
+      desc: "MonStarz is Portal at its peak. Eleven national titles, two Worlds and Summit Finals appearances, and the hardware to back it up. This team doesn't chase the moment. They create it.",
       featured: true,
     },
   ],
@@ -335,11 +333,11 @@ export const TEAMS = {
   auditions: {
     eyebrow: "Season III · Now Open",
     title: "Auditions Are Open.",
-    sub: "Bigger instructors. Monsters Convention. Las Vegas. If your dancer has the drive, we have everything else.",
+    sub: "Guest choreographers. Monsters Convention. Las Vegas. If your dancer has the drive, we have everything else.",
     dates: "June 8–10, 2026 · Portal Dance Lab, Richmond TX",
     fee: "$50 audition fee · Includes Standard Portal Shirt",
     cta: "Register for Auditions",
-    workshopNote: "Sign up for your workshop session — Monday June 8 and/or Wednesday June 10. Register for each day you plan to attend.",
+    workshopNote: "Sign up for your workshop session, Monday June 8 and/or Wednesday June 10. Register for each day you plan to attend.",
     note: "All experience levels considered. If your dancer has the drive, we'll build the rest.",
   },
 
@@ -387,7 +385,7 @@ export const PRICING = {
     {
       label: "Competitive Team",
       note: "SZN III · June 2026 – May 2027",
-      note2: "Auditions required — June 8–10",
+      note2: "Auditions required, June 8–10",
       items: [
         { name: "1 Routine", price: "$350", per: "/mo", desc: "4 hrs/week training. Competition fees included." },
         { name: "2 Routines", price: "$380", per: "/mo", desc: "6 hrs/week training. Competition fees included." },
@@ -401,7 +399,7 @@ export const PRICING = {
 export const SCHEDULE = {
   eyebrow: "Richmond, TX · Portal Dance Lab",
   title: "Class Schedule.",
-  sub: "Browse available classes and register directly. Walk-ins welcome — spots fill fast.",
+  sub: "Browse available classes and register directly. Walk-ins welcome, spots fill fast.",
 };
 
 // ─────────────────────────────────────────────
@@ -413,27 +411,29 @@ export const CITIES = [
   {
     slug: "richmond",
     name: "Richmond",
-    metaTitle: "Dance Classes in Richmond, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes in Richmond, TX | Portal Dance Lab",
     metaDesc:
       "Portal Dance Lab is Richmond's competitive dance studio. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, and adult classes. First class is free.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes in Richmond, TX.",
     sub: "This is home. We train Richmond dancers from their first class all the way to the national stage.",
     paras: [
       "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Dr. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
-      "We train dancers from age 3 through adult across hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Recreational classes are open enrollment — no audition, no long-term commitment. Competitive team spots are earned through auditions.",
+      "We train dancers from age 3 through adult across hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Recreational classes are open enrollment: no audition, no long-term commitment. Competitive team spots are earned through auditions.",
       "Fort Bend County has serious drill team culture, and we're built for it. Our drill team prep program is designed around UIL and TAPPS standards. If your student is prepping for a FBISD tryout, this is the place.",
     ],
   },
   {
     slug: "rosenberg",
     name: "Rosenberg",
-    metaTitle: "Dance Classes Near Rosenberg, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Rosenberg, TX | Portal Dance Lab",
     metaDesc:
-      "Dance classes near Rosenberg, TX at Portal Dance Lab — just 5 minutes away in Richmond. 11x National Champions. All ages, all levels. First class is free.",
+      "Dance classes near Rosenberg, TX at Portal Dance Lab, just 5 minutes away in Richmond. 11x National Champions. All ages, all levels. First class is free.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Rosenberg, TX.",
     sub: "Five minutes away. Richmond's national champion dance studio is right in your backyard.",
     paras: [
-      "Rosenberg and Richmond are practically the same neighborhood. Portal Dance Lab is five minutes from most of Rosenberg — no highway, no long commute. Just show up.",
+      "Rosenberg and Richmond are practically the same neighborhood. Portal Dance Lab is five minutes from most of Rosenberg. No highway, no long commute. Just show up.",
       "We run a competitive program that's earned 11 national titles in two seasons, and a recreational program that's open to anyone, anytime. Hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Ages 3 through adult.",
       "Whether your kid wants to dance for fun or compete on the national stage, we have a lane for them. First class is always on us.",
     ],
@@ -441,27 +441,29 @@ export const CITIES = [
   {
     slug: "sugar-land",
     name: "Sugar Land",
-    metaTitle: "Dance Classes Near Sugar Land, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Sugar Land, TX | Portal Dance Lab",
     metaDesc:
       "Looking for dance classes near Sugar Land, TX? Portal Dance Lab in Richmond is less than 15 minutes away. 11x National Champions. Book a free trial class today.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Sugar Land, TX.",
     sub: "About 12 miles from Sugar Land. Families in the area drive to Portal because the training is worth it.",
     paras: [
-      "Sugar Land has dance studios. What it doesn't have is a studio that has taken teams to the national stage and brought home hardware the way Portal Dance Lab has — 11 national titles in two seasons, competing in five states, at Worlds, and at Summit Finals.",
-      "We're a short drive from most Sugar Land neighborhoods — less than 15 minutes from First Colony, Telfair, and New Territory. Our coaches train recreational and competitive dancers from age 3 through adult in hip hop, jazz, contemporary, ballet, and drill team prep.",
+      "Sugar Land has dance studios. What it doesn't have is a studio that has taken teams to the national stage and brought home hardware the way Portal Dance Lab has: 11 national titles in two seasons, competing in five states, at Worlds, and at Summit Finals.",
+      "We're a short drive from most Sugar Land neighborhoods, less than 15 minutes from First Colony, Telfair, and New Territory. Our coaches train recreational and competitive dancers from age 3 through adult in hip hop, jazz, contemporary, ballet, and drill team prep.",
       "Fort Bend County is one of the strongest drill team markets in Texas. If your high schooler is prepping for Dulles, Clements, or any FBISD squad, our drill team prep program is built for exactly that. First class is on us.",
     ],
   },
   {
     slug: "missouri-city",
     name: "Missouri City",
-    metaTitle: "Dance Classes Near Missouri City, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Missouri City, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Missouri City, TX at Portal Dance Lab in Richmond. About 15 miles away. Competitive and recreational training for all ages. First class free.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Missouri City, TX.",
-    sub: "About 15 miles from Missouri City. Real training, real results — all ages and levels.",
+    sub: "About 15 miles from Missouri City. Real training, real results. All ages and levels.",
     paras: [
-      "Missouri City dancers who want more than a once-a-week routine come to Portal. We're about 15 miles west — close enough to make it part of your weekly schedule, and far enough that families come here on purpose.",
+      "Missouri City dancers who want more than a once-a-week routine come to Portal. We're about 15 miles west, close enough to make it part of your weekly schedule, and far enough that families come here on purpose.",
       "Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Our competitive program fields five teams that compete nationally. Both tracks exist at every age level.",
       "If your student is prepping for a high school drill team tryout, Fort Bend County is one of the top markets in Texas for that. Our drill team prep program is built around UIL and TAPPS standards, taught by coaches who train professionally.",
     ],
@@ -469,55 +471,59 @@ export const CITIES = [
   {
     slug: "stafford",
     name: "Stafford",
-    metaTitle: "Dance Classes Near Stafford, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Stafford, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Stafford, TX at Portal Dance Lab in Richmond. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, adult classes. First class free.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Stafford, TX.",
     sub: "About 15 miles from Stafford. Competitive training that builds dancers who show up and show out.",
     paras: [
-      "Stafford sits at the edge of Houston, and Portal Dance Lab is just west on Highway 90 — about 15 miles from most Stafford neighborhoods. Families come here because they want training that develops real dancers, not just kids who can run through a routine.",
-      "We train ages 3 through adult. Hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. No audition required for recreational classes — just come try it. Competitive team spots are earned through auditions.",
+      "Stafford sits at the edge of Houston, and Portal Dance Lab is just west on Highway 90, about 15 miles from most Stafford neighborhoods. Families come here because they want training that develops real dancers, not just kids who can run through a routine.",
+      "We train ages 3 through adult. Hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. No audition required for recreational classes. Just come try it. Competitive team spots are earned through auditions.",
       "Our coaches compete professionally. When you train at Portal, you're getting coached by people who are active in the craft. That matters. You can feel the difference in how class runs.",
     ],
   },
   {
     slug: "katy",
     name: "Katy",
-    metaTitle: "Dance Classes Near Katy, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Katy, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Katy, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive teams and recreational classes for all ages. First class free.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Katy, TX.",
     sub: "About 20 miles east on I-10. Competitive families from Katy make the drive because they want the best.",
     paras: [
       "Katy has strong athletics culture, and families here know what elite training looks like. Portal Dance Lab is about 20 miles east on I-10, and for families that want national-level competitive dance, that drive is a regular part of their week.",
-      "We field five competitive teams from Mini through Senior — all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
-      "SZN III auditions are June 8-10. If your dancer is ready to compete, come show us what they've got. All experience levels are considered — we build the rest.",
+      "We field five competitive teams from Mini through Senior, all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
+      "SZN III auditions are June 8-10. If your dancer is ready to compete, come show us what they've got. All experience levels are considered. We build the rest.",
     ],
   },
   {
     slug: "fulshear",
     name: "Fulshear",
-    metaTitle: "Dance Classes Near Fulshear, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Fulshear, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Fulshear, TX at Portal Dance Lab in Richmond. Less than 20 minutes away. Competitive teams and recreational classes for all ages. Book a free trial today.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Fulshear, TX.",
     sub: "Fulshear is growing fast. Portal Dance Lab has been here since 2023, about 15 miles east on FM 1093.",
     paras: [
-      "Fulshear families looking for quality dance training make the short drive to Portal. About 15 minutes east on FM 1093 or FM 359 — and worth every minute.",
+      "Fulshear families looking for quality dance training make the short drive to Portal. About 15 minutes east on FM 1093 or FM 359, and worth every minute.",
       "We opened in 2023 and in two seasons our teams won 11 national titles. That's not slow-building credibility. We built this program from scratch with a clear standard: always put on a good show, always compete to win.",
-      "Recreational and competitive programs for ages 3 and up. All major styles. No long-term commitment required to start — just book a free trial and see what Portal is about.",
+      "Recreational and competitive programs for ages 3 and up. All major styles. No long-term commitment required to start. Just book a free trial and see what Portal is about.",
     ],
   },
   {
     slug: "pearland",
     name: "Pearland",
-    metaTitle: "Dance Classes Near Pearland, TX — Portal Dance Lab",
+    metaTitle: "Dance Classes Near Pearland, TX | Portal Dance Lab",
     metaDesc:
       "Dance classes near Pearland, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive and recreational training for all ages. Book a free trial today.",
+    image: "/assets/photo-groove.jpg",
     headline: "Dance Classes Near Pearland, TX.",
     sub: "About 25 miles from Pearland. Our Pearland families make the drive because there's nothing like it closer to home.",
     paras: [
-      "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built — 11 national titles in two seasons, five teams competing nationally — and decided the drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
+      "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built: 11 national titles in two seasons, five teams competing nationally. The drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
       "We run recreational classes year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. Competitive team spots are available through seasonal auditions.",
       "If your high schooler is targeting a school drill team spot, our drill team prep program is one of the best in the Houston metro. Fort Bend County is serious drill team country, and we train for it. First class is always free.",
     ],
