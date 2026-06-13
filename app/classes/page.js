@@ -1,7 +1,7 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
-import { CLASSES, BOOKING_URL, AUDITIONS_URL } from "../../content";
+import { CLASSES, BOOKING_URL } from "../../content";
 
 export const metadata = {
   title: "Classes & Programs — Portal Dance Lab | Richmond, TX",
@@ -163,9 +163,6 @@ export default function ClassesPage() {
           <div style={{ marginTop: 48, display: "flex", gap: 16, flexWrap: "wrap" }}>
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               Book a Free Trial
-            </a>
-            <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
-              Register for Auditions
             </a>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function Home() {
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               {HERO.primaryCta}
             </a>
-            <a href="#" className="btn-ghost">
+            <a href="/teams" className="btn-ghost">
               {HERO.secondaryCta} &rarr;
             </a>
           </div>

@@ -313,8 +313,8 @@ export const TEAMS = {
     {
       name: "Nova",
       age: "Junior · Hip Hop",
-      tagline: "Emerging fast.",
-      desc: "Nova is the wildcard, in the best way. Developing at a pace that surprises people. When they hit the stage, you remember it.",
+      tagline: "This is where it clicks.",
+      desc: "This is where the rubber meets the road. Nova is Portal's fastest-developing team — the place where real habits get built, and those habits stick. Equal weight on individual skill and moving as a unit. These dancers are growing fast, and when they hit the stage, you feel it.",
     },
     {
       name: "MonStarz",
