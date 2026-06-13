@@ -9,7 +9,7 @@ export const SCHEDULE_EMBED_URL =
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
 
-export const AUDITIONS_URL = "https://portaldancelab.gymmasteronline.com/portal/account/book/class/schedule?logo=0&date=2026-06-08&companyid=2&week=2026-6-9";
+export const SUMMER_CAMP_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdefAeN8y9mq05eIsB_5UTwvCo_dUhZfEvRwnAVTQ6fcFufNg/viewform?usp=header";
 
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About", "Shop"],
@@ -24,8 +24,8 @@ export const HERO = {
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
   badge: {
-    label: "SZN III Auditions Open",
-    sub: "June 8–10 · Portal Dance Lab, Richmond TX",
+    label: "Summer Camp · Now Open",
+    sub: "Limited spots · Portal Dance Lab, Richmond TX",
   },
 };
 
@@ -112,12 +112,13 @@ export const REVIEWS = {
 };
 
 export const SZN3 = {
-  eyebrow: "What Comes Next",
-  title: ["Season III", "Is Coming."],
-  accentWord: "Coming.",
-  sub: "Guest choreographers. Monsters Convention. Vegas. We are not slowing down.",
-  cta: "Register for Auditions",
-  dates: "Auditions · June 8–10 · Portal Dance Lab, Richmond TX",
+  eyebrow: "Summer 2026",
+  title: ["Summer Camp", "Is Here."],
+  accentWord: "Here.",
+  sub: "A week of full-day training, performances, and culture. All styles, all levels. Spots are limited.",
+  cta: "Sign Up for Summer Camp",
+  ctaHref: "https://docs.google.com/forms/d/e/1FAIpQLSdefAeN8y9mq05eIsB_5UTwvCo_dUhZfEvRwnAVTQ6fcFufNg/viewform?usp=header",
+  dates: "",
 };
 
 export const CONTACT = {
@@ -208,7 +209,7 @@ export const CLASSES = {
       label: "Competitive",
       heading: "Train for the stage.",
       desc: "Audition required. Five teams competing at nationals across 5 states, Worlds, and Summit Finals. If your dancer has the drive, this is where they find out what they're made of.",
-      details: ["Teams at every level: Mini, Youth, Junior, Senior", "National competition program. Fees included in monthly tuition.", "Year-round training with guest choreographers", "SZN III auditions, June 8–10"],
+      details: ["Teams at every level: Youth, Junior, Senior", "National competition program. Fees included in monthly tuition.", "Year-round training with guest choreographers", "SZN IV audition dates announced end of season"],
       cta: "See Our Teams",
       ctaHref: "/teams",
     },
@@ -278,7 +279,7 @@ export const CLASSES = {
     options: [
       { situation: "No dance experience", rec: "Book a Free Trial in Hip Hop or Jazz. Our coaches will watch, assess, and place your dancer in the right class." },
       { situation: "Some experience or returning dancer", rec: "Jump into Recreational Hip Hop or Contemporary. We'll evaluate and recommend from there." },
-      { situation: "Ready to compete", rec: "SZN III auditions are June 8–10. Show up ready to work, all experience levels considered." },
+      { situation: "Ready to compete", rec: "Come take class with us now. SZN IV audition dates will be announced at end of season — the dancers who make teams are already in the building training." },
       { situation: "High school drill team prep", rec: "Drill Team Unlimited: start any time, train year-round, peak before tryouts." },
     ],
   },
@@ -298,22 +299,16 @@ export const TEAMS = {
 
   teams: [
     {
-      name: "Orbitties",
-      age: "Mini · Hip Hop",
-      tagline: "Where it starts.",
-      desc: "The youngest Portal team. Big personality, bigger work ethic. Orbitties learn the Portal way from day one, technique, stage presence, and how to compete.",
-    },
-    {
-      name: "Rangers",
+      name: "Cadets",
       age: "Youth · Hip Hop",
-      tagline: "Ready for anything.",
-      desc: "Rangers are built for the grind. Consistent, coachable, and competitive. They show up every week and show out every performance.",
+      tagline: "The standard starts here.",
+      desc: "Cadets are Portal's next wave. Youth dancers building the habits, technique, and mentality that the upper teams run on. This is where the Portal way gets wired in.",
     },
     {
-      name: "Ethereal",
-      age: "Junior · Jazz & Contemporary",
+      name: "Eclipse",
+      age: "Senior · Jazz & Contemporary",
       tagline: "Grace. Power. Both.",
-      desc: "Ethereal dancers know how to hold a room. Artistry and athleticism in the same breath. The performers that make the crowd go quiet.",
+      desc: "Eclipse dancers know how to hold a room. The team has grown up together — from junior to senior — and brought everything with them. Artistry and athleticism in the same breath. When Eclipse hits the stage, the crowd goes quiet.",
     },
     {
       name: "Nova",
@@ -331,14 +326,14 @@ export const TEAMS = {
   ],
 
   auditions: {
-    eyebrow: "Season III · Now Open",
-    title: "Auditions Are Open.",
-    sub: "Guest choreographers. Monsters Convention. Las Vegas. If your dancer has the drive, we have everything else.",
-    dates: "June 8–10, 2026 · Portal Dance Lab, Richmond TX",
-    fee: "$50 audition fee · Includes Standard Portal Shirt",
-    cta: "Register for Auditions",
-    workshopNote: "Sign up for your workshop session, Monday June 8 and/or Wednesday June 10. Register for each day you plan to attend.",
-    note: "All experience levels considered. If your dancer has the drive, we'll build the rest.",
+    eyebrow: "Season III · Underway",
+    title: "Want to Compete Next Season?",
+    sub: "SZN IV auditions aren't open yet — but the dancers who make teams are already training. The best way to get seen is to be in the building. Come take class with us now and show up to auditions ready.",
+    dates: "",
+    fee: "",
+    cta: "Book a Free Trial Class",
+    workshopNote: "",
+    note: "",
   },
 
   programDetails: [
@@ -385,7 +380,6 @@ export const PRICING = {
     {
       label: "Competitive Team",
       note: "SZN III · June 2026 – May 2027",
-      note2: "Auditions required, June 8–10",
       items: [
         { name: "1 Routine", price: "$350", per: "/mo", desc: "4 hrs/week training. Competition fees included." },
         { name: "2 Routines", price: "$380", per: "/mo", desc: "6 hrs/week training. Competition fees included." },
@@ -495,7 +489,7 @@ export const CITIES = [
     paras: [
       "Katy has strong athletics culture, and families here know what elite training looks like. Portal Dance Lab is about 20 miles east on I-10, and for families that want national-level competitive dance, that drive is a regular part of their week.",
       "We field five competitive teams from Mini through Senior, all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
-      "SZN III auditions are June 8-10. If your dancer is ready to compete, come show us what they've got. All experience levels are considered. We build the rest.",
+      "First class is always free.",
     ],
   },
   {

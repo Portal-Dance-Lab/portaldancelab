@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
 import {
   BOOKING_URL,
-  AUDITIONS_URL,
   HERO,
   STATS,
   PATHWAYS,
@@ -209,10 +208,9 @@ export default function Home() {
           )}
         </h2>
         <p className="szn3-sub">{SZN3.sub}</p>
-        <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
+        <a href={SZN3.ctaHref} className="btn-coral" target="_blank" rel="noopener noreferrer">
           {SZN3.cta}
         </a>
-        <div className="szn3-dates">{SZN3.dates}</div>
       </div>
 
       {/* CONTACT */}

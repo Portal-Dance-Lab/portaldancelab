@@ -1,11 +1,11 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { TEAMS, AUDITIONS_URL } from "../../content";
+import { TEAMS, BOOKING_URL } from "../../content";
 
 export const metadata = {
   title: "Competitive Teams — Portal Dance Lab | Richmond, TX",
   description:
-    "11x National Champions. Five competitive teams training at the highest level in Richmond, TX. SZN III auditions open June 8–10. Portal Dance Lab.",
+    "11x National Champions. Four competitive teams training at the highest level in Richmond, TX. Portal Dance Lab.",
 };
 
 export default function TeamsPage() {
@@ -36,7 +36,7 @@ export default function TeamsPage() {
             <p className="auditions-fee">{TEAMS.auditions.fee}</p>
           </div>
           <div className="auditions-action">
-            <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
+            <a href={BOOKING_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
               {TEAMS.auditions.cta}
             </a>
             <p className="auditions-workshop-note">{TEAMS.auditions.workshopNote}</p>
@@ -113,13 +113,13 @@ export default function TeamsPage() {
 
       {/* BOTTOM CTA */}
       <div className="szn3-banner">
-        <p className="szn3-eyebrow">Ready to Compete?</p>
+        <p className="szn3-eyebrow">Season III · Underway</p>
         <h2 className="szn3-title">
-          Auditions are <span className="accent">Open.</span>
+          Start Training <span className="accent">Now.</span>
         </h2>
-        <p className="szn3-sub">{TEAMS.auditions.dates}</p>
-        <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
-          {TEAMS.auditions.cta}
+        <p className="szn3-sub">SZN IV auditions will come. The dancers who make it are already in the building. Come take class with us and get ahead.</p>
+        <a href={BOOKING_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
+          Book a Free Trial Class
         </a>
       </div>
 
