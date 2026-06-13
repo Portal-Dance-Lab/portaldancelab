@@ -320,8 +320,7 @@ export const TEAMS = {
       name: "MonStarz",
       age: "Senior · Hip Hop",
       tagline: "The flagship. The standard.",
-      desc: "MonStarz is Portal at its peak. Eleven national titles, two Worlds and Summit Finals appearances, and the hardware to back it up. This team doesn't chase the moment. They create it.",
-      featured: true,
+      desc: "MonStarz is where Portal's best end up. You don't start here — you work your way up through the program until you're ready. The most competitive team we field, trained for nationals, and coached to a standard that sends every senior out the door ready for the industry or a college program. The hardware backs it up.",
     },
   ],
 

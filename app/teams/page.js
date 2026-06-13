@@ -9,8 +9,7 @@ export const metadata = {
 };
 
 export default function TeamsPage() {
-  const regularTeams = TEAMS.teams.filter((t) => !t.featured);
-  const featuredTeam = TEAMS.teams.find((t) => t.featured);
+  const regularTeams = TEAMS.teams;
 
   return (
     <>
@@ -83,15 +82,6 @@ export default function TeamsPage() {
             ))}
           </div>
 
-          {featuredTeam && (
-            <div className="team-card team-card-featured">
-              <div className="featured-badge">Flagship Team</div>
-              <p className="team-age">{featuredTeam.age}</p>
-              <p className="team-tagline">{featuredTeam.tagline}</p>
-              <h3 className="team-name">{featuredTeam.name}</h3>
-              <p className="team-desc">{featuredTeam.desc}</p>
-            </div>
-          )}
         </div>
       </section>
 
