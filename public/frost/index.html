@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frost Flyers Car Rider Sponsors</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #080d18;
+      --surface: #121929;
+      --gold: #F5A623;
+      --white: #ffffff;
+      --muted: rgba(255,255,255,0.5);
+      --border: rgba(255,255,255,0.08);
+      --cc-red: #d94f1e;
+      --pdl-blue: #1B4FD8;
+      --radius: 16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      background: #ffffff;
+      padding: 44px 24px 32px;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    .frost-logo { width: 80px; height: auto; margin-bottom: 20px; }
+
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+      color: #0a0f1a;
+    }
+
+    .header h1 span { color: var(--gold); }
+
+    .header p {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.6;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 28px 16px 52px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .logo-banner {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-banner.cc  { background: #000; height: 340px; }
+    .logo-banner.pdl { background: #091524; height: 200px; }
+
+    .logo-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .logo-banner.pdl img { padding: 28px 24px; }
+
+    .card-body { padding: 24px 22px; }
+
+    .card-body h2 { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+
+    .location { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+    .card-body p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.65;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 24px;
+      border-radius: 12px;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-cc  { background: var(--cc-red);   color: #fff; }
+    .btn-pdl { background: var(--pdl-blue); color: #fff; }
+
+    .footer-note {
+      background: var(--surface);
+      border: 1px solid rgba(245,166,35,0.15);
+      border-radius: var(--radius);
+      padding: 22px;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    .footer-note p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .footer-note p strong { color: var(--gold); }
+
+    .page-footer {
+      text-align: center;
+      padding: 24px 16px 40px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="frost-logo" src="./frostlogo.jpg" alt="Frost Elementary" />
+    <h1>Thanks for being a <span>Frost Flyer.</span></h1>
+    <p>These businesses helped sponsor our car rider program this year. Show them some love.</p>
+  </div>
+
+  <div class="main">
+
+    <div class="card">
+      <div class="logo-banner cc">
+        <img src="./compadrecookerslogo.png" alt="Compadre Cookers BBQ" />
+      </div>
+      <div class="card-body">
+        <h2>Compadre Cookers</h2>
+        <p class="location">Downtown Rosenberg, TX</p>
+        <p>Tex-Mex BBQ out of Downtown Rosenberg. Brisket, ribs, chicken - cooked right. These guys took home the 2025 Houston Livestock Show and Rodeo Chicken Championship. If you haven't been, you're missing out.</p>
+        <a href="https://compadrecookers.com/" target="_blank" rel="noopener" class="btn btn-cc">Build Your Plate</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="logo-banner pdl">
+        <img src="./pdl-logo-horizontal-white-on-black.png" alt="Portal Dance Lab" />
+      </div>
+      <div class="card-body">
+        <h2>Portal Dance Lab</h2>
+        <p class="location">Richmond, TX</p>
+        <p>A competitive dance studio right here in Richmond. Hip hop, jazz, ballet, contemporary, and drill team prep for kids who want to actually compete. 11 national titles and counting - they don't mess around.</p>
+        <a href="https://portaldancelab.com/classes" target="_blank" rel="noopener" class="btn btn-pdl">Schedule Your Free Class</a>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p><strong>Shopping local matters.</strong> These businesses invested in Frost kids. We hope you'll invest in them too.</p>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    Frost Elementary - Lamar CISD - Richmond, TX - 2025-2026
+  </div>
+
+</body>
+</html>
