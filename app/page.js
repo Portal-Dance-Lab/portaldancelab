@@ -1,6 +1,8 @@
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
 import {
   BOOKING_URL,
-  AUDITIONS_URL,
   HERO,
   STATS,
   PATHWAYS,
@@ -9,28 +11,13 @@ import {
   REVIEWS,
   SZN3,
   CONTACT,
-  FOOTER,
 } from "../content";
 
 export default function Home() {
   return (
     <>
-      {/* NAV */}
-      <nav>
-        <a href="/" className="nav-logo">
-          <img src="/brand/pdl-logo-horizontal.svg" alt="Portal Dance Lab" style={{ height: 36, display: "block" }} />
-        </a>
-        <div className="nav-links">
-          <a href="#">Classes</a>
-          <a href="#">Teams</a>
-          <a href="#">Schedule</a>
-          <a href="#">About</a>
-          <a href="#">Shop</a>
-          <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
-            Book a Free Trial
-          </a>
-        </div>
-      </nav>
+      <LocalBusinessJsonLd />
+      <Nav />
 
       {/* HERO */}
       <section className="hero">
@@ -61,7 +48,7 @@ export default function Home() {
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               {HERO.primaryCta}
             </a>
-            <a href="#" className="btn-ghost">
+            <a href="/teams" className="btn-ghost">
               {HERO.secondaryCta} &rarr;
             </a>
           </div>
@@ -91,6 +78,18 @@ export default function Home() {
         </div>
       </div>
 
+      {/* HOMEPAGE PHOTO STRIP */}
+      <div className="home-photo-strip">
+        <img
+          src="/assets/IMG_4684.jpeg"
+          alt="Portal Dance Lab National Champions celebrating at The Dance Worlds"
+          className="home-photo-img"
+        />
+        <div className="home-photo-overlay">
+          <p className="home-photo-stat">11x National Champions.</p>
+        </div>
+      </div>
+
       {/* PATHWAYS */}
       <section className="pathways">
         <div className="section-inner">
@@ -104,9 +103,11 @@ export default function Home() {
                 <p className="pathway-who">{card.who}</p>
                 <h3 className="pathway-heading">{card.heading}</h3>
                 <p className="pathway-desc">{card.desc}</p>
-                <a href={BOOKING_URL} className="pathway-link" target="_blank" rel="noopener noreferrer">
+                {card.href && (
+                <a href={card.href} className="pathway-link">
                   {card.link} &rarr;
                 </a>
+              )}
               </div>
             ))}
           </div>
@@ -207,10 +208,9 @@ export default function Home() {
           )}
         </h2>
         <p className="szn3-sub">{SZN3.sub}</p>
-        <a href={AUDITIONS_URL} className="btn-coral" target="_blank" rel="noopener noreferrer">
+        <a href={SZN3.ctaHref} className="btn-coral" target="_blank" rel="noopener noreferrer">
           {SZN3.cta}
         </a>
-        <div className="szn3-dates">{SZN3.dates}</div>
       </div>
 
       {/* CONTACT */}
@@ -239,37 +239,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-top">
-            <div>
-              <img
-                src="/brand/pdl-logo-white-transparent.png"
-                alt="Portal Dance Lab"
-                style={{ height: 40, marginBottom: 12, display: "block" }}
-              />
-              <p className="footer-brand-desc">{FOOTER.desc}</p>
-            </div>
-            {FOOTER.columns.map((col, i) => (
-              <div className="footer-col" key={i}>
-                <div className="footer-col-title">{col.title}</div>
-                <ul>
-                  {col.links.map((link, j) => (
-                    <li key={j}>
-                      <a href="#">{link}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="footer-bottom">
-            <div className="footer-legal">{FOOTER.legal}</div>
-            <div className="footer-address">{FOOTER.domain}</div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
