@@ -1,15 +1,14 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
+import { FlashSaleBadge, FlashSaleBanner } from "./components/FlashSale";
 import {
   BOOKING_URL,
   HERO,
   STATS,
   PATHWAYS,
   TRIAL,
-  VIDEO,
   REVIEWS,
-  SZN3,
   CONTACT,
 } from "../content";
 
@@ -52,13 +51,7 @@ export default function Home() {
               {HERO.secondaryCta} &rarr;
             </a>
           </div>
-          <div className="hero-badge">
-            <div className="hero-badge-icon">🏆</div>
-            <div className="hero-badge-text">
-              <strong>{HERO.badge.label}</strong>
-              {HERO.badge.sub}
-            </div>
-          </div>
+          <FlashSaleBadge />
         </div>
       </section>
 
@@ -141,36 +134,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section className="video-section">
-        <div className="video-inner">
-          <div className="video-header">
-            <p className="section-eyebrow">{VIDEO.eyebrow}</p>
-            <h2 className="section-title">{VIDEO.title}</h2>
-          </div>
-          {VIDEO.youtubeId ? (
-            <div className="video-embed">
-              <iframe
-                src={`https://www.youtube.com/embed/${VIDEO.youtubeId}`}
-                title="PDL Competition Highlights"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          ) : (
-            <div className="video-placeholder">
-              <div className="play-btn">
-                <svg viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <div className="video-label">{VIDEO.label}</div>
-              <div className="video-sub">[ Paste YouTube ID in content.js to activate ]</div>
-            </div>
-          )}
-        </div>
-      </section>
-
       {/* SOCIAL PROOF */}
       <section className="social-proof">
         <div className="section-inner">
@@ -188,30 +151,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SZN3 BANNER */}
-      <div className="szn3-banner">
-        <p className="szn3-eyebrow">{SZN3.eyebrow}</p>
-        <h2 className="szn3-title">
-          {SZN3.title.map((line, i) =>
-            line.includes(SZN3.accentWord) ? (
-              <span key={i}>
-                {line.replace(SZN3.accentWord, "")}
-                <span className="accent">{SZN3.accentWord}</span>
-                <br />
-              </span>
-            ) : (
-              <span key={i}>
-                {line}
-                <br />
-              </span>
-            )
-          )}
-        </h2>
-        <p className="szn3-sub">{SZN3.sub}</p>
-        <a href={SZN3.ctaHref} className="btn-coral" target="_blank" rel="noopener noreferrer">
-          {SZN3.cta}
-        </a>
-      </div>
+      {/* MERCH FLASH SALE TEASER (auto-hides after FLASH_SALE.endDate) */}
+      <FlashSaleBanner />
 
       {/* CONTACT */}
       <section className="contact">

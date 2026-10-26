@@ -63,6 +63,7 @@ export default function SchedulePage() {
             ))}
           </div>
           <p className="pricing-discounts">{PRICING.discounts}</p>
+          {PRICING.effective && <p className="pricing-effective">{PRICING.effective}</p>}
         </div>
       </section>
 

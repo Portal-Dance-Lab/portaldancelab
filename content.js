@@ -9,10 +9,8 @@ export const SCHEDULE_EMBED_URL =
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
 
-export const SUMMER_CAMP_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdefAeN8y9mq05eIsB_5UTwvCo_dUhZfEvRwnAVTQ6fcFufNg/viewform?usp=header";
-
 export const NAV = {
-  links: ["Classes", "Teams", "Schedule", "About", "Shop"],
+  links: ["Classes", "Teams", "Schedule", "About"],
   cta: "Book a Free Trial",
 };
 
@@ -23,10 +21,6 @@ export const HERO = {
   sub: "Richmond's competitive dance studio. 11x National Champions. 5 teams. Every level - from your kid's first class to the national stage.",
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
-  badge: {
-    label: "Summer Camp · Now Open",
-    sub: "Limited spots · Portal Dance Lab, Richmond TX",
-  },
 };
 
 export const STATS = [
@@ -82,13 +76,6 @@ export const TRIAL = {
   badgeLabel: "National Champs",
 };
 
-export const VIDEO = {
-  eyebrow: "See It Live",
-  title: "We Don't Talk. We Show.",
-  label: "SZN II Competition Highlights",
-  youtubeId: "", // Paste YouTube video ID here once uploaded (e.g. "dQw4w9WgXcQ")
-};
-
 export const REVIEWS = {
   eyebrow: "What Families Say",
   title: "They Said It Better Than We Could.",
@@ -111,14 +98,36 @@ export const REVIEWS = {
   ],
 };
 
-export const SZN3 = {
-  eyebrow: "Summer 2026",
-  title: ["Summer Camp", "Is Here."],
-  accentWord: "Here.",
-  sub: "A week of full-day training, performances, and culture. All styles, all levels. Spots are limited.",
-  cta: "Sign Up for Summer Camp",
-  ctaHref: "https://docs.google.com/forms/d/e/1FAIpQLSdefAeN8y9mq05eIsB_5UTwvCo_dUhZfEvRwnAVTQ6fcFufNg/viewform?usp=header",
-  dates: "",
+// ─────────────────────────────────────────────
+// MERCH FLASH SALE TEASER
+// Shows a hero badge + a countdown banner on the homepage.
+// - dropDate empty    → "Dropping soon" tease, CTA = get first dibs
+// - before dropDate   → live countdown to the drop
+// - dropDate → endDate → "Live now" + countdown to close, CTA = saleUrl
+// - after endDate     → everything disappears on its own. No cleanup needed.
+// Dates are ISO with Houston offset, e.g. "2026-11-07T10:00:00-06:00"
+// ─────────────────────────────────────────────
+export const FLASH_SALE = {
+  dropDate: "",
+  endDate: "",
+  saleUrl: "", // Square checkout / product link for the live window
+
+  badge: {
+    icon: "⚡",
+    label: "Merch Flash Sale · Dropping Soon",
+    liveLabel: "Merch Flash Sale · Live Now",
+    sub: "Limited run. No restocks.",
+  },
+
+  eyebrow: "PDL Merch · Flash Sale",
+  title: ["One Drop.", "Then It's Gone."],
+  accentWord: "Gone.",
+  sub: "Limited run. Short window. No restocks. When the timer hits zero, that's it.",
+  liveSub: "The drop is live. Quantities are limited and this window closes fast.",
+  teaseCta: "Get First Dibs",
+  teaseHref: "https://ig.me/m/portaldancelab",
+  teaseNote: "DM us \"MERCH\" on Instagram and we'll send you the link the second it drops.",
+  liveCta: "Shop the Drop",
 };
 
 export const CONTACT = {
@@ -340,7 +349,6 @@ export const TEAMS = {
     { label: "Age Groups", value: "Mini · Youth · Junior · Senior" },
     { label: "Styles", value: "Hip Hop · Jazz · Contemporary" },
     { label: "Competition Fees", value: "Included in monthly tuition" },
-    { label: "Space Camp", value: "July 20–26 · Mandatory" },
   ],
 
   training: [
@@ -355,24 +363,26 @@ export const PRICING = {
   eyebrow: "Transparent Pricing",
   title: "No Surprises.",
   sub: "Everything is month-to-month. Cancel anytime before your next billing date.",
+  effective: "New pay-as-you-go pricing starts November 1, 2026. Class packs bought before then are honored as purchased.",
   groups: [
     {
       label: "Memberships",
       note: "Monthly · Billed on the 1st",
+      note2: "Guaranteed spot in class + bonus classes in 5-week months",
       items: [
-        { name: "Unlimited Classes", price: "$200", per: "/mo", desc: "All styles, all levels. Best value." },
-        { name: "2 Classes / Week", price: "$180", per: "/mo", desc: "Two classes per week, any style." },
+        { name: "Unlimited Classes", price: "$200", per: "/mo", desc: "All styles, all levels. Under $17 a class. Best deal in the building." },
+        { name: "2 Classes / Week", price: "$180", per: "/mo", desc: "Two classes per week, any style. $22.50 a class." },
         { name: "Drill Team Unlimited", price: "$150", per: "/mo", desc: "Unlimited classes for pom & drill team prep." },
-        { name: "1 Class / Week", price: "$100", per: "/mo", desc: "One class per week, any style." },
+        { name: "1 Class / Week", price: "$100", per: "/mo", desc: "One class per week, any style. Bonus class in 5-week months." },
       ],
     },
     {
-      label: "Drop In",
-      note: "No commitment",
+      label: "Pay As You Go",
+      note: "No commitment · Every class is $25",
       items: [
-        { name: "10-Class Pack", price: "$150", per: "", desc: "$15 per class. Never expires." },
-        { name: "5-Class Pack", price: "$75", per: "", desc: "$15 per class. Never expires." },
-        { name: "Single Class", price: "$20", per: "", desc: "Just show up." },
+        { name: "10-Class Pack", price: "$250", per: "", desc: "Use within 90 days. Booked as space allows." },
+        { name: "5-Class Pack", price: "$125", per: "", desc: "Use within 60 days. Booked as space allows." },
+        { name: "Single Class", price: "$25", per: "", desc: "Just show up." },
         { name: "First Class", price: "Free", per: "", desc: "Try us out. No card required." },
       ],
     },

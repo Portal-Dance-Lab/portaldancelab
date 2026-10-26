@@ -236,32 +236,6 @@ section { padding: 96px 48px; }
 }
 .badge-label { font-size: 11px; color: var(--muted); letter-spacing: 0.06em; }
 
-/* VIDEO */
-.video-section { background: var(--navy-mid); border-top: 1px solid var(--edge); }
-.video-inner { max-width: 1200px; margin: 0 auto; }
-.video-header { text-align: center; margin-bottom: 48px; }
-.video-embed {
-  aspect-ratio: 16/9; border-radius: 10px; overflow: hidden;
-  border: 1px solid var(--edge);
-}
-.video-embed iframe { width: 100%; height: 100%; border: none; }
-.video-placeholder {
-  aspect-ratio: 16/9; background: var(--navy-card);
-  border-radius: 10px; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 16px;
-  border: 1px solid var(--edge); cursor: pointer; transition: border-color 0.2s;
-}
-.video-placeholder:hover { border-color: rgba(27,79,216,0.5); }
-.play-btn {
-  width: 72px; height: 72px; background: var(--coral);
-  border-radius: 50%; display: flex; align-items: center; justify-content: center;
-}
-.play-btn svg { width: 28px; height: 28px; fill: var(--white); margin-left: 4px; }
-.video-label {
-  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
-  font-size: 20px; font-weight: 700; color: var(--white);
-}
-.video-sub { font-size: 13px; color: var(--subtle); }
 
 /* SOCIAL PROOF */
 .social-proof { background: var(--navy); }
@@ -277,7 +251,7 @@ section { padding: 96px 48px; }
 }
 .proof-author { font-size: 13px; color: var(--muted); font-weight: 600; }
 
-/* SZN3 BANNER */
+/* PROMO BANNER (merch flash sale) */
 .szn3-banner {
   background: var(--navy-card);
   border-top: 3px solid var(--coral);
@@ -322,6 +296,43 @@ section { padding: 96px 48px; }
   margin-top: 24px; font-size: 14px; color: var(--subtle);
   font-weight: 600; letter-spacing: 0.05em;
   position: relative; z-index: 1;
+}
+
+.hero-badge-link { text-decoration: none; }
+.hero-badge-link .hero-badge-icon { background: var(--coral); }
+.hero-badge-link:hover .hero-badge-text strong { color: var(--coral); }
+.flash-countdown {
+  display: flex; justify-content: center; gap: 12px;
+  margin: 0 auto 36px; position: relative; z-index: 1;
+}
+.flash-unit {
+  min-width: 84px; padding: 14px 10px 10px;
+  background: var(--navy); border: 1px solid var(--edge); border-radius: 6px;
+}
+.flash-num {
+  display: block;
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  font-size: 44px; font-weight: 900; line-height: 1; color: var(--white);
+  font-variant-numeric: tabular-nums;
+}
+.flash-label {
+  display: block; margin-top: 6px; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--subtle);
+}
+.flash-note {
+  margin-top: 20px; font-size: 13px; color: var(--subtle);
+  position: relative; z-index: 1;
+}
+.flash-live-dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--coral); margin-right: 8px; vertical-align: middle;
+  animation: flashPulse 1.4s ease-in-out infinite;
+}
+@keyframes flashPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+@media (max-width: 768px) {
+  .flash-countdown { gap: 8px; }
+  .flash-unit { min-width: 0; flex: 1; }
+  .flash-num { font-size: 34px; }
 }
 
 /* CONTACT */
@@ -1164,6 +1175,7 @@ footer {
 }
 .pricing-per { font-size: 13px; color: var(--subtle); }
 .pricing-group:last-child .pricing-amount { color: var(--gold); }
+.pricing-effective { margin-top: 12px; text-align: center; font-size: 13px; color: var(--cobalt-light); }
 .pricing-discounts {
   margin-top: 40px; font-size: 14px; color: var(--subtle);
   text-align: center; font-style: italic;

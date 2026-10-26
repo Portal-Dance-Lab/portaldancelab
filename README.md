@@ -8,7 +8,7 @@ Next.js site for portaldancelab.com. Hosted on Vercel. Auto-deploys on every pus
 
 All site copy lives in `content.js` at the root. Edit there, save, push — Vercel redeploys in ~60 seconds. No CMS needed.
 
-To activate the YouTube video: paste the video ID (the part after `?v=`) into `content.js` → `VIDEO.youtubeId`.
+Merch flash sale: set `FLASH_SALE.dropDate`, `endDate` and `saleUrl` in `content.js`. The homepage teaser counts down, flips to "Live Now" at the drop, and hides itself after `endDate`.
 
 ---
 
@@ -86,7 +86,6 @@ Vercel will give you a `.vercel.app` preview URL immediately. That's your live s
 
 ## After launch — things to wire up
 
-- [ ] Upload SZN II highlights to YouTube → paste video ID into `content.js → VIDEO.youtubeId`
 - [ ] Swap GymMaster booking URL for Jackrabbit once migration is done (June 16) — one line in `content.js → BOOKING_URL`
 - [ ] Build inner pages: Programs, Schedule, About, Teams
 - [ ] Test on mobile
