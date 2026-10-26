@@ -7,7 +7,7 @@ export const SCHEDULE_EMBED_URL =
   "https://portaldancelab.gymmasteronline.com/portal/classcalendar?logo=0";
 
 export const BOOKING_URL =
-  "https://portaldancelab.gymmasteronline.com/portal/quick/signup/0e6e58e638d84709da27e6b21ce79fad";
+  "https://portaldancelab.gymmasteronline.com/portal/quick/signup/8099d2e21f40bebaedfe54280ec570f5";
 
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About"],
