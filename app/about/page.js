@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -38,9 +39,11 @@ export default function AboutPage() {
             </div>
             <div className="about-origin-accent">
               <div className="about-origin-photo">
-                <img
+                <Image
                   src="/assets/photo-encore.jpg"
                   alt="Portal Dance Lab team holding Encore Championships banner"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   className="about-photo-img"
                 />
               </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
@@ -29,7 +30,16 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg">
+          <Image
+            src="/assets/mkd_1274_fixed.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="hero-bg-img"
+          />
+        </div>
         <div className="hero-overlay" />
         <div className="hero-stars" />
         <div className="portal-ring" />
@@ -82,9 +92,11 @@ export default function Home() {
 
       {/* HOMEPAGE PHOTO STRIP */}
       <div className="home-photo-strip">
-        <img
+        <Image
           src="/assets/IMG_4684.jpeg"
           alt="Portal Dance Lab National Champions celebrating at The Dance Worlds"
+          fill
+          sizes="100vw"
           className="home-photo-img"
         />
         <div className="home-photo-overlay">
@@ -133,7 +145,12 @@ export default function Home() {
             </a>
           </div>
           <div className="trial-photo">
-            <img src="/assets/competition-shot-fixed.jpg" alt="PDL dancer performing on stage" />
+            <Image
+              src="/assets/competition-shot-fixed.jpg"
+              alt="PDL dancer performing on stage"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
             <div className="trial-photo-overlay" />
             <div className="trial-photo-badge">
               <div className="badge-stat">{TRIAL.badgeStat}</div>

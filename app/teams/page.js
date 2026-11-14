@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { TEAMS, BOOKING_URL } from "../../content";
@@ -28,9 +29,11 @@ export default function TeamsPage() {
 
       {/* COMPETITION PHOTO */}
       <div className="teams-photo-strip">
-        <img
+        <Image
           src="/assets/6.png"
           alt="Portal Dance Lab MonStarz competing at nationals"
+          fill
+          sizes="100vw"
           className="teams-photo-img"
         />
         <div className="teams-photo-overlay">

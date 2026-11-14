@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -70,9 +71,11 @@ export default function ClassesPage() {
 
       {/* PHOTO STRIP */}
       <div className="classes-photo-strip">
-        <img
+        <Image
           src="/assets/photo-7.png"
           alt="Portal Dance Lab dancers performing on stage"
+          fill
+          sizes="100vw"
           className="classes-photo-img"
         />
         <div className="classes-photo-overlay">
