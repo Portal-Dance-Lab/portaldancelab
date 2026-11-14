@@ -1,12 +1,14 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { TEAMS, BOOKING_URL } from "../../content";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Competitive Teams — Portal Dance Lab | Richmond, TX",
+export const metadata = pageMetadata({
+  title: "Competitive Dance Teams",
   description:
     "11x National Champions. Four competitive teams training at the highest level in Richmond, TX. Portal Dance Lab.",
-};
+  path: "/teams",
+});
 
 export default function TeamsPage() {
   const regularTeams = TEAMS.teams;

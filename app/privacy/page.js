@@ -1,10 +1,13 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Privacy Policy — Portal Dance Lab",
-  description: "Privacy policy for Portal Dance Lab, Richmond TX.",
-};
+export const metadata = pageMetadata({
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for Portal Dance Lab, Richmond TX.",
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

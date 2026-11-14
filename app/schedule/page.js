@@ -2,12 +2,14 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import GymMasterCalendar from "./GymMasterCalendar";
 import { SCHEDULE, PRICING, BOOKING_URL } from "../../content";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Class Schedule — Portal Dance Lab | Richmond, TX",
+export const metadata = pageMetadata({
+  title: "Class Schedule & Pricing",
   description:
     "Browse the full Portal Dance Lab class schedule. Hip hop, lyrical, technique, adult classes, and competitive team training in Richmond, TX. Book your spot today.",
-};
+  path: "/schedule",
+});
 
 export default function SchedulePage() {
   return (

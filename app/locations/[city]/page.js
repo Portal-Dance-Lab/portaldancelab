@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { CITIES, BOOKING_URL, REVIEWS } from "../../../content";
+import { pageMetadata } from "../../lib/seo";
 
 export async function generateStaticParams() {
   return CITIES.map((city) => ({ city: city.slug }));
@@ -10,15 +11,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const city = CITIES.find((c) => c.slug === params.city);
   if (!city) return {};
-  return {
-    title: city.metaTitle,
+  return pageMetadata({
+    title: { absolute: city.metaTitle },
     description: city.metaDesc,
-    openGraph: {
-      title: city.metaTitle,
-      description: city.metaDesc,
-      url: `https://www.portaldancelab.com/locations/${city.slug}`,
-    },
-  };
+    path: `/locations/${city.slug}`,
+  });
 }
 
 export default function CityPage({ params }) {

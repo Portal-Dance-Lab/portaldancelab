@@ -11,6 +11,15 @@ import {
   REVIEWS,
   CONTACT,
 } from "../content";
+import { pageMetadata, TITLE_SUFFIX } from "./lib/seo";
+
+export const metadata = pageMetadata({
+  // Root page shares the layout's segment, so the title template does not apply here.
+  title: { absolute: `Competitive Dance Studio | ${TITLE_SUFFIX}` },
+  description:
+    "11x National Champions. Competitive and recreational dance training for all ages in Richmond, TX. Hip hop, ballet, contemporary, jazz, drill team prep, and adult classes. Book your free first class today.",
+  path: "/",
+});
 
 export default function Home() {
   return (

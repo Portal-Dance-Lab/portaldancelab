@@ -2,12 +2,14 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import { ABOUT, BOOKING_URL } from "../../content";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "About — Portal Dance Lab | Richmond, TX",
+export const metadata = pageMetadata({
+  title: "About Us",
   description:
     "Founded in 2023 by Andrew Ton and Taylor Everett. Portal Dance Lab is Richmond, TX's competitive dance home — 11x national champions, built on discipline, culture, and a love for the craft.",
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
