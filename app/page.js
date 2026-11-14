@@ -11,6 +11,7 @@ import {
   TRIAL,
   REVIEWS,
   CONTACT,
+  CLASS_CARDS,
 } from "../content";
 import { pageMetadata, TITLE_SUFFIX } from "./lib/seo";
 
@@ -46,7 +47,7 @@ export default function Home() {
         <div className="hero-glow" />
         <div className="hero-content">
           <p className="hero-eyebrow">{HERO.eyebrow}</p>
-          <h1 className="hero-title">
+          <p className="hero-title">
             {HERO.headline.map((line, i) =>
               line === HERO.accentLine ? (
                 <span key={i}>
@@ -60,16 +61,30 @@ export default function Home() {
                 </span>
               )
             )}
-          </h1>
+          </p>
+          <h1 className="hero-h1">{HERO.h1}</h1>
           <p className="hero-sub">{HERO.sub}</p>
+          <ul className="hero-trust">
+            {HERO.trust.map((t) => (
+              <li key={t.label}>
+                <span className="hero-trust-num">{t.number}</span>
+                <span className="hero-trust-label">{t.label}</span>
+              </li>
+            ))}
+          </ul>
           <div className="hero-actions">
-            <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href={BOOKING_URL} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
               {HERO.primaryCta}
             </a>
-            <a href="/teams" className="btn-ghost">
+            <a href="/teams" className="btn-ghost hero-secondary">
               {HERO.secondaryCta} &rarr;
             </a>
           </div>
+          <p className="hero-note">
+            {HERO.ctaNote}
+            <span aria-hidden="true"> · </span>
+            <a href="/find-your-class">{HERO.quizCta}</a>
+          </p>
           <FlashSaleBadge />
         </div>
       </section>
@@ -104,6 +119,29 @@ export default function Home() {
         </div>
       </div>
 
+      {/* FIND YOUR CLASS */}
+      <section className="class-cards">
+        <div className="section-inner">
+          <p className="section-eyebrow">{CLASS_CARDS.eyebrow}</p>
+          <h2 className="section-title">{CLASS_CARDS.title}</h2>
+          <p className="class-cards-sub">{CLASS_CARDS.sub}</p>
+          <div className="class-cards-grid">
+            {CLASS_CARDS.cards.map((c) => (
+              <a key={c.name} href={c.href} className={`class-card${c.image ? "" : " class-card--plain"}`}>
+                {c.image && (
+                  <Image src={c.image} alt="" fill sizes="(max-width: 768px) 50vw, 20vw" className="class-card-img" />
+                )}
+                <span className="class-card-name">{c.name}</span>
+                <span className="class-card-meta">{c.meta}</span>
+              </a>
+            ))}
+          </div>
+          <p className="class-cards-price">
+            {CLASS_CARDS.priceNote} · <a href="/schedule">See pricing</a>
+          </p>
+        </div>
+      </section>
+
       {/* PATHWAYS */}
       <section className="pathways">
         <div className="section-inner">
@@ -129,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* FREE TRIAL */}
-      <section className="trial">
+      <section className="trial" id="trial">
         <div className="trial-inner">
           <div className="trial-copy">
             <p className="section-eyebrow">{TRIAL.eyebrow}</p>
@@ -140,6 +178,15 @@ export default function Home() {
                 <li key={i}>{item}</li>
               ))}
             </ul>
+            <h3 className="trial-steps-title">{TRIAL.stepsTitle}</h3>
+            <ol className="trial-steps">
+              {TRIAL.steps.map((step, i) => (
+                <li key={i}>
+                  <span className="trial-step-num">{i + 1}</span>
+                  <span><strong>{step.heading}</strong> {step.desc}</span>
+                </li>
+              ))}
+            </ol>
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               {TRIAL.cta}
             </a>

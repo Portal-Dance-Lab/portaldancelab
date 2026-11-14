@@ -1,6 +1,7 @@
 import { Barlow_Condensed, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { OG_IMAGE, TITLE_TEMPLATE } from "./lib/seo";
+import StickyBookBar from "./components/StickyBookBar";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
@@ -58,7 +59,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${barlow.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <StickyBookBar />
+      </body>
     </html>
   );
 }

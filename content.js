@@ -18,12 +18,36 @@ export const NAV = {
 };
 
 export const HERO = {
-  eyebrow: "Richmond, TX · Est. 2023",
+  eyebrow: "Richmond, TX · Est. 2023 · Ages 3 to Adult",
+  // The H1 carries the search keywords; `headline` is the big display line.
+  h1: "Competitive and recreational dance studio in Richmond, TX.",
   headline: ["This Is", "Where It", "Starts."],
   accentLine: "Starts.",
   sub: "Richmond's competitive dance studio. 11x National Champions. 4 teams. Every level - from your kid's first class to the national stage.",
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
+  ctaNote: "First class free · No card required",
+  quizCta: "Not sure where to start? Take the 30-second quiz",
+  trust: [
+    { number: "11×", label: "National Champions" },
+    { number: "2×", label: "Worlds & Summit Finalists" },
+    { number: "100%", label: "Seniors College Bound" },
+  ],
+};
+
+// Homepage "find your class" cards. href points at a class page or /classes.
+export const CLASS_CARDS = {
+  eyebrow: "Find Your Class",
+  title: "Every Age. Every Level.",
+  sub: "Never danced? Perfect. Every class welcomes beginners.",
+  priceNote: "First class free · Memberships from $100/mo",
+  cards: [
+    { name: "Kids", meta: "Ages 3 to 10", href: "/classes/kids", image: "/assets/8.png" },
+    { name: "Hip Hop", meta: "Ages 3 to Adult", href: "/classes/hip-hop", image: "/assets/photo-groove.jpg" },
+    { name: "Drill Team Prep", meta: "Middle and high school", href: "/classes/drill-team-prep", image: "/assets/091343H-16704-ajm_6004.jpg" },
+    { name: "Jazz & Contemporary", meta: "Plus lyrical, ballet, technique", href: "/classes", image: "/assets/091316H-16704-ajm_5976.jpg" },
+    { name: "Adult Classes", meta: "18 and up", href: "/classes", image: null },
+  ],
 };
 
 export const STATS = [
@@ -75,6 +99,12 @@ export const TRIAL = {
     "No forms, no sales pitch, just dancing",
   ],
   cta: "Book Your Free Trial",
+  stepsTitle: "How it works",
+  steps: [
+    { heading: "Sign up.", desc: "Takes about a minute. No card required." },
+    { heading: "We reach out.", desc: "Our team contacts you to find the right class and time for your dancer." },
+    { heading: "Come dance.", desc: "No sales pitch. Meet the coaches and see if it's a fit." },
+  ],
   badgeStat: "11×",
   badgeLabel: "National Champs",
 };
@@ -292,7 +322,7 @@ export const CLASSES = {
     options: [
       { situation: "No dance experience", rec: "Book a Free Trial in Hip Hop or Jazz. Our coaches will watch, assess, and place your dancer in the right class." },
       { situation: "Some experience or returning dancer", rec: "Jump into Recreational Hip Hop or Contemporary. We'll evaluate and recommend from there." },
-      { situation: "Ready to compete", rec: "Come take class with us now. SZN IV audition dates will be announced at end of season — the dancers who make teams are already in the building training." },
+      { situation: "Ready to compete", rec: "Come take class with us. SZN IV audition dates will be announced at the end of the season, and anyone can try out." },
       { situation: "High school drill team prep", rec: "Drill Team Unlimited: start any time, train year-round, peak before tryouts." },
     ],
   },
@@ -333,14 +363,16 @@ export const TEAMS = {
       name: "MonStarz",
       age: "Senior · Hip Hop",
       tagline: "The flagship. The standard.",
-      desc: "MonStarz is where Portal's best end up. You don't start here — you work your way up through the program until you're ready. The most competitive team we field, trained for nationals, and coached to a standard that sends every senior out the door ready for the industry or a college program. The hardware backs it up.",
+      desc: "MonStarz is Portal's most competitive team, for dancers ready to train at the highest level. Trained for nationals, and coached to a standard that sends every senior out the door ready for the industry or a college program. The hardware backs it up.",
     },
   ],
+
+  solos: "Plus solo and duet competitors. Private choreography is available for every age and style.",
 
   auditions: {
     eyebrow: "Season III · Underway",
     title: "Want to Compete Next Season?",
-    sub: "SZN IV auditions aren't open yet — but the dancers who make teams are already training. The best way to get seen is to be in the building. Come take class with us now and show up to auditions ready.",
+    sub: "SZN IV auditions aren't open yet. When they are, anyone can try out. Want a feel for how we train first? Come take a class with us.",
     dates: "",
     fee: "",
     cta: "Book a Free Trial Class",
@@ -533,6 +565,101 @@ export const CITIES = [
       "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built: 11 national titles in two seasons, four teams competing nationally. The drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
       "We run recreational classes year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. Competitive team spots are available through seasonal auditions.",
       "If your high schooler is targeting a school drill team spot, our drill team prep program is one of the best in the Houston metro. Fort Bend County is serious drill team country, and we train for it. First class is always free.",
+    ],
+  },
+];
+
+// ─────────────────────────────────────────────
+// CLASS STYLE PAGES  (/classes/[slug])
+// DRAFT COPY: built from facts already on the site. Edit freely.
+// ─────────────────────────────────────────────
+export const CLASS_PAGES = [
+  {
+    slug: "kids",
+    title: "Kids Dance Classes (Ages 3 to 10)",
+    metaDesc:
+      "Kids dance classes in Richmond, TX for ages 3 to 10. Hip hop, jazz, ballet and more in small, high-energy classes. Month-to-month, and the first class is free.",
+    h1: "Kids Dance Classes in Richmond, TX",
+    intro:
+      "Portal's youngest classes are designed to build a love for dance before demanding the craft. Small classes, big energy, and coaches who know how to make it real for little ones.",
+    image: "/assets/8.png",
+    imageAlt: "Young Portal Dance Lab dancers performing on stage",
+    ages: [
+      { label: "Tiny & Mini", range: "Ages 3 to 10" },
+      { label: "Youth", range: "Ages 8 to 13" },
+    ],
+    learnTitle: "What Your Dancer Gets",
+    learn: [
+      "A love for dance first. The skills follow fast.",
+      "Hip hop, jazz, ballet, and technique",
+      "Confidence, focus, and new friends",
+      "Coaches who compete professionally",
+    ],
+    // Names from PRICING, so prices stay in one place.
+    prices: ["First Class", "Single Class", "1 Class / Week", "Unlimited Classes"],
+    faq: [
+      { q: "My kid has never danced. Is that OK?", a: "Yes. Book a free trial and our coaches will watch, assess, and place your dancer in the right class." },
+      { q: "Is there a long-term commitment?", a: "No. Everything is month-to-month. Cancel anytime before your next billing date." },
+      { q: "Do kids have to compete?", a: "No. Recreational classes have no audition and no season commitment. Competing is totally optional." },
+    ],
+  },
+  {
+    slug: "hip-hop",
+    title: "Hip Hop Dance Classes",
+    metaDesc:
+      "Hip hop dance classes in Richmond, TX for ages 3 to adult, taught by coaches who compete professionally. Beginners welcome. First class is free.",
+    h1: "Hip Hop Dance Classes in Richmond, TX",
+    intro:
+      "High energy, real foundations, and choreography that feels like a performance. Hip hop at Portal is taught by coaches who compete professionally, for every age and every level.",
+    image: "/assets/photo-groove.jpg",
+    imageAlt: "Portal Dance Lab hip hop dancers performing at The Groove",
+    ages: [
+      { label: "Tiny & Mini", range: "Ages 3 to 10" },
+      { label: "Youth", range: "Ages 8 to 13" },
+      { label: "Junior & Senior", range: "Ages 10 to 19" },
+      { label: "Adult", range: "18 and up" },
+    ],
+    learnTitle: "What Your Dancer Learns",
+    learn: [
+      "Hip hop foundations and grooves",
+      "Musicality and freestyle",
+      "Choreography and performance quality",
+      "Confidence on and off the floor",
+    ],
+    // Names from PRICING, so prices stay in one place.
+    prices: ["First Class", "Single Class", "1 Class / Week", "Unlimited Classes"],
+    faq: [
+      { q: "My kid has never danced. Is that OK?", a: "Yes. Hip hop is one of the best places to start. Our coaches will watch, assess, and place your dancer in the right class." },
+      { q: "Do you have adult hip hop?", a: "Yes. Adult classes take you seriously, whether you're a first-timer or coming back after years away. No judgment. All work." },
+      { q: "Is there a long-term commitment?", a: "No. Everything is month-to-month. Cancel anytime before your next billing date." },
+    ],
+  },
+  {
+    slug: "drill-team-prep",
+    title: "Drill Team Prep Classes",
+    metaDesc:
+      "Drill team prep in Richmond, TX for middle and high schoolers. Pom and kick technique aligned with UIL and TAPPS standards, plus tryout prep. Train year-round.",
+    h1: "Drill Team Prep in Richmond, TX",
+    intro:
+      "Fort Bend County is one of the strongest high school drill team markets in Texas. Portal's drill team prep program is built for middle and high schoolers looking to make and excel on their school's team. We train the technique, precision, and performance quality that tryout panels look for.",
+    image: "/assets/091343H-16704-ajm_6004.jpg",
+    imageAlt: "Portal Dance Lab dancer performing on stage",
+    ages: [
+      { label: "Middle School", range: "Prep for junior high tryouts" },
+      { label: "High School", range: "Prep for FBISD and area teams" },
+    ],
+    learnTitle: "What We Train",
+    learn: [
+      "Pom and kick technique aligned with TAPPS and UIL standards",
+      "Performance quality, crowd appeal, and stage presence",
+      "Tryout prep: material breakdown, execution, and managing nerves",
+      "Year-round program, so dancers peak before tryouts",
+    ],
+    prices: ["First Class", "Drill Team Unlimited", "Single Class"],
+    faq: [
+      { q: "When should my dancer start?", a: "Any time. Drill Team Unlimited lets dancers start whenever they're ready, train year-round, and peak before tryouts." },
+      { q: "Which schools do you prep for?", a: "Fort Bend County is serious drill team country. If your student is prepping for an FBISD tryout, or any school drill team, this program is built for it." },
+      { q: "Is there a long-term commitment?", a: "No. Everything is month-to-month. Cancel anytime before your next billing date." },
     ],
   },
 ];
