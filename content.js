@@ -576,7 +576,7 @@ export const CITIES = [
 export const CLASS_PAGES = [
   {
     slug: "kids",
-    title: "Kids Dance Classes (Ages 3 to 10)",
+    title: "Kids Dance Classes",
     metaDesc:
       "Kids dance classes in Richmond, TX for ages 3 to 10. Hip hop, jazz, ballet and more in small, high-energy classes. Month-to-month, and the first class is free.",
     h1: "Kids Dance Classes in Richmond, TX",
