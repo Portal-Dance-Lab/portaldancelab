@@ -1276,8 +1276,11 @@ footer {
 .nav-menu summary::-webkit-details-marker { display: none; }
 .nav-menu .nav-menu-close, .nav-menu[open] .nav-menu-open { display: none; }
 .nav-menu[open] .nav-menu-close { display: block; }
+/* The nav's backdrop-filter makes it the containing block for fixed
+   children, so size the panel explicitly from the bottom of the nav bar. */
 .nav-menu-panel {
-  position: fixed; top: 72px; left: 0; right: 0; bottom: 0; z-index: 99;
+  position: fixed; top: 100%; left: 0; right: 0; z-index: 99;
+  height: calc(100vh - 72px); height: calc(100dvh - 72px);
   background: var(--navy); display: flex; flex-direction: column; justify-content: space-between;
   overflow-y: auto;
 }
