@@ -30,11 +30,6 @@ export const HERO = {
   quizCta: "Not sure where to start? Take the 30-second quiz",
   // Flip to true once the quiz questions and class matches are signed off.
   quizEnabled: false,
-  trust: [
-    { number: "11×", label: "National Champions" },
-    { number: "2×", label: "Worlds & Summit Finalists" },
-    { number: "#1", label: "Voted Best Studio in Richmond" },
-  ],
 };
 
 // Homepage social proof (reviews band + hardware). Review excerpts are
@@ -59,19 +54,13 @@ export const HARDWARE = {
     { src: "/assets/photo-encore.jpg", alt: "Portal Dance Lab team holding Encore Championships banner" },
     { src: "/assets/6.png", alt: "Portal Dance Lab MonStarz competing at nationals" },
   ],
-  stats: [
-    { number: "11×", label: "National Titles" },
-    { number: "7", label: "Competitions" },
-    { number: "5", label: "States" },
-    { number: "100%", label: "College Bound" },
-  ],
-  competedAt: "Competed at The Dance Worlds · The Summit · Encore · The Groove · Super Nationals",
+  competedAt: "7 competitions in 5 states, including The Dance Worlds · The Summit · Encore · The Groove · Super Nationals",
 };
 
 export const STATS = [
   { number: "11", unit: "×", label: "National Champions", sub: "Season II · And counting" },
   { number: "100", unit: "%", label: "College Bound", sub: "Every senior, every year" },
-  { number: "#1", unit: "", label: "Best Dance Studio", sub: "Richmond TX · 2 years running" },
+  { number: "#1", unit: "", label: "Voted Best Studio", sub: "Richmond TX · 2 years running" },
   { number: "2", unit: "×", label: "Worlds & Summit Finalists", sub: "Competing on the biggest stages" },
 ];
 

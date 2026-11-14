@@ -666,11 +666,6 @@ footer {
   color: var(--gold); letter-spacing: -0.02em; display: block;
 }
 .hardware-unit { font-size: 36px; }
-.hardware-label {
-  font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--white);
-  display: block; margin-top: 8px;
-}
 .hardware-sub { font-size: 12px; color: var(--subtle); margin-top: 4px; display: block; }
 
 /* TEAM CARDS */
@@ -1268,19 +1263,6 @@ footer {
   color: var(--white); max-width: 560px; margin-bottom: 14px;
 }
 .hero-sub { margin-bottom: 24px; }
-.hero-trust {
-  list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px; max-width: 520px; margin-bottom: 28px;
-}
-.hero-trust li {
-  background: rgba(12,22,40,0.85); border: 1px solid #2A3B57; border-radius: 10px;
-  padding: 12px 10px; display: flex; flex-direction: column; gap: 2px;
-}
-.hero-trust-num {
-  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif;
-  font-weight: 900; font-size: 30px; line-height: 1; color: var(--gold);
-}
-.hero-trust-label { font-size: 12px; line-height: 1.25; color: #D1D5DB; }
 .btn-lg { font-size: 19px; padding: 18px 40px; border-radius: 10px; }
 .hero-note { margin-top: 16px; font-size: 14px; color: #C2C8D0; }
 .hero-note a { color: var(--white); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
@@ -1346,13 +1328,11 @@ footer {
     background: linear-gradient(to bottom, rgba(9,21,36,0) 0%, rgba(9,21,36,0) 35%, rgba(9,21,36,0.85) 55%, var(--navy) 64%);
   }
   .portal-ring { display: none; }
+  .hero { min-height: 86svh; }
   .hero-title { font-size: 48px; margin-bottom: 12px; }
   .hero-h1 { font-size: 18px; }
   .hero-sub { font-size: 14px; margin-bottom: 18px; }
-  .hero-trust { gap: 8px; margin-bottom: 20px; }
-  .hero-trust-num { font-size: 26px; }
-  .hero-trust-label { font-size: 11px; }
-  .hero-secondary { display: none; }
+        .hero-secondary { display: none; }
   .btn-lg { width: 100%; padding: 16px 20px; }
   .hero-note { font-size: 13px; }
 
@@ -1497,14 +1477,6 @@ footer {
 }
 .hardware-photo { position: relative; height: 300px; border-radius: 12px; overflow: hidden; }
 .hardware-photo img { object-fit: cover; object-position: center 30%; }
-.hardware-stats {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 28px; text-align: center;
-}
-.hardware-stats div { display: flex; flex-direction: column; }
-.hardware-num {
-  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 52px; line-height: 1;
-}
-.hardware-label { font-size: 13px; color: var(--muted); }
 .hardware-competed { margin-top: 20px; text-align: center; font-size: 14px; color: var(--muted); }
 
 .trial-simple { max-width: 640px; }
@@ -1525,8 +1497,22 @@ footer {
   .hardware-photos { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 20px; }
   .hardware-photo { height: 150px; }
   .hardware-photo--wide { grid-column: 1 / -1; height: 210px; }
-  .hardware-stats { gap: 6px; margin-top: 20px; }
-  .hardware-num { font-size: 34px; }
-  .hardware-label { font-size: 11px; }
-  .hardware-competed { font-size: 13px; }
+        .hardware-competed { font-size: 13px; }
 }
+
+/* Odometer (slot-machine number roll) */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.odo-face { display: inline-flex; align-items: flex-end; line-height: 1; }
+.odo-cell { display: inline-block; height: 1em; overflow: hidden; }
+.odo-strip { display: flex; flex-direction: column; transform: translateY(calc(var(--stop) * -1em)); }
+.odo-strip span { display: block; height: 1em; line-height: 1; }
+.odo--armed .odo-strip { transform: translateY(0); transition: none; }
+.odo--run .odo-strip {
+  transform: translateY(calc(var(--stop) * -1em));
+  transition: transform 1.8s cubic-bezier(0.15, 0.75, 0.2, 1) var(--delay);
+}
+.odo-char { line-height: 1; }
+.stat-number .odo-char { font-size: 0.55em; padding-bottom: 0.08em; }

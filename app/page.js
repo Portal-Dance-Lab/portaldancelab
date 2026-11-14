@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
 import { FlashSaleBadge, FlashSaleBanner } from "./components/FlashSale";
-import { BOOKING_URL, HERO, TRIAL, HOME_PROOF, HARDWARE } from "../content";
+import Odometer from "./components/Odometer";
+import { BOOKING_URL, HERO, STATS, TRIAL, HOME_PROOF, HARDWARE } from "../content";
 import { pageMetadata, TITLE_SUFFIX } from "./lib/seo";
 
 export const metadata = pageMetadata({
@@ -53,14 +54,6 @@ export default function Home() {
             )}
           </p>
           <h1 className="hero-h1">{HERO.h1}</h1>
-          <ul className="hero-trust">
-            {HERO.trust.map((t) => (
-              <li key={t.label}>
-                <span className="hero-trust-num">{t.number}</span>
-                <span className="hero-trust-label">{t.label}</span>
-              </li>
-            ))}
-          </ul>
           <div className="hero-actions">
             <a href={BOOKING_URL} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
               {HERO.primaryCta}
@@ -81,6 +74,19 @@ export default function Home() {
           <FlashSaleBadge />
         </div>
       </section>
+
+      {/* STATS STRIP (numbers roll up like a slot machine when scrolled into view) */}
+      <div className="stats-strip">
+        <div className="stats-inner">
+          {STATS.map((s) => (
+            <div className="stat-item" key={s.label}>
+              <Odometer value={`${s.number}${s.unit}`} className="stat-number" />
+              <span className="stat-label">{s.label}</span>
+              <div className="stat-sub">{s.sub}</div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* WHAT FAMILIES SAY */}
       <section className="home-proof">
@@ -114,14 +120,6 @@ export default function Home() {
             {HARDWARE.photos.map((ph, i) => (
               <div className={`hardware-photo${i === 0 ? " hardware-photo--wide" : ""}`} key={ph.src}>
                 <Image src={ph.src} alt={ph.alt} fill sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />
-              </div>
-            ))}
-          </div>
-          <div className="hardware-stats">
-            {HARDWARE.stats.map((st) => (
-              <div key={st.label}>
-                <span className="hardware-num">{st.number}</span>
-                <span className="hardware-label">{st.label}</span>
               </div>
             ))}
           </div>
