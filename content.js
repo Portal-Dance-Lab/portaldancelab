@@ -9,6 +9,9 @@ export const SCHEDULE_EMBED_URL =
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/8099d2e21f40bebaedfe54280ec570f5";
 
+// Must match the Google Business Profile exactly (NAP consistency).
+export const PHONE = { display: "(281) 229-2400", tel: "+12812292400" };
+
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About"],
   cta: "Book a Free Trial",
@@ -18,7 +21,7 @@ export const HERO = {
   eyebrow: "Richmond, TX · Est. 2023",
   headline: ["This Is", "Where It", "Starts."],
   accentLine: "Starts.",
-  sub: "Richmond's competitive dance studio. 11x National Champions. 5 teams. Every level - from your kid's first class to the national stage.",
+  sub: "Richmond's competitive dance studio. 11x National Champions. 4 teams. Every level - from your kid's first class to the national stage.",
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
 };
@@ -134,7 +137,8 @@ export const CONTACT = {
   eyebrow: "Get In Touch",
   title: "Questions? We're Fast.",
   email: "info@portaldancelab.com",
-  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  phone: PHONE,
+  address: "2441 Precinct Line Rd, Richmond, TX 77406",
   hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
   cta: "Send Us a Message",
 };
@@ -217,7 +221,7 @@ export const CLASSES = {
     competitive: {
       label: "Competitive",
       heading: "Train for the stage.",
-      desc: "Audition required. Five teams competing at nationals across 5 states, Worlds, and Summit Finals. If your dancer has the drive, this is where they find out what they're made of.",
+      desc: "Audition required. Four teams competing at nationals across 5 states, Worlds, and Summit Finals. If your dancer has the drive, this is where they find out what they're made of.",
       details: ["Teams at every level: Youth, Junior, Senior", "National competition program. Fees included in monthly tuition.", "Year-round training with guest choreographers", "SZN IV audition dates announced end of season"],
       cta: "See Our Teams",
       ctaHref: "/teams",
@@ -421,7 +425,7 @@ export const CITIES = [
     headline: "Dance Classes in Richmond, TX.",
     sub: "This is home. We train Richmond dancers from their first class all the way to the national stage.",
     paras: [
-      "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Dr. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
+      "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Rd. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
       "We train dancers from age 3 through adult across hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Recreational classes are open enrollment: no audition, no long-term commitment. Competitive team spots are earned through auditions.",
       "Fort Bend County has serious drill team culture, and we're built for it. Our drill team prep program is designed around UIL and TAPPS standards. If your student is prepping for a FBISD tryout, this is the place.",
     ],
@@ -467,7 +471,7 @@ export const CITIES = [
     sub: "About 15 miles from Missouri City. Real training, real results. All ages and levels.",
     paras: [
       "Missouri City dancers who want more than a once-a-week routine come to Portal. We're about 15 miles west, close enough to make it part of your weekly schedule, and far enough that families come here on purpose.",
-      "Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Our competitive program fields five teams that compete nationally. Both tracks exist at every age level.",
+      "Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Our competitive program fields four teams that compete nationally. Both tracks exist at every age level.",
       "If your student is prepping for a high school drill team tryout, Fort Bend County is one of the top markets in Texas for that. Our drill team prep program is built around UIL and TAPPS standards, taught by coaches who train professionally.",
     ],
   },
@@ -497,7 +501,7 @@ export const CITIES = [
     sub: "About 20 miles east on I-10. Competitive families from Katy make the drive because they want the best.",
     paras: [
       "Katy has strong athletics culture, and families here know what elite training looks like. Portal Dance Lab is about 20 miles east on I-10, and for families that want national-level competitive dance, that drive is a regular part of their week.",
-      "We field five competitive teams from Mini through Senior, all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
+      "We field four competitive teams from Youth through Senior, all competing at nationals, two with Worlds and Summit Finals appearances. Our recreational program runs year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, and technique.",
       "First class is always free.",
     ],
   },
@@ -526,7 +530,7 @@ export const CITIES = [
     headline: "Dance Classes Near Pearland, TX.",
     sub: "About 25 miles from Pearland. Our Pearland families make the drive because there's nothing like it closer to home.",
     paras: [
-      "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built: 11 national titles in two seasons, five teams competing nationally. The drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
+      "Pearland is a strong sports and athletics market with high expectations. Our Pearland families chose Portal after looking at what we've built: 11 national titles in two seasons, four teams competing nationally. The drive was worth it. About 30 minutes on TX-288 or Beltway 8.",
       "We run recreational classes year-round with no audition required: hip hop, jazz, contemporary, lyrical, ballet, technique, and drill team prep. Competitive team spots are available through seasonal auditions.",
       "If your high schooler is targeting a school drill team spot, our drill team prep program is one of the best in the Houston metro. Fort Bend County is serious drill team country, and we train for it. First class is always free.",
     ],
@@ -541,8 +545,9 @@ export const SOCIALS = [
 
 export const FOOTER = {
   desc: "Richmond, TX's competitive dance home. Training champions from Mini to Senior since 2023.",
-  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  address: "2441 Precinct Line Rd, Richmond, TX 77406",
   hours: "Mon – Fri: 4PM – 9PM · Sat: 9AM – 2PM",
+  phone: PHONE,
   email: "info@portaldancelab.com",
   legal: "© 2026 Portal Dance Lab · Richmond, TX",
   domain: "portaldancelab.com",

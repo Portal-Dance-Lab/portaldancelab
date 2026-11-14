@@ -1,12 +1,15 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { TEAMS, BOOKING_URL } from "../../content";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Competitive Teams — Portal Dance Lab | Richmond, TX",
+export const metadata = pageMetadata({
+  title: "Competitive Dance Teams",
   description:
     "11x National Champions. Four competitive teams training at the highest level in Richmond, TX. Portal Dance Lab.",
-};
+  path: "/teams",
+});
 
 export default function TeamsPage() {
   const regularTeams = TEAMS.teams;
@@ -26,9 +29,11 @@ export default function TeamsPage() {
 
       {/* COMPETITION PHOTO */}
       <div className="teams-photo-strip">
-        <img
+        <Image
           src="/assets/6.png"
           alt="Portal Dance Lab MonStarz competing at nationals"
+          fill
+          sizes="100vw"
           className="teams-photo-img"
         />
         <div className="teams-photo-overlay">

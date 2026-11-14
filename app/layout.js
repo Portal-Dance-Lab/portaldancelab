@@ -1,5 +1,6 @@
 import { Barlow_Condensed, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { OG_IMAGE, TITLE_TEMPLATE } from "./lib/seo";
 
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export const metadata = {
   metadataBase: new URL("https://www.portaldancelab.com"),
   title: {
     default: "Portal Dance Lab — Richmond, TX | Where Champions Are Made",
-    template: "%s | Portal Dance Lab",
+    template: TITLE_TEMPLATE,
   },
   description:
     "11x National Champions. Competitive and recreational dance training for all ages in Richmond, TX. Hip hop, ballet, contemporary, jazz, drill team prep, and adult classes. Book your free first class today.",
@@ -31,21 +32,14 @@ export const metadata = {
     title: "Portal Dance Lab — Richmond, TX | Where Champions Are Made",
     description:
       "11x National Champions. Competitive dance training in Richmond, TX. Book your free trial class today.",
-    images: [
-      {
-        url: "/assets/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Portal Dance Lab — Richmond, TX competitive dance studio",
-      },
-    ],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Portal Dance Lab — Richmond, TX",
     description:
       "11x National Champions. Book your free trial class today.",
-    images: ["/assets/og-image.png"],
+    images: [OG_IMAGE.url],
   },
   verification: {
     google: "pcppaZbNoC0pJO8otk96TwdrzkkQ4A3P4Ix18w6jarw",

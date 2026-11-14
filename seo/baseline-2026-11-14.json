@@ -1,0 +1,132 @@
+{
+  "generatedFrom": "source",
+  "base": "https://www.portaldancelab.com",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Portal Dance Lab — Richmond, TX | Where Champions Are Made",
+      "description": "11x National Champions. Competitive and recreational dance training for all ages in Richmond, TX. Hip hop, ballet, contemporary, jazz, drill team prep, and adult classes. Book your free first class today.",
+      "h1": "This Is Where It Starts.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/about",
+      "title": "About — Portal Dance Lab | Richmond, TX | Portal Dance Lab",
+      "description": "Founded in 2023 by Andrew Ton and Taylor Everett. Portal Dance Lab is Richmond, TX's competitive dance home — 11x national champions, built on discipline, culture, and a love for the craft.",
+      "h1": "Richmond's Dance Studio. Built Different.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/about",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/classes",
+      "title": "Classes & Programs — Portal Dance Lab | Richmond, TX | Portal Dance Lab",
+      "description": "Hip hop, jazz, contemporary, ballet, drill team prep, adult classes, and competitive team training in Richmond, TX. All ages, all levels. First class is free.",
+      "h1": "Dance Classes in Richmond, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/classes",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/teams",
+      "title": "Competitive Teams — Portal Dance Lab | Richmond, TX | Portal Dance Lab",
+      "description": "11x National Champions. Four competitive teams training at the highest level in Richmond, TX. Portal Dance Lab.",
+      "h1": "Portal Dance Lab Competitive Teams.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/teams",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/schedule",
+      "title": "Class Schedule — Portal Dance Lab | Richmond, TX | Portal Dance Lab",
+      "description": "Browse the full Portal Dance Lab class schedule. Hip hop, lyrical, technique, adult classes, and competitive team training in Richmond, TX. Book your spot today.",
+      "h1": "Class Schedule.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/schedule",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy Policy — Portal Dance Lab | Portal Dance Lab",
+      "description": "Privacy policy for Portal Dance Lab, Richmond TX.",
+      "h1": "Privacy Policy",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/privacy",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/richmond",
+      "title": "Dance Classes in Richmond, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Portal Dance Lab is Richmond's competitive dance studio. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, and adult classes. First class is free.",
+      "h1": "Dance Classes in Richmond, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/richmond",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/rosenberg",
+      "title": "Dance Classes Near Rosenberg, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Rosenberg, TX at Portal Dance Lab, just 5 minutes away in Richmond. 11x National Champions. All ages, all levels. First class is free.",
+      "h1": "Dance Classes Near Rosenberg, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/rosenberg",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/sugar-land",
+      "title": "Dance Classes Near Sugar Land, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Looking for dance classes near Sugar Land, TX? Portal Dance Lab in Richmond is less than 15 minutes away. 11x National Champions. Book a free trial class today.",
+      "h1": "Dance Classes Near Sugar Land, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/sugar-land",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/missouri-city",
+      "title": "Dance Classes Near Missouri City, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Missouri City, TX at Portal Dance Lab in Richmond. About 15 miles away. Competitive and recreational training for all ages. First class free.",
+      "h1": "Dance Classes Near Missouri City, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/missouri-city",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/stafford",
+      "title": "Dance Classes Near Stafford, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Stafford, TX at Portal Dance Lab in Richmond. 11x National Champions. Hip hop, jazz, contemporary, drill team prep, adult classes. First class free.",
+      "h1": "Dance Classes Near Stafford, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/stafford",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/katy",
+      "title": "Dance Classes Near Katy, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Katy, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive teams and recreational classes for all ages. First class free.",
+      "h1": "Dance Classes Near Katy, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/katy",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/fulshear",
+      "title": "Dance Classes Near Fulshear, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Fulshear, TX at Portal Dance Lab in Richmond. Less than 20 minutes away. Competitive teams and recreational classes for all ages. Book a free trial today.",
+      "h1": "Dance Classes Near Fulshear, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/fulshear",
+      "robots": "index,follow"
+    },
+    {
+      "path": "/locations/pearland",
+      "title": "Dance Classes Near Pearland, TX | Portal Dance Lab | Portal Dance Lab",
+      "description": "Dance classes near Pearland, TX at Portal Dance Lab in Richmond. 11x National Champions. Competitive and recreational training for all ages. Book a free trial today.",
+      "h1": "Dance Classes Near Pearland, TX.",
+      "canonical": null,
+      "url": "https://www.portaldancelab.com/locations/pearland",
+      "robots": "index,follow"
+    }
+  ]
+}
