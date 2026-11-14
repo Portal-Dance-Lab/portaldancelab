@@ -1519,3 +1519,10 @@ footer {
 }
 .odo-char { line-height: 1; }
 .stat-number .odo-char { font-size: 0.55em; padding-bottom: 0.08em; }
+
+/* Lock the page behind the open mobile menu (no background scrolling) */
+@media (max-width: 768px) {
+  html:has(.nav-menu[open]), body:has(.nav-menu[open]) { overflow: hidden; }
+  .nav-menu-panel { overscroll-behavior: contain; }
+  .gymmaster-wrapper .gmiframe { min-height: 900px !important; }
+}
