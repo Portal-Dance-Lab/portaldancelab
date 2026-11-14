@@ -71,7 +71,7 @@ export default function Quiz() {
   // Adults skip straight to a match; little ones skip the goal question.
   const steps = QUESTIONS.filter((q) => {
     if (q.key === "vibe") return answers.age !== "adult";
-    if (q.key === "goal") return answers.age === "kid" || answers.age === "teen";
+    if (q.key === "goal") return !answers.age || answers.age === "kid" || answers.age === "teen";
     return true;
   });
   const current = steps.find((q) => !(q.key in answers));
