@@ -1,6 +1,9 @@
 // LocalBusiness structured data for Google rich results + map pack eligibility.
 // Schema type: DanceSchool (subtype of LocalBusiness).
-// TODO: Agency to deliver a true 1200x630 crop of og-image for ideal social preview dimensions.
+// No aggregateRating: Google ignores self-served review markup on LocalBusiness,
+// and a hard-coded count goes stale.
+
+import { PHONE } from "../../content";
 
 export default function LocalBusinessJsonLd() {
   const schema = {
@@ -11,12 +14,12 @@ export default function LocalBusinessJsonLd() {
       "Richmond, TX's competitive dance studio. 11x National Champions. Competitive and recreational training for all ages — hip hop, jazz, contemporary, ballet, drill team prep, and adult classes.",
     url: "https://www.portaldancelab.com",
     logo: "https://www.portaldancelab.com/brand/pdl-logo-horizontal.svg",
-    image: "https://www.portaldancelab.com/assets/og-image.png",
-    telephone: "+12812292400",
+    image: "https://www.portaldancelab.com/assets/og-image-1200x630.jpg",
+    telephone: PHONE.tel,
     email: "info@portaldancelab.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "2441 Precinct Line Dr",
+      streetAddress: "2441 Precinct Line Rd",
       addressLocality: "Richmond",
       addressRegion: "TX",
       postalCode: "77406",
@@ -53,11 +56,6 @@ export default function LocalBusinessJsonLd() {
       "https://www.tiktok.com/@portaldancelab",
       "https://www.facebook.com/p/Portal-Dance-Lab-61554361072668/",
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "26",
-    },
     foundingDate: "2023",
     founder: [
       { "@type": "Person", name: "Andrew Ton" },

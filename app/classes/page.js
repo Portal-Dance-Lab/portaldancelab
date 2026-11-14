@@ -1,13 +1,16 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import { CLASSES, BOOKING_URL } from "../../content";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Classes & Programs — Portal Dance Lab | Richmond, TX",
+export const metadata = pageMetadata({
+  title: "Dance Classes & Programs",
   description:
     "Hip hop, jazz, contemporary, ballet, drill team prep, adult classes, and competitive team training in Richmond, TX. All ages, all levels. First class is free.",
-};
+  path: "/classes",
+});
 
 export default function ClassesPage() {
   return (
@@ -68,9 +71,11 @@ export default function ClassesPage() {
 
       {/* PHOTO STRIP */}
       <div className="classes-photo-strip">
-        <img
+        <Image
           src="/assets/photo-7.png"
           alt="Portal Dance Lab dancers performing on stage"
+          fill
+          sizes="100vw"
           className="classes-photo-img"
         />
         <div className="classes-photo-overlay">

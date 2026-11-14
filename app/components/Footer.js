@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FOOTER, SOCIALS, BOOKING_URL } from "../../content";
 
@@ -31,10 +32,12 @@ export default function Footer() {
           {/* LEFT — brand + contact */}
           <div className="footer-brand">
             <Link href="/">
-              <img
+              <Image
                 src="/brand/pdl-logo-white-transparent.png"
                 alt="Portal Dance Lab"
-                style={{ height: 40, marginBottom: 16, display: "block" }}
+                width={39}
+                height={40}
+                style={{ marginBottom: 16, display: "block" }}
               />
             </Link>
             <p className="footer-brand-desc">{FOOTER.desc}</p>
@@ -42,6 +45,9 @@ export default function Footer() {
             <div className="footer-contact">
               <p className="footer-contact-item">{FOOTER.address}</p>
               <p className="footer-contact-item">{FOOTER.hours}</p>
+              <a href={`tel:${FOOTER.phone.tel}`} className="footer-contact-item footer-contact-link">
+                {FOOTER.phone.display}
+              </a>
               <a href={`mailto:${FOOTER.email}`} className="footer-contact-item footer-contact-link">
                 {FOOTER.email}
               </a>

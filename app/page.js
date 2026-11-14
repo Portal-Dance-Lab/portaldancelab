@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import LocalBusinessJsonLd from "./components/LocalBusinessJsonLd";
@@ -11,6 +12,15 @@ import {
   REVIEWS,
   CONTACT,
 } from "../content";
+import { pageMetadata, TITLE_SUFFIX } from "./lib/seo";
+
+export const metadata = pageMetadata({
+  // Root page shares the layout's segment, so the title template does not apply here.
+  title: { absolute: `Competitive Dance Studio | ${TITLE_SUFFIX}` },
+  description:
+    "11x National Champions. Competitive and recreational dance training for all ages in Richmond, TX. Hip hop, ballet, contemporary, jazz, drill team prep, and adult classes. Book your free first class today.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -20,7 +30,16 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg">
+          <Image
+            src="/assets/mkd_1274_fixed.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="hero-bg-img"
+          />
+        </div>
         <div className="hero-overlay" />
         <div className="hero-stars" />
         <div className="portal-ring" />
@@ -73,9 +92,11 @@ export default function Home() {
 
       {/* HOMEPAGE PHOTO STRIP */}
       <div className="home-photo-strip">
-        <img
+        <Image
           src="/assets/IMG_4684.jpeg"
           alt="Portal Dance Lab National Champions celebrating at The Dance Worlds"
+          fill
+          sizes="100vw"
           className="home-photo-img"
         />
         <div className="home-photo-overlay">
@@ -124,7 +145,12 @@ export default function Home() {
             </a>
           </div>
           <div className="trial-photo">
-            <img src="/assets/competition-shot-fixed.jpg" alt="PDL dancer performing on stage" />
+            <Image
+              src="/assets/competition-shot-fixed.jpg"
+              alt="PDL dancer performing on stage"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
             <div className="trial-photo-overlay" />
             <div className="trial-photo-badge">
               <div className="badge-stat">{TRIAL.badgeStat}</div>
@@ -166,6 +192,10 @@ export default function Home() {
               <a href={`mailto:${CONTACT.email}`} className="contact-item contact-email">
                 <span className="contact-icon">✉</span>
                 <span>{CONTACT.email}</span>
+              </a>
+              <a href={`tel:${CONTACT.phone.tel}`} className="contact-item contact-email">
+                <span className="contact-icon">☎</span>
+                <span>{CONTACT.phone.display}</span>
               </a>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>

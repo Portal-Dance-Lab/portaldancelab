@@ -1,10 +1,13 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Privacy Policy — Portal Dance Lab",
-  description: "Privacy policy for Portal Dance Lab, Richmond TX.",
-};
+export const metadata = pageMetadata({
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for Portal Dance Lab, Richmond TX.",
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (
@@ -92,7 +95,7 @@ export default function PrivacyPage() {
             <h2>Contact</h2>
             <p>Questions about this policy? Reach us at:</p>
             <p><strong>Portal Dance Lab</strong><br />
-            2441 Precinct Line Dr, Richmond, TX 77406<br />
+            2441 Precinct Line Rd, Richmond, TX 77406<br />
             <a href="mailto:info@portaldancelab.com">info@portaldancelab.com</a></p>
           </div>
 
