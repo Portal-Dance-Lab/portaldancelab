@@ -47,6 +47,7 @@ export default function Nav() {
               </a>
             ))}
           </div>
+          <a href="/find-your-class" className="nav-menu-quiz">Not sure where to start? Take the 30-second quiz &rarr;</a>
           <div className="nav-menu-foot">
             <a href={BOOKING_URL} className="btn-primary nav-menu-cta" target="_blank" rel="noopener noreferrer">
               Book a Free Trial Class
