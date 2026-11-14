@@ -1316,34 +1316,6 @@ footer {
 .nav-menu-contact a { color: var(--cobalt-light); font-weight: 600; font-size: 15px; text-decoration: none; }
 .nav-menu-address { font-size: 13px; color: var(--muted); }
 
-/* Find your class cards */
-.class-cards { background: var(--navy); }
-.class-cards-sub { color: var(--muted); font-size: 16px; margin-top: 12px; }
-.class-cards-grid {
-  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 32px;
-}
-.class-card {
-  position: relative; height: 280px; border-radius: 12px; overflow: hidden;
-  display: flex; flex-direction: column; justify-content: flex-end; padding: 14px;
-  text-decoration: none; color: var(--white); background: var(--navy-mid);
-  transition: transform 0.2s;
-}
-.class-card:hover { transform: translateY(-3px); }
-.class-card::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(9,21,36,0.95), rgba(9,21,36,0) 65%);
-}
-.class-card--plain::after { display: none; }
-.class-card-img { object-fit: cover; object-position: center 25%; }
-.class-card-name, .class-card-meta { position: relative; z-index: 1; }
-.class-card-name {
-  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900;
-  font-size: 26px; line-height: 1; text-transform: uppercase;
-}
-.class-card-meta { font-size: 12px; color: #D1D5DB; margin-top: 4px; }
-.class-cards-price { margin-top: 24px; font-size: 15px; color: var(--muted); }
-.class-cards-price a { color: var(--cobalt-light); font-weight: 600; }
-
 /* Trial steps */
 .trial-steps-title {
   font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
@@ -1384,10 +1356,6 @@ footer {
   .btn-lg { width: 100%; padding: 16px 20px; }
   .hero-note { font-size: 13px; }
 
-  .class-cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .class-card { height: 200px; }
-  .class-card:last-child { grid-column: 1 / -1; height: 120px; }
-  .class-card-name { font-size: 22px; }
 
   .sticky-book {
     display: flex; justify-content: center;
@@ -1499,4 +1467,66 @@ footer {
   .quiz-q { font-size: 34px; }
   .quiz-result-name { font-size: 44px; }
   .quiz-cta { display: block; }
+}
+
+/* Homepage: proof-first */
+.home-proof { background: var(--navy-mid); border-top: 1px solid var(--edge); padding-left: 0; padding-right: 0; }
+.home-proof .section-inner { padding: 0 48px; }
+.home-proof-eyebrow, .hardware-eyebrow { color: var(--gold); }
+.home-proof-rating { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+.home-proof-score {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 64px; line-height: 1;
+}
+.home-proof-stars { display: flex; flex-direction: column; gap: 2px; color: var(--gold); font-size: 20px; letter-spacing: 2px; }
+.home-proof-note { color: #C2C8D0; font-size: 14px; letter-spacing: 0; }
+.home-proof-track {
+  max-width: 1200px; margin: 24px auto 0; padding: 0 48px;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+}
+.home-proof-card {
+  background: var(--navy-card); border: 1px solid var(--edge); border-radius: 14px; padding: 22px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
+}
+.home-proof-card blockquote { font-size: 17px; line-height: 1.5; }
+.home-proof-card figcaption { font-size: 13px; color: var(--muted); }
+.home-proof-swipe { display: none; }
+
+.hardware { background: var(--navy); }
+.hardware-photos {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; margin-top: 28px;
+}
+.hardware-photo { position: relative; height: 300px; border-radius: 12px; overflow: hidden; }
+.hardware-photo img { object-fit: cover; object-position: center 30%; }
+.hardware-stats {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 28px; text-align: center;
+}
+.hardware-stats div { display: flex; flex-direction: column; }
+.hardware-num {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 52px; line-height: 1;
+}
+.hardware-label { font-size: 13px; color: var(--muted); }
+.hardware-competed { margin-top: 20px; text-align: center; font-size: 14px; color: var(--muted); }
+
+.trial-simple { max-width: 640px; }
+.trial-simple-body { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 14px 0 22px; }
+.trial-simple .trial-steps-title { display: none; }
+
+@media (max-width: 768px) {
+  .home-proof .section-inner { padding: 0 20px; }
+  .home-proof-score { font-size: 52px; }
+  .home-proof-track {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px;
+    padding: 0 20px 8px; margin-top: 18px; -webkit-overflow-scrolling: touch;
+  }
+  .home-proof-card { flex: none; width: 82%; scroll-snap-align: start; }
+  .home-proof-card blockquote { font-size: 16px; }
+  .home-proof-swipe { display: block; padding: 8px 20px 0; font-size: 13px; color: var(--muted); }
+
+  .hardware-photos { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 20px; }
+  .hardware-photo { height: 150px; }
+  .hardware-photo--wide { grid-column: 1 / -1; height: 210px; }
+  .hardware-stats { gap: 6px; margin-top: 20px; }
+  .hardware-num { font-size: 34px; }
+  .hardware-label { font-size: 11px; }
+  .hardware-competed { font-size: 13px; }
 }

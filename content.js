@@ -33,23 +33,39 @@ export const HERO = {
   trust: [
     { number: "11×", label: "National Champions" },
     { number: "2×", label: "Worlds & Summit Finalists" },
-    { number: "100%", label: "Seniors College Bound" },
+    { number: "#1", label: "Voted Best Studio in Richmond" },
   ],
 };
 
-// Homepage "find your class" cards. href points at a class page or /classes.
-export const CLASS_CARDS = {
-  eyebrow: "Find Your Class",
-  title: "Every Age. Every Level.",
-  sub: "Never danced? Perfect. Every class welcomes beginners.",
-  priceNote: "First class free · Memberships from $100/mo",
-  cards: [
-    { name: "Kids", meta: "Ages 3 to 10", href: "/classes/kids", image: "/assets/8.png" },
-    { name: "Hip Hop", meta: "Ages 3 to Adult", href: "/classes/hip-hop", image: "/assets/photo-groove.jpg" },
-    { name: "Drill Team Prep", meta: "Middle and high school", href: "/classes/drill-team-prep", image: "/assets/091343H-16704-ajm_6004.jpg" },
-    { name: "Jazz & Contemporary", meta: "Plus lyrical, ballet, technique", href: "/classes", image: "/assets/091316H-16704-ajm_5976.jpg" },
-    { name: "Adult Classes", meta: "18 and up", href: "/classes", image: null },
+// Homepage social proof (reviews band + hardware). Review excerpts are
+// trimmed from REVIEWS.cards; the full quotes still run on the city pages.
+export const HOME_PROOF = {
+  eyebrow: "What Families Say",
+  rating: "5.0",
+  ratingNote: "on Google",
+  swipeNote: "Swipe for more",
+  reviews: [
+    { quote: "This is our first year in competitive dance and we love it. My daughter has learned so much from her dance teachers and always wants to be there.", author: "Erica Rosales, Parent" },
+    { quote: "Hands down the best dance studio in town. Whether you're a beginner or an experienced dancer, every class feels tailored to your individual progress.", author: "Rhea Athilat, Google Review" },
+    { quote: "The dancers are all so welcoming and it is overall a great environment for you and your children. This is the place to be.", author: "Cameron Knight, MonStarz" },
   ],
+};
+
+export const HARDWARE = {
+  eyebrow: "SZN II Results",
+  title: "The Hardware.",
+  photos: [
+    { src: "/assets/IMG_4684.jpeg", alt: "Portal Dance Lab National Champions celebrating at The Dance Worlds" },
+    { src: "/assets/photo-encore.jpg", alt: "Portal Dance Lab team holding Encore Championships banner" },
+    { src: "/assets/6.png", alt: "Portal Dance Lab MonStarz competing at nationals" },
+  ],
+  stats: [
+    { number: "11×", label: "National Titles" },
+    { number: "7", label: "Competitions" },
+    { number: "5", label: "States" },
+    { number: "100%", label: "College Bound" },
+  ],
+  competedAt: "Competed at The Dance Worlds · The Summit · Encore · The Groove · Super Nationals",
 };
 
 export const STATS = [
@@ -94,6 +110,7 @@ export const TRIAL = {
   eyebrow: "No Commitment Required",
   title: "First Class Is On Us.",
   body: "Come see what Portal is about before you sign a thing. One free trial class, any style, any age group. If it's not a fit, no pressure. If it is, welcome home.",
+  bodyShort: "Come see what Portal is about before you sign a thing. If it's not a fit, no pressure. If it is, welcome home.",
   checklist: [
     "Any age group, beginner to advanced",
     "Hip hop, lyrical, technique, and more. Try what fits.",
@@ -136,7 +153,7 @@ export const REVIEWS = {
 // ─────────────────────────────────────────────
 // MERCH FLASH SALE TEASER
 // Shows a hero badge + a countdown banner on the homepage.
-// - dropDate empty    → "Dropping soon" tease, CTA = get first dibs
+// - dropDate empty    → nothing shows (set a date to start the teaser)
 // - before dropDate   → live countdown to the drop
 // - dropDate → endDate → "Live now" + countdown to close, CTA = saleUrl
 // - after endDate     → everything disappears on its own. No cleanup needed.

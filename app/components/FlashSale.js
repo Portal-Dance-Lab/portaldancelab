@@ -41,7 +41,7 @@ function split(ms) {
 
 export function FlashSaleBadge() {
   const { phase } = useFlashSale();
-  if (phase === "over") return null;
+  if (phase === "over" || !FLASH_SALE.dropDate) return null;
   const b = FLASH_SALE.badge;
   return (
     <a href="#merch" className="hero-badge hero-badge-link">
@@ -56,7 +56,7 @@ export function FlashSaleBadge() {
 
 export function FlashSaleBanner() {
   const { phase, left } = useFlashSale();
-  if (phase === "over") return null;
+  if (phase === "over" || !FLASH_SALE.dropDate) return null;
 
   const fs = FLASH_SALE;
   const live = phase === "live" && fs.saleUrl;
