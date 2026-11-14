@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BOOKING_URL, PHONE, CONTACT } from "../../content";
+import { BOOKING_URL, PHONE, CONTACT, HERO } from "../../content";
 
 const LINKS = [
   { href: "/classes", label: "Classes", note: "Ages 3 to Adult" },
@@ -47,7 +47,9 @@ export default function Nav() {
               </a>
             ))}
           </div>
-          <a href="/find-your-class" className="nav-menu-quiz">Not sure where to start? Take the 30-second quiz &rarr;</a>
+          {HERO.quizEnabled && (
+            <a href="/find-your-class" className="nav-menu-quiz">{HERO.quizCta} &rarr;</a>
+          )}
           <div className="nav-menu-foot">
             <a href={BOOKING_URL} className="btn-primary nav-menu-cta" target="_blank" rel="noopener noreferrer">
               Book a Free Trial Class

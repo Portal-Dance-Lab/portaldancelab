@@ -2,7 +2,7 @@ import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
-import { CLASSES, BOOKING_URL, CLASS_PAGES } from "../../content";
+import { CLASSES, BOOKING_URL, CLASS_PAGES, HERO } from "../../content";
 import { pageMetadata } from "../lib/seo";
 
 export const metadata = pageMetadata({
@@ -35,7 +35,7 @@ export default function ClassesPage() {
             {CLASS_PAGES.map((c) => (
               <Link key={c.slug} href={`/classes/${c.slug}`}>{c.h1.replace(/ in Richmond, TX$/, "")}</Link>
             ))}
-            <Link href="/find-your-class">Not sure? Take the quiz</Link>
+            {HERO.quizEnabled && <Link href="/find-your-class">Not sure? Take the quiz</Link>}
           </nav>
         </div>
       </div>

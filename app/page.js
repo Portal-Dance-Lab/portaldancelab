@@ -63,7 +63,6 @@ export default function Home() {
             )}
           </p>
           <h1 className="hero-h1">{HERO.h1}</h1>
-          <p className="hero-sub">{HERO.sub}</p>
           <ul className="hero-trust">
             {HERO.trust.map((t) => (
               <li key={t.label}>
@@ -82,8 +81,12 @@ export default function Home() {
           </div>
           <p className="hero-note">
             {HERO.ctaNote}
-            <span aria-hidden="true"> · </span>
-            <a href="/find-your-class">{HERO.quizCta}</a>
+            {HERO.quizEnabled && (
+              <>
+                <span aria-hidden="true"> · </span>
+                <a href="/find-your-class">{HERO.quizCta}</a>
+              </>
+            )}
           </p>
           <FlashSaleBadge />
         </div>
@@ -124,7 +127,7 @@ export default function Home() {
         <div className="section-inner">
           <p className="section-eyebrow">{CLASS_CARDS.eyebrow}</p>
           <h2 className="section-title">{CLASS_CARDS.title}</h2>
-          <p className="class-cards-sub">{CLASS_CARDS.sub}</p>
+          <p className="class-cards-sub">{HERO.sub} {CLASS_CARDS.sub}</p>
           <div className="class-cards-grid">
             {CLASS_CARDS.cards.map((c) => (
               <a key={c.name} href={c.href} className={`class-card${c.image ? "" : " class-card--plain"}`}>

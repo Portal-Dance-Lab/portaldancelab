@@ -31,10 +31,6 @@ export default function StickyBookBar() {
 
   return (
     <div className={`sticky-book${visible ? " is-visible" : ""}`} aria-hidden={!visible}>
-      <div className="sticky-book-copy">
-        <strong>First class free</strong>
-        <span>Ages 3 to Adult</span>
-      </div>
       <a
         href={BOOKING_URL}
         className="btn-primary sticky-book-cta"
@@ -42,7 +38,7 @@ export default function StickyBookBar() {
         rel="noopener noreferrer"
         tabIndex={visible ? 0 : -1}
       >
-        Book Free Trial
+        Book a Free Trial
       </a>
     </div>
   );

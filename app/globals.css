@@ -1368,11 +1368,13 @@ footer {
 @media (max-width: 768px) {
   .nav-links a.nav-cta { display: none; }
   .nav-menu { display: block; }
-  .hero-bg { filter: brightness(0.75); }
+  .hero-bg { filter: brightness(0.85); bottom: auto; height: 62%; }
+  .hero-bg-img { object-position: center 20%; }
   .hero-overlay {
-    background: linear-gradient(to bottom, rgba(9,21,36,0.15) 0%, rgba(9,21,36,0.6) 40%, rgba(9,21,36,0.97) 75%);
+    background: linear-gradient(to bottom, rgba(9,21,36,0) 0%, rgba(9,21,36,0) 35%, rgba(9,21,36,0.85) 55%, var(--navy) 64%);
   }
-  .hero-title { font-size: 56px; margin-bottom: 14px; }
+  .portal-ring { display: none; }
+  .hero-title { font-size: 48px; margin-bottom: 12px; }
   .hero-h1 { font-size: 18px; }
   .hero-sub { font-size: 14px; margin-bottom: 18px; }
   .hero-trust { gap: 8px; margin-bottom: 20px; }
@@ -1388,17 +1390,16 @@ footer {
   .class-card-name { font-size: 22px; }
 
   .sticky-book {
-    display: flex; align-items: center; gap: 12px;
+    display: flex; justify-content: center;
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
-    padding: 10px 16px calc(12px + env(safe-area-inset-bottom));
-    background: rgba(9,21,36,0.97); border-top: 1px solid var(--edge);
+    padding: 24px 16px calc(14px + env(safe-area-inset-bottom));
+    background: linear-gradient(to top, rgba(9,21,36,0.9) 40%, rgba(9,21,36,0));
+    pointer-events: none;
     transform: translateY(110%); transition: transform 0.25s ease;
   }
+  .sticky-book .sticky-book-cta { pointer-events: auto; box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
   .sticky-book.is-visible { transform: translateY(0); }
-  .sticky-book-copy { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
-  .sticky-book-copy strong { font-size: 15px; }
-  .sticky-book-copy span { font-size: 12px; color: var(--muted); }
-  .sticky-book-cta { width: auto; padding: 13px 20px; font-size: 18px; border-radius: 10px; }
+  .sticky-book-cta { width: auto; padding: 14px 36px; font-size: 18px; border-radius: 999px; }
 }
 
 /* Class style pages */

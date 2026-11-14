@@ -1,7 +1,8 @@
+import { notFound } from "next/navigation";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Quiz from "./Quiz";
-import { CLASS_PAGES } from "../../content";
+import { CLASS_PAGES, HERO } from "../../content";
 import { pageMetadata } from "../lib/seo";
 
 // Shareable quiz (Instagram bio, flyers). Kept out of search results: it is
@@ -16,6 +17,7 @@ export const metadata = {
 };
 
 export default function FindYourClassPage() {
+  if (!HERO.quizEnabled) notFound();
   return (
     <>
       <Nav />

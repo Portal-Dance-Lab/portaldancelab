@@ -28,6 +28,8 @@ export const HERO = {
   secondaryCta: "See Our Teams",
   ctaNote: "First class free · No card required",
   quizCta: "Not sure where to start? Take the 30-second quiz",
+  // Flip to true once the quiz questions and class matches are signed off.
+  quizEnabled: false,
   trust: [
     { number: "11×", label: "National Champions" },
     { number: "2×", label: "Worlds & Summit Finalists" },
