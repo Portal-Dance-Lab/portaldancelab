@@ -1519,3 +1519,81 @@ footer {
 }
 .odo-char { line-height: 1; }
 .stat-number .odo-char { font-size: 0.55em; padding-bottom: 0.08em; }
+
+/* Lock the page behind the open mobile menu (no background scrolling) */
+@media (max-width: 768px) {
+  html:has(.nav-menu[open]), body:has(.nav-menu[open]) { overflow: hidden; }
+  .nav-menu-panel { overscroll-behavior: contain; }
+  .gymmaster-wrapper .gmiframe { min-height: 900px !important; }
+}
+
+/* Schedule: pricing picker */
+.pp { max-width: 640px; margin-top: 28px; display: flex; flex-direction: column; gap: 18px; }
+.pp-free {
+  background: var(--coral); border-radius: 12px; padding: 14px 18px;
+  display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 16px; color: #FFFFFF;
+}
+.pp-free strong { font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 28px; }
+.pp-tabs {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--navy-card); border: 1px solid var(--edge); border-radius: 999px; padding: 4px;
+}
+.pp-tab {
+  height: 42px; border: none; border-radius: 999px; background: none; color: #C2C8D0; cursor: pointer;
+  font: 700 14px var(--font-dm-sans), 'DM Sans', sans-serif;
+}
+.pp-tab.is-active { background: var(--white); color: var(--navy); }
+.pp-question { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+.pp-options { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.pp-option {
+  min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer;
+  background: var(--navy-card); color: var(--white); border: 1px solid #2A3B57;
+  font: 600 14px var(--font-dm-sans), 'DM Sans', sans-serif;
+}
+.pp-option.is-active { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.pp-plans { display: flex; flex-direction: column; gap: 16px; }
+.pp-plan {
+  position: relative; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: var(--navy-card); border: 1px solid var(--edge); border-radius: 16px; padding: 20px;
+}
+.pp-plan.is-mine { background: var(--navy-mid); border: 2px solid var(--gold); }
+.pp-badges { position: absolute; top: -12px; left: 16px; display: flex; gap: 6px; }
+.pp-badge {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px; color: var(--navy);
+}
+.pp-badge--mine { background: var(--gold); }
+.pp-badge--best { background: var(--white); }
+.pp-plan-copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.pp-plan-name { font-size: 16px; font-weight: 700; }
+.pp-plan-detail { font-size: 13px; color: var(--muted); }
+.pp-plan-price { display: flex; flex-direction: column; text-align: right; flex: none; }
+.pp-plan-num {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 44px; line-height: 0.9;
+}
+.pp-plan.is-mine .pp-plan-num { color: var(--gold); }
+.pp-plan-unit { font-size: 12px; color: var(--muted); }
+.pp-comp { background: var(--navy-mid); border: 2px solid var(--gold); border-radius: 16px; overflow: hidden; }
+.pp-comp-photo { position: relative; height: 200px; }
+.pp-comp-photo img { object-fit: cover; object-position: center 30%; }
+.pp-comp-body { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.pp-comp-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+.pp-comp-title {
+  font-family: var(--font-barlow), 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 36px; line-height: 0.95; text-transform: uppercase;
+}
+.pp-comp-text { font-size: 15px; line-height: 1.55; color: #D1D5DB; }
+.pp-comp-teaser {
+  font-size: 14px; line-height: 1.5; background: var(--navy-card); border: 1px solid #2A3B57; border-radius: 10px; padding: 10px 12px;
+}
+.pp-comp-cta {
+  margin-top: 6px; height: 50px; display: flex; align-items: center; justify-content: center;
+  background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 10px; font-weight: 800; font-size: 16px;
+}
+.pp-comp-link { text-align: center; font-size: 14px; font-weight: 600; color: var(--cobalt-light); padding: 6px 0; }
+.pp-foot { font-size: 13px; line-height: 1.5; color: var(--muted); }
+.pp-cta { text-align: center; }
+@media (max-width: 768px) {
+  .pp-plan { padding: 18px 16px; }
+  .pp-plan-num { font-size: 38px; }
+  .pp-cta { display: block; }
+}

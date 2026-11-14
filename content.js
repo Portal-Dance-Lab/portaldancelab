@@ -443,6 +443,64 @@ export const PRICING = {
   discounts: "Discounts available for educators, first responders, and military. Unlimited referral bonus.",
 };
 
+// Schedule-page pricing picker. Plans point at PRICING item names, so the
+// monthly prices live in one place; per-class = monthly / (perWeek × 4),
+// the same 4-weeks-a-month math as "under $17 a class".
+export const PRICING_PICKER = {
+  freeLabel: "Your first class",
+  freeValue: "FREE",
+  tabs: [
+    {
+      key: "classes",
+      label: "Classes",
+      question: "How many times a week will you dance?",
+      defaultPick: "three",
+      options: [
+        { key: "once", label: "1×" },
+        { key: "twice", label: "2×" },
+        { key: "three", label: "3+" },
+        { key: "drop", label: "Here and there" },
+      ],
+      plans: [
+        { key: "three", item: "Unlimited Classes", perWeek: 3, detail: "based on 3 a week", best: true },
+        { key: "twice", item: "2 Classes / Week", perWeek: 2, detail: "any style" },
+        { key: "once", item: "1 Class / Week", perWeek: 1, detail: "bonus class in 5-week months" },
+        { key: "drop", item: "Single Class", name: "Pay As You Go", detail: "Single $25 · 5-pack $125 · 10-pack $250" },
+      ],
+    },
+    {
+      key: "drill",
+      label: "Drill Team",
+      question: "How many times a week will you train?",
+      defaultPick: "two",
+      options: [
+        { key: "two", label: "2+" },
+        { key: "drop", label: "Here and there" },
+      ],
+      plans: [
+        { key: "two", item: "Drill Team Unlimited", perWeek: 2, detail: "based on 2 a week", best: true },
+        { key: "drop", item: "Single Class", name: "Pay As You Go", detail: "Single $25 · 5-pack $125 · 10-pack $250" },
+      ],
+    },
+    {
+      key: "comp",
+      label: "Comp Team",
+      comp: {
+        eyebrow: "Competitive Teams · SZN IV",
+        title: "Want to Compete?",
+        body: "Auditions for next season are announced at the end of SZN III, and anyone can try out.",
+        teaser: "Be on the lookout for audition and comp prep packages this spring.",
+        cta: "Get Audition Updates",
+        ctaHref: "mailto:info@portaldancelab.com?subject=SZN%20IV%20audition%20updates",
+        link: "Meet our competitive teams",
+        linkHref: "/teams",
+        image: "/assets/6.png",
+        imageAlt: "Portal Dance Lab MonStarz competing at nationals",
+      },
+    },
+  ],
+};
+
 export const SCHEDULE = {
   eyebrow: "Richmond, TX · Portal Dance Lab",
   title: "Class Schedule.",
