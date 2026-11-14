@@ -3,7 +3,9 @@
 // app/page.js (same segment as the layout) or to { absolute } titles.
 // Usage: node scripts/seo-baseline.mjs > seo/baseline-YYYY-MM-DD.json
 import { existsSync, readFileSync } from "node:fs";
-import { CITIES, ABOUT, CLASSES, TEAMS, SCHEDULE, HERO } from "../content.js";
+import * as C from "../content.js";
+const { CITIES, ABOUT, CLASSES, TEAMS, SCHEDULE, HERO } = C;
+const CLASS_PAGES = C.CLASS_PAGES ?? [];
 
 const BASE = "https://www.portaldancelab.com";
 const read = (rel) => readFileSync(new URL(`../${rel}`, import.meta.url), "utf8");
@@ -30,7 +32,7 @@ function homePage() {
   const abs = src.match(/absolute:\s*`([^`]+)`/)?.[1];
   const title = abs ? abs.replace("${TITLE_SUFFIX}", SUFFIX) : ROOT_TITLE;
   const description = descOf(src) ?? descOf(layout);
-  return { path: "/", title, description, h1: HERO.headline.join(" "), canonical: canonicalOf(src) };
+  return { path: "/", title, description, h1: HERO.h1 ?? HERO.headline.join(" "), canonical: canonicalOf(src) };
 }
 
 const citySrc = read("app/locations/[city]/page.js");
@@ -44,6 +46,13 @@ const pages = [
   staticPage("/teams", "teams/page.js", TEAMS.title),
   staticPage("/schedule", "schedule/page.js", SCHEDULE.title),
   staticPage("/privacy", "privacy/page.js", "Privacy Policy"),
+  ...CLASS_PAGES.map((c) => ({
+    path: `/classes/${c.slug}`,
+    title: applyTemplate(c.title),
+    description: c.metaDesc,
+    h1: c.h1,
+    canonical: `/classes/${c.slug}`,
+  })),
   ...CITIES.map((c) => ({
     path: `/locations/${c.slug}`,
     title: cityAbsolute ? c.metaTitle : applyTemplate(c.metaTitle),

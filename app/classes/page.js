@@ -2,7 +2,7 @@ import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
-import { CLASSES, BOOKING_URL } from "../../content";
+import { CLASSES, BOOKING_URL, CLASS_PAGES, HERO } from "../../content";
 import { pageMetadata } from "../lib/seo";
 
 export const metadata = pageMetadata({
@@ -31,6 +31,12 @@ export default function ClassesPage() {
               View Full Schedule &rarr;
             </Link>
           </div>
+          <nav aria-label="Class styles" className="class-explore">
+            {CLASS_PAGES.map((c) => (
+              <Link key={c.slug} href={`/classes/${c.slug}`}>{c.h1.replace(/ in Richmond, TX$/, "")}</Link>
+            ))}
+            {HERO.quizEnabled && <Link href="/find-your-class">Not sure? Take the quiz</Link>}
+          </nav>
         </div>
       </div>
 
@@ -116,6 +122,9 @@ export default function ClassesPage() {
               </ul>
               <Link href="/schedule" className="btn-primary" style={{ marginTop: 32, display: "inline-block" }}>
                 {CLASSES.drillTeam.cta}
+              </Link>
+              <Link href="/classes/drill-team-prep" className="btn-ghost" style={{ marginTop: 16 }}>
+                More about drill team prep &rarr;
               </Link>
             </div>
             <div className="drill-badge">

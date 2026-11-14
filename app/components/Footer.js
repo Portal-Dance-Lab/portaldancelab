@@ -75,6 +75,9 @@ export default function Footer() {
             <nav className="footer-links" aria-label="Footer navigation">
               <Link href="/" className="footer-nav-link">Home</Link>
               <Link href="/classes" className="footer-nav-link">Classes</Link>
+              <Link href="/classes/kids" className="footer-nav-link">Kids Classes</Link>
+              <Link href="/classes/hip-hop" className="footer-nav-link">Hip Hop</Link>
+              <Link href="/classes/drill-team-prep" className="footer-nav-link">Drill Team Prep</Link>
               <Link href="/teams" className="footer-nav-link">Teams</Link>
               <Link href="/schedule" className="footer-nav-link">Schedule</Link>
               <Link href="/about" className="footer-nav-link">About</Link>

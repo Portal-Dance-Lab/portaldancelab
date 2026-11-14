@@ -1,4 +1,4 @@
-import { CITIES } from "../content";
+import { CITIES, CLASS_PAGES } from "../content";
 
 const BASE = "https://www.portaldancelab.com";
 
@@ -21,5 +21,12 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  return [...corePages, ...cityPages];
+  const classPages = CLASS_PAGES.map((c) => ({
+    url: `${BASE}/classes/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...corePages, ...classPages, ...cityPages];
 }
