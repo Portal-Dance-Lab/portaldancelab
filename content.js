@@ -26,7 +26,7 @@ export const HERO = {
   sub: "Richmond's competitive dance studio. 11x National Champions. 4 teams. Every level - from your kid's first class to the national stage.",
   primaryCta: "Book a Free Trial Class",
   secondaryCta: "See Our Teams",
-  ctaNote: "First class free · No card required",
+  ctaNote: "First class free · Ages 3 to Adult · No card required",
   quizCta: "Not sure where to start? Take the 30-second quiz",
   // Flip to true once the quiz questions and class matches are signed off.
   quizEnabled: false,

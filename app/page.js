@@ -46,7 +46,6 @@ export default function Home() {
         <div className="portal-ring" />
         <div className="hero-glow" />
         <div className="hero-content">
-          <p className="hero-eyebrow">{HERO.eyebrow}</p>
           <p className="hero-title">
             {HERO.headline.map((line, i) =>
               line === HERO.accentLine ? (
