@@ -66,7 +66,7 @@ export default function TeamsPage() {
               </div>
             ))}
           </div>
-
+          <p className="teams-solos">{TEAMS.solos}</p>
         </div>
       </section>
 
