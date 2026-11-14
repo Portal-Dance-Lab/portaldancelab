@@ -176,6 +176,10 @@ export default function Home() {
                 <span className="contact-icon">✉</span>
                 <span>{CONTACT.email}</span>
               </a>
+              <a href={`tel:${CONTACT.phone.tel}`} className="contact-item contact-email">
+                <span className="contact-icon">☎</span>
+                <span>{CONTACT.phone.display}</span>
+              </a>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
                 <span>{CONTACT.address}</span>

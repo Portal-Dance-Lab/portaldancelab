@@ -9,6 +9,9 @@ export const SCHEDULE_EMBED_URL =
 export const BOOKING_URL =
   "https://portaldancelab.gymmasteronline.com/portal/quick/signup/8099d2e21f40bebaedfe54280ec570f5";
 
+// Must match the Google Business Profile exactly (NAP consistency).
+export const PHONE = { display: "(281) 229-2400", tel: "+12812292400" };
+
 export const NAV = {
   links: ["Classes", "Teams", "Schedule", "About"],
   cta: "Book a Free Trial",
@@ -134,7 +137,8 @@ export const CONTACT = {
   eyebrow: "Get In Touch",
   title: "Questions? We're Fast.",
   email: "info@portaldancelab.com",
-  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  phone: PHONE,
+  address: "2441 Precinct Line Rd, Richmond, TX 77406",
   hours: "Mon–Fri: 4PM–9PM · Sat: 9AM–2PM",
   cta: "Send Us a Message",
 };
@@ -421,7 +425,7 @@ export const CITIES = [
     headline: "Dance Classes in Richmond, TX.",
     sub: "This is home. We train Richmond dancers from their first class all the way to the national stage.",
     paras: [
-      "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Dr. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
+      "Portal Dance Lab is Richmond's competitive dance home, right here at 2441 Precinct Line Rd. We opened in 2023 and in two seasons our teams have earned 11 national titles. That pace doesn't happen by accident.",
       "We train dancers from age 3 through adult across hip hop, jazz, contemporary, lyrical, ballet, and drill team prep. Recreational classes are open enrollment: no audition, no long-term commitment. Competitive team spots are earned through auditions.",
       "Fort Bend County has serious drill team culture, and we're built for it. Our drill team prep program is designed around UIL and TAPPS standards. If your student is prepping for a FBISD tryout, this is the place.",
     ],
@@ -541,8 +545,9 @@ export const SOCIALS = [
 
 export const FOOTER = {
   desc: "Richmond, TX's competitive dance home. Training champions from Mini to Senior since 2023.",
-  address: "2441 Precinct Line Dr, Richmond, TX 77406",
+  address: "2441 Precinct Line Rd, Richmond, TX 77406",
   hours: "Mon – Fri: 4PM – 9PM · Sat: 9AM – 2PM",
+  phone: PHONE,
   email: "info@portaldancelab.com",
   legal: "© 2026 Portal Dance Lab · Richmond, TX",
   domain: "portaldancelab.com",

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
-import { CITIES, BOOKING_URL, REVIEWS } from "../../../content";
+import { CITIES, BOOKING_URL, REVIEWS, PHONE } from "../../../content";
 import { pageMetadata } from "../../lib/seo";
 
 export async function generateStaticParams() {
@@ -57,7 +57,7 @@ export default function CityPage({ params }) {
           <aside className="city-aside">
             <div className="city-aside-card">
               <p className="city-aside-label">Studio Location</p>
-              <p className="city-aside-value">2441 Precinct Line Dr<br />Richmond, TX 77406</p>
+              <p className="city-aside-value">2441 Precinct Line Rd<br />Richmond, TX 77406<br /><a href={`tel:${PHONE.tel}`}>{PHONE.display}</a></p>
             </div>
             <div className="city-aside-card">
               <p className="city-aside-label">Hours</p>

@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             <h2>Contact</h2>
             <p>Questions about this policy? Reach us at:</p>
             <p><strong>Portal Dance Lab</strong><br />
-            2441 Precinct Line Dr, Richmond, TX 77406<br />
+            2441 Precinct Line Rd, Richmond, TX 77406<br />
             <a href="mailto:info@portaldancelab.com">info@portaldancelab.com</a></p>
           </div>
 

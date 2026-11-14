@@ -42,6 +42,9 @@ export default function Footer() {
             <div className="footer-contact">
               <p className="footer-contact-item">{FOOTER.address}</p>
               <p className="footer-contact-item">{FOOTER.hours}</p>
+              <a href={`tel:${FOOTER.phone.tel}`} className="footer-contact-item footer-contact-link">
+                {FOOTER.phone.display}
+              </a>
               <a href={`mailto:${FOOTER.email}`} className="footer-contact-item footer-contact-link">
                 {FOOTER.email}
               </a>
